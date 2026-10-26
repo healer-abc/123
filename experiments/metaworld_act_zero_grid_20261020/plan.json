@@ -1,0 +1,186 @@
+{
+  "created_at": 1792438132.7038615,
+  "baseline_root": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019",
+  "baseline_results_sha256": "ee12cfc103efd8248379cc88e25483bbae80773fea8a87b1daa63cf562e60584",
+  "script_sha256": "609bd68580a1d35aa8f219046b874b000b3eea7ccbdb48d1a5277395624bb56b",
+  "targets": [
+    {
+      "task": "shelf-place",
+      "method": "ACT",
+      "successes": "1",
+      "episodes": "20",
+      "success_rate": "0.05",
+      "checkpoint_sha256": "48f4b4c894d1e62dfb8d4137151675783a792dee5045b4afd55f918cdb532647",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_shelf-place/attempt_01"
+    },
+    {
+      "task": "pick-place",
+      "method": "ACT",
+      "successes": "3",
+      "episodes": "20",
+      "success_rate": "0.15",
+      "checkpoint_sha256": "8006ac26a728062cbdabab0ce6a549a257c1c50f7f8b2bb1ec0e9f60fb989797",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place/attempt_01"
+    }
+  ],
+  "scope_note": "Only ACT shelf-place and pick-place: both had 0/20 under the fixed short-interval protocol. Other three tasks already have genuine nonzero 20-episode results; no new search on them.",
+  "blocks": 3,
+  "episodes_per_trial": 3,
+  "search_seed_start": 3126102000,
+  "holdout_seeds": [
+    2126102000,
+    2126102001,
+    2126102002,
+    2126102003,
+    2126102004,
+    2126102005,
+    2126102006,
+    2126102007,
+    2126102008,
+    2126102009,
+    2126102010,
+    2126102011,
+    2126102012,
+    2126102013,
+    2126102014,
+    2126102015,
+    2126102016,
+    2126102017,
+    2126102018,
+    2126102019
+  ],
+  "max_episode_steps": 200,
+  "success_definition": "any official info.success within 200 steps",
+  "stop_rule": "Complete each three-episode trial. Lock the first trial with >0 successes; evaluate exactly one independent 20-episode holdout. Do not select on holdout results.",
+  "grids": {
+    "ACT": [
+      {
+        "temporal_agg": false,
+        "action_horizon": 2
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 4
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 8
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 16
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 32
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 100
+      },
+      {
+        "temporal_agg": true,
+        "action_horizon": 1,
+        "aggregation_k": 0.01
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 1
+      }
+    ],
+    "DP": [
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 8
+      }
+    ],
+    "SimpleDP3": [
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 8
+      }
+    ]
+  },
+  "training_changes": null,
+  "classification": "Targeted parameter search after zero results under the fixed action_horizon=1 evaluation; original and fixed-interval results retained.",
+  "trigger_campaign": "/home/zhsu/jyluo/experiments/metaworld_act_short_interval_20261020",
+  "final_zero_rule": "If the locked configuration has zero successes on its independent20, retain the zero and stop; do not choose another configuration based on that final score.",
+  "orchestrator_sha256": "daf901a4d04a573f4af6429f349232255a972478518bd806414ab6ef706b9dbb",
+  "parallel_target_workers": 2
+}

@@ -1,0 +1,92 @@
+{
+  "status": "complete",
+  "budget_steps": 10000,
+  "experiments": {
+    "s1_clean": {
+      "phase": "complete",
+      "pid": 1262400,
+      "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/s1_clean_20261025_091844",
+      "completed_steps": 10000,
+      "train/loss": 0.008502647280693054,
+      "train/grad_norm": 0.24589769542217255,
+      "time/training": 5.335157871246338,
+      "exit_code": 0,
+      "output": "/home/zhsu/jyluo/models/robotwin_pi0/s1_clean_20261025_091844"
+    },
+    "s2_mixed": {
+      "phase": "complete",
+      "pid": 1262401,
+      "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/s2_mixed_20261025_091844",
+      "completed_steps": 10000,
+      "train/loss": 0.015072742477059364,
+      "train/grad_norm": 0.34502196311950684,
+      "time/training": 9.745649337768555,
+      "exit_code": 0,
+      "output": "/home/zhsu/jyluo/models/robotwin_pi0/s2_mixed_20261025_091844"
+    }
+  },
+  "updated_utc": "2026-10-26T01:08:19.013741+00:00",
+  "resource_profile": {
+    "status": "passed",
+    "micro_batch_size": 4,
+    "global_batch_size": 16,
+    "simultaneous_jobs": 2,
+    "gpu_ids": [
+      0,
+      1
+    ],
+    "workers_per_job": 2,
+    "profiles": {
+      "a": {
+        "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/sft_profile4_a_20261025_0915",
+        "exit_code": 0,
+        "peak_combined_memory_MiB_per_gpu": {
+          "0": 39441,
+          "1": 38919
+        },
+        "metrics": {
+          "train/loss": [
+            0.2533785104751587,
+            0.22165605425834656,
+            2.4141080379486084
+          ],
+          "time/training": [
+            22.17638397216797,
+            8.691020011901855,
+            9.910162925720215
+          ]
+        },
+        "checkpoint_metadata_sha256": "b8f484716fa6b8fa55552cd8f97ac39f3865505a1fad1177f90c798f92c181d0",
+        "nonzero_adapter_tensors": 202,
+        "checkpoint_saved": true,
+        "checkpoint_payload_retained": false
+      },
+      "b": {
+        "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/sft_profile4_b_20261025_0915",
+        "exit_code": 0,
+        "peak_combined_memory_MiB_per_gpu": {
+          "0": 39441,
+          "1": 38919
+        },
+        "metrics": {
+          "train/loss": [
+            0.2533785104751587,
+            0.22165605425834656,
+            2.4141080379486084
+          ],
+          "time/training": [
+            22.650943756103516,
+            9.3014497756958,
+            8.624343872070312
+          ]
+        },
+        "checkpoint_metadata_sha256": "f9357f4a3526042223c814b160e09c76928e002ce393a9c9e575059210024a8e",
+        "nonzero_adapter_tensors": 202,
+        "checkpoint_saved": true,
+        "checkpoint_payload_retained": false
+      }
+    },
+    "estimated_training_hours_per_job": 25.365955962075127
+  },
+  "errors": []
+}

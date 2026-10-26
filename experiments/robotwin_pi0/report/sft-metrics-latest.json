@@ -1,0 +1,35 @@
+{
+  "updated_utc": "2026-10-26T01:17:30.080887+00:00",
+  "experiments": {
+    "s1_clean": {
+      "phase": "complete",
+      "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/s1_clean_20261025_091844",
+      "completed_steps": 10000,
+      "loss_latest": 0.008502647280693054,
+      "loss_mean_last_100": 0.009988400409929455,
+      "loss_average_samples": 100,
+      "grad_norm_latest": 0.24589769542217255,
+      "training_seconds_mean_last_100": 6.390649385452271,
+      "elapsed_gpu_monitor_hours": 23.818054722216395,
+      "gpu_hours_equal_share_estimate": 23.93337625003523
+    },
+    "s2_mixed": {
+      "phase": "complete",
+      "run_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/s2_mixed_20261025_091844",
+      "completed_steps": 10000,
+      "loss_latest": 0.015072742477059364,
+      "loss_mean_last_100": 0.00977842861553654,
+      "loss_average_samples": 100,
+      "grad_norm_latest": 0.34502196311950684,
+      "training_seconds_mean_last_100": 8.201383824348449,
+      "elapsed_gpu_monitor_hours": 23.702732777794203,
+      "gpu_hours_equal_share_estimate": 23.70273152778546
+    }
+  },
+  "physical_gpu_hours_total": 47.63610777782069,
+  "peak_device_memory_MiB_combined_jobs": {
+    "0": 56119,
+    "1": 49657
+  },
+  "accounting": "Union of gpu.csv monitoring intervals per physical GPU; includes initialization and checkpoint saves, excludes CPU export after monitoring stops. Equal-share per-job values are estimates, not measured per-process GPU execution time. Memory is device-wide sampled once per second, not per-job or exact allocator peak."
+}

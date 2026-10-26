@@ -1,0 +1,97 @@
+{
+  "rows": [
+    {
+      "task": "shelf-place",
+      "episodes_per_method": 20,
+      "DP_successes": 3,
+      "ACT_successes": 11,
+      "SimpleDP3_successes": 8,
+      "DP_success_rate": 0.15,
+      "ACT_success_rate": 0.55,
+      "SimpleDP3_success_rate": 0.4
+    },
+    {
+      "task": "pick-place-wall",
+      "episodes_per_method": 20,
+      "DP_successes": 6,
+      "ACT_successes": 19,
+      "SimpleDP3_successes": 17,
+      "DP_success_rate": 0.3,
+      "ACT_success_rate": 0.95,
+      "SimpleDP3_success_rate": 0.85
+    },
+    {
+      "task": "pick-place",
+      "episodes_per_method": 20,
+      "DP_successes": 4,
+      "ACT_successes": 14,
+      "SimpleDP3_successes": 18,
+      "DP_success_rate": 0.2,
+      "ACT_success_rate": 0.7,
+      "SimpleDP3_success_rate": 0.9
+    },
+    {
+      "task": "stick-push",
+      "episodes_per_method": 20,
+      "DP_successes": 5,
+      "ACT_successes": 20,
+      "SimpleDP3_successes": 16,
+      "DP_success_rate": 0.25,
+      "ACT_success_rate": 1.0,
+      "SimpleDP3_success_rate": 0.8
+    },
+    {
+      "task": "door-open",
+      "episodes_per_method": 20,
+      "DP_successes": 19,
+      "ACT_successes": 19,
+      "SimpleDP3_successes": 20,
+      "DP_success_rate": 0.95,
+      "ACT_success_rate": 0.95,
+      "SimpleDP3_success_rate": 1.0
+    }
+  ],
+  "averages": {
+    "DP": 0.37,
+    "ACT": 0.83,
+    "SimpleDP3": 0.79
+  },
+  "ACT_sources": [
+    {
+      "task": "shelf-place",
+      "ACT_source": "/home/zhsu/jyluo/experiments/metaworld_community_baselines_50demo_20261020/runs/ACT_shelf-place/attempt_04/complete.json",
+      "ACT_source_sha256": "61bfd2dd98556e3905d09ec1acd40875d5459a20352e346e9e9aa9a9051e200a",
+      "ACT_checkpoint_sha256": "329c16891faeeacf72783010e445d3c96f176451fbd2dede48ac5aa16fa431cd"
+    },
+    {
+      "task": "pick-place-wall",
+      "ACT_source": "/home/zhsu/jyluo/experiments/metaworld_community_baselines_50demo_20261020/runs/ACT_pick-place-wall/attempt_05/complete.json",
+      "ACT_source_sha256": "44f25fa1d2d88f03e39d86cf56b9d56cd3e8ab3fb6cb4330580d60d05a9af0e9",
+      "ACT_checkpoint_sha256": "a32f2a37234dd89721326099e67a58024d777257197b4b638570a90377383fbb"
+    },
+    {
+      "task": "pick-place",
+      "ACT_source": "/home/zhsu/jyluo/experiments/metaworld_community_baselines_50demo_20261020/runs/ACT_pick-place/attempt_02/complete.json",
+      "ACT_source_sha256": "346361073e5c76ce36affa59085ec4db2914bff5a762ccbd34e3273efd40978d",
+      "ACT_checkpoint_sha256": "6df6984277b827369734b5da4955bab7af9309395627a862d8f9c44e023eac35"
+    },
+    {
+      "task": "stick-push",
+      "ACT_source": "/home/zhsu/jyluo/experiments/metaworld_community_baselines_50demo_20261020/runs/ACT_stick-push/attempt_01/complete.json",
+      "ACT_source_sha256": "8fdbfb8280826725604411b8941f2794c3445bc802dc73454e6978044277b203",
+      "ACT_checkpoint_sha256": "e9cc2b62cde863cf45d9e9a6629e982054b470408c5ff77a227d4bacce20aefc"
+    },
+    {
+      "task": "door-open",
+      "ACT_source": "/home/zhsu/jyluo/experiments/metaworld_community_baselines_50demo_20261020/runs/ACT_door-open/attempt_01/complete.json",
+      "ACT_source_sha256": "ca7da7a567f7fea121e004ff2eb479df60bd79071ba244c7d9076a5d0eef7756",
+      "ACT_checkpoint_sha256": "e1b0153fc3446f01a52826da3c37d44ebccc22d75e99d4a3cfadc2116c33df53"
+    }
+  ],
+  "SimpleDP3_summary": "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/summary.json",
+  "DP_summary": "/home/zhsu/jyluo/experiments/metaworld_dp_resume1000_20261020/summary.json",
+  "source_summary_sha256": {
+    "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/summary.json": "f3e6c6cb1064d691a3fc8b581dab4966e463d5ef41a4b1552a78ac7ad8117e2e",
+    "/home/zhsu/jyluo/experiments/metaworld_dp_resume1000_20261020/summary.json": "42e77478ea36bc874125f12689c003817e7b31b0ade6380a4df68c064bd7f3dd"
+  }
+}

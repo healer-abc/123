@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-26T05:42:10.728889+00:00",
+  "finished_utc": "2026-10-26T05:37:56.809923+00:00",
+  "formal_requested_episodes": 600,
+  "formal_batches": 60,
+  "conditions": {
+    "s1_clean/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 67,
+      "success_rate": 0.44666666666666666,
+      "wilson_95": [
+        0.3694280104150967,
+        0.5265688156508312
+      ]
+    },
+    "s1_clean/randomized": {
+      "attempted": 150,
+      "valid_scenes": 119,
+      "invalid_scenes": 31,
+      "successes": 3,
+      "success_rate": 0.025210084033613446,
+      "wilson_95": [
+        0.008610231289265538,
+        0.07150489364635611
+      ]
+    },
+    "s2_mixed/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 93,
+      "success_rate": 0.62,
+      "wilson_95": [
+        0.5402444138161229,
+        0.6937627275355391
+      ]
+    },
+    "s2_mixed/randomized": {
+      "attempted": 150,
+      "valid_scenes": 119,
+      "invalid_scenes": 31,
+      "successes": 89,
+      "success_rate": 0.7478991596638656,
+      "wilson_95": [
+        0.6629702080798223,
+        0.8173236647414017
+      ]
+    }
+  },
+  "paired": {
+    "clean": {
+      "valid_paired_seeds": 150,
+      "s1_only_success": 11,
+      "s2_only_success": 37,
+      "both_success": 56,
+      "both_failure": 46,
+      "mcnemar_exact_two_sided_p": 0.00022224496262168714
+    },
+    "randomized": {
+      "valid_paired_seeds": 119,
+      "s1_only_success": 1,
+      "s2_only_success": 87,
+      "both_success": 2,
+      "both_failure": 29,
+      "mcnemar_exact_two_sided_p": 5.751490196657771e-25
+    }
+  },
+  "invalid_requested_seeds": {
+    "clean": [],
+    "randomized": [
+      100100003,
+      100100008,
+      100100012,
+      100100019,
+      100100023,
+      100100032,
+      100100033,
+      100100035,
+      100100037,
+      100100054,
+      100100057,
+      100100065,
+      100100074,
+      100100081,
+      100100094,
+      100100098,
+      100100110,
+      100100129,
+      100100130,
+      100100133,
+      100100134,
+      100100135,
+      100100137,
+      100100139,
+      100100142,
+      100100149,
+      100100155,
+      100100156,
+      100100160,
+      100100163,
+      100100175
+    ]
+  },
+  "shared_norm_sha256": "08facb861d34c912d1ac861cf37cf3dad6d3a97de2697203b7def76bcf0e9db6",
+  "shared_audit_extension_sha256": "c1890e8ac7a1b0c8bae34fe37bc3e0904f90e061d0d7c6fe133dc9465cfdcdc3",
+  "results_sha256": "f9813239025ca778acacd5ffddcda24e51026dceb88a66bb26617e29bb265af4",
+  "results": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045/results.json"
+}

@@ -1,0 +1,51 @@
+{
+  "complete": true,
+  "records": 100,
+  "valid": 100,
+  "tasks": [
+    {
+      "task": "assembly-v2",
+      "episodes": 20,
+      "successes": 0
+    },
+    {
+      "task": "peg-insert-side-v2",
+      "episodes": 20,
+      "successes": 0
+    },
+    {
+      "task": "disassemble-v2",
+      "episodes": 20,
+      "successes": 0
+    },
+    {
+      "task": "peg-unplug-side-v2",
+      "episodes": 20,
+      "successes": 0
+    },
+    {
+      "task": "stick-pull-v2",
+      "episodes": 20,
+      "successes": 0
+    }
+  ],
+  "max_action_reconstruction_error": 5.5469378201777886e-08,
+  "max_unrepresentable_rotation_rad_s": 2.8324642253910354e-06,
+  "max_tcp_displacement_m": 0.6223958673919502,
+  "mean_tcp_displacement_m": 0.3616340627999673,
+  "total_environment_steps": 50000,
+  "cartesian_clipped_components": 17058,
+  "mean_state_ood_fraction": 0.4972775,
+  "policy_inferences": 1900,
+  "protocol_sha256": "f04241af4c4ce51b2b2669d937d9dadaf8438d30c83a2a82d3a73dd5afc949a9",
+  "checks": [
+    "base metadata",
+    "same task identities and seeds",
+    "quantile normalization roundtrip",
+    "7D DROID normalized command to rad/s with uniform limit/8th gripper",
+    "Jacobian conversion",
+    "15 Hz resampling",
+    "first success stops episode",
+    "all trajectory and video files"
+  ]
+}

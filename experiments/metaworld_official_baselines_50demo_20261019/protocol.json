@@ -1,0 +1,109 @@
+{
+  "tasks": [
+    "shelf-place",
+    "pick-place-wall",
+    "pick-place",
+    "stick-push",
+    "door-open"
+  ],
+  "methods": [
+    "DP",
+    "ACT",
+    "SimpleDP3"
+  ],
+  "training_seed": 0,
+  "data": {
+    "previous_verified_successful_demonstrations": 10,
+    "previous_collection_seed": 42,
+    "additional_successful_demonstrations": 40,
+    "additional_collection_seed": 43,
+    "training_episodes": 40,
+    "validation_episodes": 10,
+    "shared_split_sha256": "4a903413eb9a4f6bc1a200c40b4e741746646238cdc84075d421102786833598"
+  },
+  "successful_demonstrations_per_task": 50,
+  "final_episodes_per_group": 20,
+  "final_episode_seeds": [
+    2026101900,
+    2026101901,
+    2026101902,
+    2026101903,
+    2026101904,
+    2026101905,
+    2026101906,
+    2026101907,
+    2026101908,
+    2026101909,
+    2026101910,
+    2026101911,
+    2026101912,
+    2026101913,
+    2026101914,
+    2026101915,
+    2026101916,
+    2026101917,
+    2026101918,
+    2026101919
+  ],
+  "development_episode_seeds": [
+    1026101900,
+    1026101901,
+    1026101902,
+    1026101903,
+    1026101904
+  ],
+  "development_rollout_episodes": 5,
+  "max_episode_steps": 200,
+  "success": "any official info.success within full episode",
+  "DP": {
+    "source": "real-stanford/diffusion_policy",
+    "config": "train_diffusion_unet_image_workspace.yaml",
+    "num_epochs": 8000,
+    "batch_size": 64,
+    "horizon": 16,
+    "n_action_steps": 8,
+    "checkpoint": "fixed terminal epoch EMA"
+  },
+  "SimpleDP3": {
+    "source": "YanjieZe/3D-Diffusion-Policy",
+    "config": "simple_dp3.yaml",
+    "num_epochs": 3000,
+    "batch_size": 128,
+    "horizon": 16,
+    "n_action_steps": 8,
+    "checkpoint": "fixed terminal epoch EMA"
+  },
+  "ACT": {
+    "source": "tonyzhaozh/act",
+    "config": "README simulated training command",
+    "num_epochs": 2000,
+    "batch_size": 8,
+    "chunk_size": 100,
+    "kl_weight": 10,
+    "hidden_dim": 512,
+    "dim_feedforward": 3200,
+    "lr": 1e-05,
+    "temporal_aggregation": false,
+    "checkpoint": "official best validation loss"
+  },
+  "scope": "official algorithms with documented MetaWorld I/O adaptation; no model improvements",
+  "runtime_adaptations": {
+    "development_rollout_every_epochs": 500,
+    "diffusion_checkpoint_every_epochs": 500,
+    "DP_validation_every_epochs": 20,
+    "diffusion_sampling_diagnostic_every_epochs": 100,
+    "diffusion_loader_workers": 2,
+    "persistent_data_loader_workers": true,
+    "development_rollouts_restore_training_rng": true,
+    "all_policy_models_trained_fresh": true
+  },
+  "limitations": [
+    "one training seed per method/task; 20 final episodes is not a multi-seed benchmark",
+    "DP and ACT have no official MetaWorld recipe; robot dimensions, data and rollout I/O are adapted",
+    "training workspaces periodically run additional development rollouts; only final holdout 20 enter final table",
+    "DP/SimpleDP3 terminal checkpoint holdout score differs from DP3 paper largest-K development-score reporting",
+    "all methods share the official ACT 40/10 split; DP/SimpleDP3 dataset split adapted accordingly",
+    "pinned source archives; existing compatible PyTorch 2.7.1 CUDA12.8 runtime on RTX6000D",
+    "software EGL rendering due unavailable hardware-render device permissions"
+  ]
+}

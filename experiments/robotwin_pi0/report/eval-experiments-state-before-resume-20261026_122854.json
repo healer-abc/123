@@ -1,0 +1,66 @@
+{
+  "status": "failed",
+  "output_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045",
+  "target_per_condition": 150,
+  "phase": "formal",
+  "completed_batches": 33,
+  "formal_episodes": 330,
+  "conditions": {
+    "s1_clean/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 67,
+      "success_rate": 0.44666666666666666,
+      "wilson_95": [
+        0.3694280104150967,
+        0.5265688156508312
+      ]
+    },
+    "s1_clean/randomized": {
+      "attempted": 20,
+      "valid_scenes": 15,
+      "invalid_scenes": 5,
+      "successes": 2,
+      "success_rate": 0.13333333333333333,
+      "wilson_95": [
+        0.037361259103066535,
+        0.37881982832321587
+      ]
+    },
+    "s2_mixed/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 93,
+      "success_rate": 0.62,
+      "wilson_95": [
+        0.5402444138161229,
+        0.6937627275355391
+      ]
+    },
+    "s2_mixed/randomized": {
+      "attempted": 10,
+      "valid_scenes": 8,
+      "invalid_scenes": 2,
+      "successes": 7,
+      "success_rate": 0.875,
+      "wilson_95": [
+        0.5291118177871563,
+        0.9775825085499423
+      ]
+    }
+  },
+  "initial_free_GiB": 9.319183349609375,
+  "updated_utc": "2026-10-26T02:49:07.698631+00:00",
+  "free_disk_GiB": 3.0216140747070312,
+  "output_MiB": 1.7533187866210938,
+  "active_model": "s1_clean",
+  "active_variant": "randomized",
+  "active_batch": 1,
+  "active_job": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045/formal_s1_clean_randomized_01",
+  "pid": 633061,
+  "active_elapsed_seconds": 130,
+  "pilot_status": "passed",
+  "error": "Free disk below 3 GiB; preserve results and stop before next batch"
+}

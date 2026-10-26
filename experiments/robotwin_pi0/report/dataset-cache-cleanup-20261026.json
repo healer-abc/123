@@ -1,0 +1,2723 @@
+{
+  "scope": "Regenerable HF Arrow builder caches only; all 600 source Parquets verified present and size-matched.",
+  "before_free_bytes": 77586493440,
+  "entries": [
+    {
+      "cache": "/home/zhsu/jyluo/experiments/robotwin_pi0/.cache/huggingface/datasets/parquet/default-c6c2da5a07cdfa1e/0.0.0/9c460aabd2aa27d1496e5e38d2060760561f0ac2cd6a110134eefa5b3f153b8d",
+      "bytes": 10712636496,
+      "source_datasets": [
+        "robotwin_pi0_randomized200"
+      ],
+      "sources": 200,
+      "dataset_info": {
+        "description": "",
+        "citation": "",
+        "homepage": "",
+        "license": "",
+        "features": {
+          "observation.state": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "action": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "observation.images.cam_high": {
+            "_type": "Image"
+          },
+          "observation.images.cam_left_wrist": {
+            "_type": "Image"
+          },
+          "observation.images.cam_right_wrist": {
+            "_type": "Image"
+          },
+          "timestamp": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "frame_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "episode_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "task_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          }
+        },
+        "builder_name": "parquet",
+        "dataset_name": "parquet",
+        "config_name": "default",
+        "version": {
+          "version_str": "0.0.0",
+          "major": 0,
+          "minor": 0,
+          "patch": 0
+        },
+        "splits": {
+          "train": {
+            "name": "train",
+            "num_bytes": 10712278964,
+            "num_examples": 30931,
+            "shard_lengths": [
+              1449,
+              1557,
+              1515,
+              1441,
+              1483,
+              1471,
+              1453,
+              1463,
+              1446,
+              1484,
+              1524,
+              1491,
+              1526,
+              1512,
+              1536,
+              1451,
+              1456,
+              1481,
+              1430,
+              1539,
+              1223
+            ],
+            "dataset_name": "parquet"
+          }
+        },
+        "download_checksums": {
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000000.parquet": {
+            "num_bytes": 52780739,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000001.parquet": {
+            "num_bytes": 59029467,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000002.parquet": {
+            "num_bytes": 52505204,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000003.parquet": {
+            "num_bytes": 52801279,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000004.parquet": {
+            "num_bytes": 50161834,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000005.parquet": {
+            "num_bytes": 49386495,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000006.parquet": {
+            "num_bytes": 48162171,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000007.parquet": {
+            "num_bytes": 54996013,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000008.parquet": {
+            "num_bytes": 53861741,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000009.parquet": {
+            "num_bytes": 43568698,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000010.parquet": {
+            "num_bytes": 43920539,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000011.parquet": {
+            "num_bytes": 51890837,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000012.parquet": {
+            "num_bytes": 55285241,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000013.parquet": {
+            "num_bytes": 57113054,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000014.parquet": {
+            "num_bytes": 48927023,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000015.parquet": {
+            "num_bytes": 48628735,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000016.parquet": {
+            "num_bytes": 48091581,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000017.parquet": {
+            "num_bytes": 58336068,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000018.parquet": {
+            "num_bytes": 54856507,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000019.parquet": {
+            "num_bytes": 65284595,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000020.parquet": {
+            "num_bytes": 49381214,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000021.parquet": {
+            "num_bytes": 46436875,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000022.parquet": {
+            "num_bytes": 56710218,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000023.parquet": {
+            "num_bytes": 40870406,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000024.parquet": {
+            "num_bytes": 54884786,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000025.parquet": {
+            "num_bytes": 47423563,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000026.parquet": {
+            "num_bytes": 60497710,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000027.parquet": {
+            "num_bytes": 43458692,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000028.parquet": {
+            "num_bytes": 62130835,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000029.parquet": {
+            "num_bytes": 52480545,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000030.parquet": {
+            "num_bytes": 62068380,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000031.parquet": {
+            "num_bytes": 50314682,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000032.parquet": {
+            "num_bytes": 59064253,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000033.parquet": {
+            "num_bytes": 58794027,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000034.parquet": {
+            "num_bytes": 54033819,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000035.parquet": {
+            "num_bytes": 50386680,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000036.parquet": {
+            "num_bytes": 48213964,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000037.parquet": {
+            "num_bytes": 56100492,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000038.parquet": {
+            "num_bytes": 49341404,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000039.parquet": {
+            "num_bytes": 47061200,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000040.parquet": {
+            "num_bytes": 46099978,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000041.parquet": {
+            "num_bytes": 45180011,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000042.parquet": {
+            "num_bytes": 48650881,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000043.parquet": {
+            "num_bytes": 49466257,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000044.parquet": {
+            "num_bytes": 49538630,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000045.parquet": {
+            "num_bytes": 44757539,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000046.parquet": {
+            "num_bytes": 57721015,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000047.parquet": {
+            "num_bytes": 47095398,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000048.parquet": {
+            "num_bytes": 44668315,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000049.parquet": {
+            "num_bytes": 49368706,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000050.parquet": {
+            "num_bytes": 50350304,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000051.parquet": {
+            "num_bytes": 57930655,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000052.parquet": {
+            "num_bytes": 47382842,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000053.parquet": {
+            "num_bytes": 50890293,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000054.parquet": {
+            "num_bytes": 65482017,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000055.parquet": {
+            "num_bytes": 51484652,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000056.parquet": {
+            "num_bytes": 43585658,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000057.parquet": {
+            "num_bytes": 48099151,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000058.parquet": {
+            "num_bytes": 45447230,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000059.parquet": {
+            "num_bytes": 53230261,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000060.parquet": {
+            "num_bytes": 53167196,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000061.parquet": {
+            "num_bytes": 51669465,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000062.parquet": {
+            "num_bytes": 53364494,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000063.parquet": {
+            "num_bytes": 44110916,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000064.parquet": {
+            "num_bytes": 58634614,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000065.parquet": {
+            "num_bytes": 55870512,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000066.parquet": {
+            "num_bytes": 55099572,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000067.parquet": {
+            "num_bytes": 49069003,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000068.parquet": {
+            "num_bytes": 43610498,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000069.parquet": {
+            "num_bytes": 47111528,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000070.parquet": {
+            "num_bytes": 48767870,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000071.parquet": {
+            "num_bytes": 52635321,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000072.parquet": {
+            "num_bytes": 53111768,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000073.parquet": {
+            "num_bytes": 52606871,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000074.parquet": {
+            "num_bytes": 47743366,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000075.parquet": {
+            "num_bytes": 55416178,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000076.parquet": {
+            "num_bytes": 44567080,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000077.parquet": {
+            "num_bytes": 53823364,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000078.parquet": {
+            "num_bytes": 54948985,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000079.parquet": {
+            "num_bytes": 55562886,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000080.parquet": {
+            "num_bytes": 41092432,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000081.parquet": {
+            "num_bytes": 52279767,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000082.parquet": {
+            "num_bytes": 61365343,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000083.parquet": {
+            "num_bytes": 44805519,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000084.parquet": {
+            "num_bytes": 45522127,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000085.parquet": {
+            "num_bytes": 47292988,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000086.parquet": {
+            "num_bytes": 47710015,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000087.parquet": {
+            "num_bytes": 49370575,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000088.parquet": {
+            "num_bytes": 48565491,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000089.parquet": {
+            "num_bytes": 50243253,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000090.parquet": {
+            "num_bytes": 41675937,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000091.parquet": {
+            "num_bytes": 57726707,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000092.parquet": {
+            "num_bytes": 54216047,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000093.parquet": {
+            "num_bytes": 51053887,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000094.parquet": {
+            "num_bytes": 51376083,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000095.parquet": {
+            "num_bytes": 48582993,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000096.parquet": {
+            "num_bytes": 52604937,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000097.parquet": {
+            "num_bytes": 52582594,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000098.parquet": {
+            "num_bytes": 53938675,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000099.parquet": {
+            "num_bytes": 67018657,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000100.parquet": {
+            "num_bytes": 46791828,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000101.parquet": {
+            "num_bytes": 48766417,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000102.parquet": {
+            "num_bytes": 55422595,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000103.parquet": {
+            "num_bytes": 50089935,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000104.parquet": {
+            "num_bytes": 57868498,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000105.parquet": {
+            "num_bytes": 54302643,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000106.parquet": {
+            "num_bytes": 43837112,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000107.parquet": {
+            "num_bytes": 62065651,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000108.parquet": {
+            "num_bytes": 51913132,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000109.parquet": {
+            "num_bytes": 51975538,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000110.parquet": {
+            "num_bytes": 57077534,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000111.parquet": {
+            "num_bytes": 44829544,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000112.parquet": {
+            "num_bytes": 50567541,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000113.parquet": {
+            "num_bytes": 54878810,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000114.parquet": {
+            "num_bytes": 45771170,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000115.parquet": {
+            "num_bytes": 57787845,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000116.parquet": {
+            "num_bytes": 47188405,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000117.parquet": {
+            "num_bytes": 42796168,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000118.parquet": {
+            "num_bytes": 48842794,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000119.parquet": {
+            "num_bytes": 44953763,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000120.parquet": {
+            "num_bytes": 51261047,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000121.parquet": {
+            "num_bytes": 57229923,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000122.parquet": {
+            "num_bytes": 60928314,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000123.parquet": {
+            "num_bytes": 42931778,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000124.parquet": {
+            "num_bytes": 56950597,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000125.parquet": {
+            "num_bytes": 50588867,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000126.parquet": {
+            "num_bytes": 46919127,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000127.parquet": {
+            "num_bytes": 44880267,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000128.parquet": {
+            "num_bytes": 58180157,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000129.parquet": {
+            "num_bytes": 49313719,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000130.parquet": {
+            "num_bytes": 53275433,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000131.parquet": {
+            "num_bytes": 46769411,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000132.parquet": {
+            "num_bytes": 46181883,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000133.parquet": {
+            "num_bytes": 46510969,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000134.parquet": {
+            "num_bytes": 57170219,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000135.parquet": {
+            "num_bytes": 52491394,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000136.parquet": {
+            "num_bytes": 82476174,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000137.parquet": {
+            "num_bytes": 46166141,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000138.parquet": {
+            "num_bytes": 52488989,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000139.parquet": {
+            "num_bytes": 45757174,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000140.parquet": {
+            "num_bytes": 50892364,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000141.parquet": {
+            "num_bytes": 47450960,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000142.parquet": {
+            "num_bytes": 52354472,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000143.parquet": {
+            "num_bytes": 51549252,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000144.parquet": {
+            "num_bytes": 62150632,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000145.parquet": {
+            "num_bytes": 50575278,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000146.parquet": {
+            "num_bytes": 48286051,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000147.parquet": {
+            "num_bytes": 51173778,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000148.parquet": {
+            "num_bytes": 51854392,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000149.parquet": {
+            "num_bytes": 47564200,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000150.parquet": {
+            "num_bytes": 69139900,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000151.parquet": {
+            "num_bytes": 53910226,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000152.parquet": {
+            "num_bytes": 58897395,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000153.parquet": {
+            "num_bytes": 57492066,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000154.parquet": {
+            "num_bytes": 46570262,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000155.parquet": {
+            "num_bytes": 53794904,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000156.parquet": {
+            "num_bytes": 51772023,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000157.parquet": {
+            "num_bytes": 52365234,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000158.parquet": {
+            "num_bytes": 46662900,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000159.parquet": {
+            "num_bytes": 52530556,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000160.parquet": {
+            "num_bytes": 42046331,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000161.parquet": {
+            "num_bytes": 42428525,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000162.parquet": {
+            "num_bytes": 62961659,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000163.parquet": {
+            "num_bytes": 48386497,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000164.parquet": {
+            "num_bytes": 51648034,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000165.parquet": {
+            "num_bytes": 48926468,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000166.parquet": {
+            "num_bytes": 47799735,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000167.parquet": {
+            "num_bytes": 42643921,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000168.parquet": {
+            "num_bytes": 47414804,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000169.parquet": {
+            "num_bytes": 40993638,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000170.parquet": {
+            "num_bytes": 49676888,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000171.parquet": {
+            "num_bytes": 57270030,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000172.parquet": {
+            "num_bytes": 54587162,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000173.parquet": {
+            "num_bytes": 45896123,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000174.parquet": {
+            "num_bytes": 55766545,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000175.parquet": {
+            "num_bytes": 66888958,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000176.parquet": {
+            "num_bytes": 53324184,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000177.parquet": {
+            "num_bytes": 64745167,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000178.parquet": {
+            "num_bytes": 48670831,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000179.parquet": {
+            "num_bytes": 59019308,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000180.parquet": {
+            "num_bytes": 44391093,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000181.parquet": {
+            "num_bytes": 54266901,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000182.parquet": {
+            "num_bytes": 52413734,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000183.parquet": {
+            "num_bytes": 68509527,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000184.parquet": {
+            "num_bytes": 45732199,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000185.parquet": {
+            "num_bytes": 51322009,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000186.parquet": {
+            "num_bytes": 47205465,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000187.parquet": {
+            "num_bytes": 63328848,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000188.parquet": {
+            "num_bytes": 45479261,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000189.parquet": {
+            "num_bytes": 39796773,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000190.parquet": {
+            "num_bytes": 55442856,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000191.parquet": {
+            "num_bytes": 47474212,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000192.parquet": {
+            "num_bytes": 78126000,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000193.parquet": {
+            "num_bytes": 43401734,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000194.parquet": {
+            "num_bytes": 53150677,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000195.parquet": {
+            "num_bytes": 47865972,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000196.parquet": {
+            "num_bytes": 60145556,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000197.parquet": {
+            "num_bytes": 52686746,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000198.parquet": {
+            "num_bytes": 52851998,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/data/chunk-000/episode_000199.parquet": {
+            "num_bytes": 54304442,
+            "checksum": null
+          }
+        },
+        "download_size": 10357763035,
+        "dataset_size": 10712278964,
+        "size_in_bytes": 21070041999
+      }
+    },
+    {
+      "cache": "/home/zhsu/jyluo/experiments/robotwin_pi0/.cache/huggingface/datasets/parquet/default-44e14a751d8bcecc/0.0.0/9c460aabd2aa27d1496e5e38d2060760561f0ac2cd6a110134eefa5b3f153b8d",
+      "bytes": 10064961504,
+      "source_datasets": [
+        "robotwin_pi0_mixed200"
+      ],
+      "sources": 200,
+      "dataset_info": {
+        "description": "",
+        "citation": "",
+        "homepage": "",
+        "license": "",
+        "features": {
+          "observation.state": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "action": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "observation.images.cam_high": {
+            "_type": "Image"
+          },
+          "observation.images.cam_left_wrist": {
+            "_type": "Image"
+          },
+          "observation.images.cam_right_wrist": {
+            "_type": "Image"
+          },
+          "timestamp": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "frame_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "episode_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "task_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          }
+        },
+        "builder_name": "parquet",
+        "dataset_name": "parquet",
+        "config_name": "default",
+        "version": {
+          "version_str": "0.0.0",
+          "major": 0,
+          "minor": 0,
+          "patch": 0
+        },
+        "splits": {
+          "train": {
+            "name": "train",
+            "num_bytes": 10064607034,
+            "num_examples": 30740,
+            "shard_lengths": [
+              1617,
+              1635,
+              1704,
+              1691,
+              1675,
+              1663,
+              1681,
+              1670,
+              1624,
+              1498,
+              1541,
+              1465,
+              1504,
+              1449,
+              1456,
+              1507,
+              1515,
+              1469,
+              1445,
+              931
+            ],
+            "dataset_name": "parquet"
+          }
+        },
+        "download_checksums": {
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000000.parquet": {
+            "num_bytes": 42830296,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000001.parquet": {
+            "num_bytes": 43449347,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000002.parquet": {
+            "num_bytes": 43644657,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000003.parquet": {
+            "num_bytes": 43350806,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000004.parquet": {
+            "num_bytes": 48430528,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000005.parquet": {
+            "num_bytes": 44916327,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000006.parquet": {
+            "num_bytes": 49792386,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000007.parquet": {
+            "num_bytes": 42058276,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000008.parquet": {
+            "num_bytes": 42801941,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000009.parquet": {
+            "num_bytes": 50919159,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000010.parquet": {
+            "num_bytes": 46142549,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000011.parquet": {
+            "num_bytes": 50090934,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000012.parquet": {
+            "num_bytes": 42057117,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000013.parquet": {
+            "num_bytes": 45429618,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000014.parquet": {
+            "num_bytes": 39782592,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000015.parquet": {
+            "num_bytes": 44664218,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000016.parquet": {
+            "num_bytes": 42780129,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000017.parquet": {
+            "num_bytes": 42860551,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000018.parquet": {
+            "num_bytes": 46065613,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000019.parquet": {
+            "num_bytes": 41715878,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000020.parquet": {
+            "num_bytes": 43871742,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000021.parquet": {
+            "num_bytes": 45079943,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000022.parquet": {
+            "num_bytes": 51839135,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000023.parquet": {
+            "num_bytes": 45306660,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000024.parquet": {
+            "num_bytes": 45169864,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000025.parquet": {
+            "num_bytes": 52709874,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000026.parquet": {
+            "num_bytes": 61892176,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000027.parquet": {
+            "num_bytes": 42081748,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000028.parquet": {
+            "num_bytes": 50611447,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000029.parquet": {
+            "num_bytes": 45454051,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000030.parquet": {
+            "num_bytes": 43697874,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000031.parquet": {
+            "num_bytes": 45976061,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000032.parquet": {
+            "num_bytes": 47238224,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000033.parquet": {
+            "num_bytes": 46506070,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000034.parquet": {
+            "num_bytes": 46552339,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000035.parquet": {
+            "num_bytes": 50396265,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000036.parquet": {
+            "num_bytes": 43412028,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000037.parquet": {
+            "num_bytes": 53605647,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000038.parquet": {
+            "num_bytes": 48936522,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000039.parquet": {
+            "num_bytes": 44123958,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000040.parquet": {
+            "num_bytes": 50235348,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000041.parquet": {
+            "num_bytes": 41887282,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000042.parquet": {
+            "num_bytes": 51491209,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000043.parquet": {
+            "num_bytes": 46620626,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000044.parquet": {
+            "num_bytes": 48754561,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000045.parquet": {
+            "num_bytes": 42246869,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000046.parquet": {
+            "num_bytes": 49379161,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000047.parquet": {
+            "num_bytes": 45914593,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000048.parquet": {
+            "num_bytes": 44302591,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000049.parquet": {
+            "num_bytes": 43045183,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000050.parquet": {
+            "num_bytes": 43846679,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000051.parquet": {
+            "num_bytes": 42649579,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000052.parquet": {
+            "num_bytes": 40182339,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000053.parquet": {
+            "num_bytes": 42308358,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000054.parquet": {
+            "num_bytes": 44365663,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000055.parquet": {
+            "num_bytes": 40965660,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000056.parquet": {
+            "num_bytes": 43033445,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000057.parquet": {
+            "num_bytes": 45232584,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000058.parquet": {
+            "num_bytes": 44050064,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000059.parquet": {
+            "num_bytes": 46157679,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000060.parquet": {
+            "num_bytes": 42906994,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000061.parquet": {
+            "num_bytes": 41728288,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000062.parquet": {
+            "num_bytes": 47659234,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000063.parquet": {
+            "num_bytes": 42835289,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000064.parquet": {
+            "num_bytes": 44509073,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000065.parquet": {
+            "num_bytes": 42940397,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000066.parquet": {
+            "num_bytes": 44386654,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000067.parquet": {
+            "num_bytes": 47944750,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000068.parquet": {
+            "num_bytes": 43033809,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000069.parquet": {
+            "num_bytes": 44251154,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000070.parquet": {
+            "num_bytes": 42390655,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000071.parquet": {
+            "num_bytes": 42193361,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000072.parquet": {
+            "num_bytes": 51644740,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000073.parquet": {
+            "num_bytes": 55057704,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000074.parquet": {
+            "num_bytes": 56274344,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000075.parquet": {
+            "num_bytes": 41873127,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000076.parquet": {
+            "num_bytes": 50612717,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000077.parquet": {
+            "num_bytes": 46098366,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000078.parquet": {
+            "num_bytes": 44807911,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000079.parquet": {
+            "num_bytes": 42477198,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000080.parquet": {
+            "num_bytes": 41180736,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000081.parquet": {
+            "num_bytes": 43442751,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000082.parquet": {
+            "num_bytes": 42943582,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000083.parquet": {
+            "num_bytes": 48245596,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000084.parquet": {
+            "num_bytes": 47160031,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000085.parquet": {
+            "num_bytes": 48359885,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000086.parquet": {
+            "num_bytes": 45980250,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000087.parquet": {
+            "num_bytes": 42178376,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000088.parquet": {
+            "num_bytes": 54218811,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000089.parquet": {
+            "num_bytes": 42422602,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000090.parquet": {
+            "num_bytes": 44935554,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000091.parquet": {
+            "num_bytes": 46261935,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000092.parquet": {
+            "num_bytes": 55926909,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000093.parquet": {
+            "num_bytes": 50882357,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000094.parquet": {
+            "num_bytes": 42342833,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000095.parquet": {
+            "num_bytes": 45034511,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000096.parquet": {
+            "num_bytes": 44627702,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000097.parquet": {
+            "num_bytes": 44540245,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000098.parquet": {
+            "num_bytes": 50393405,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000099.parquet": {
+            "num_bytes": 42103580,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000100.parquet": {
+            "num_bytes": 52780737,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000101.parquet": {
+            "num_bytes": 49386495,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000102.parquet": {
+            "num_bytes": 53861739,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000103.parquet": {
+            "num_bytes": 43920539,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000104.parquet": {
+            "num_bytes": 51890839,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000105.parquet": {
+            "num_bytes": 57113052,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000106.parquet": {
+            "num_bytes": 48927025,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000107.parquet": {
+            "num_bytes": 48628733,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000108.parquet": {
+            "num_bytes": 54856507,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000109.parquet": {
+            "num_bytes": 65284593,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000110.parquet": {
+            "num_bytes": 49381214,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000111.parquet": {
+            "num_bytes": 46436874,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000112.parquet": {
+            "num_bytes": 56710220,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000113.parquet": {
+            "num_bytes": 40870404,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000114.parquet": {
+            "num_bytes": 47423563,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000115.parquet": {
+            "num_bytes": 60497708,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000116.parquet": {
+            "num_bytes": 62130835,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000117.parquet": {
+            "num_bytes": 62068382,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000118.parquet": {
+            "num_bytes": 54033824,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000119.parquet": {
+            "num_bytes": 48213965,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000120.parquet": {
+            "num_bytes": 49341406,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000121.parquet": {
+            "num_bytes": 48650881,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000122.parquet": {
+            "num_bytes": 44757541,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000123.parquet": {
+            "num_bytes": 47095396,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000124.parquet": {
+            "num_bytes": 49368708,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000125.parquet": {
+            "num_bytes": 50350307,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000126.parquet": {
+            "num_bytes": 50890291,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000127.parquet": {
+            "num_bytes": 51484654,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000128.parquet": {
+            "num_bytes": 48099151,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000129.parquet": {
+            "num_bytes": 45447229,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000130.parquet": {
+            "num_bytes": 51669463,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000131.parquet": {
+            "num_bytes": 55870514,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000132.parquet": {
+            "num_bytes": 47111528,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000133.parquet": {
+            "num_bytes": 52635323,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000134.parquet": {
+            "num_bytes": 47743366,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000135.parquet": {
+            "num_bytes": 44567078,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000136.parquet": {
+            "num_bytes": 53823368,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000137.parquet": {
+            "num_bytes": 52279767,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000138.parquet": {
+            "num_bytes": 61365343,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000139.parquet": {
+            "num_bytes": 44805524,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000140.parquet": {
+            "num_bytes": 45522131,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000141.parquet": {
+            "num_bytes": 47710013,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000142.parquet": {
+            "num_bytes": 48565491,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000143.parquet": {
+            "num_bytes": 57726707,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000144.parquet": {
+            "num_bytes": 54216047,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000145.parquet": {
+            "num_bytes": 51053883,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000146.parquet": {
+            "num_bytes": 51376085,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000147.parquet": {
+            "num_bytes": 52604937,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000148.parquet": {
+            "num_bytes": 52582593,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000149.parquet": {
+            "num_bytes": 67018657,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000150.parquet": {
+            "num_bytes": 48766415,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000151.parquet": {
+            "num_bytes": 55422597,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000152.parquet": {
+            "num_bytes": 50089935,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000153.parquet": {
+            "num_bytes": 57868496,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000154.parquet": {
+            "num_bytes": 62065653,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000155.parquet": {
+            "num_bytes": 51913134,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000156.parquet": {
+            "num_bytes": 50567541,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000157.parquet": {
+            "num_bytes": 54878810,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000158.parquet": {
+            "num_bytes": 47188405,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000159.parquet": {
+            "num_bytes": 48842798,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000160.parquet": {
+            "num_bytes": 44953763,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000161.parquet": {
+            "num_bytes": 51261040,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000162.parquet": {
+            "num_bytes": 42931778,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000163.parquet": {
+            "num_bytes": 56950595,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000164.parquet": {
+            "num_bytes": 46919126,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000165.parquet": {
+            "num_bytes": 49313719,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000166.parquet": {
+            "num_bytes": 46769412,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000167.parquet": {
+            "num_bytes": 46510969,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000168.parquet": {
+            "num_bytes": 45757167,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000169.parquet": {
+            "num_bytes": 47450960,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000170.parquet": {
+            "num_bytes": 51549254,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000171.parquet": {
+            "num_bytes": 62150632,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000172.parquet": {
+            "num_bytes": 48286051,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000173.parquet": {
+            "num_bytes": 51173776,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000174.parquet": {
+            "num_bytes": 51854482,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000175.parquet": {
+            "num_bytes": 47564296,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000176.parquet": {
+            "num_bytes": 69139902,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000177.parquet": {
+            "num_bytes": 53910228,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000178.parquet": {
+            "num_bytes": 58897393,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000179.parquet": {
+            "num_bytes": 46570266,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000180.parquet": {
+            "num_bytes": 52365236,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000181.parquet": {
+            "num_bytes": 52530551,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000182.parquet": {
+            "num_bytes": 42046331,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000183.parquet": {
+            "num_bytes": 62961657,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000184.parquet": {
+            "num_bytes": 51648034,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000185.parquet": {
+            "num_bytes": 42643919,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000186.parquet": {
+            "num_bytes": 49676888,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000187.parquet": {
+            "num_bytes": 57270030,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000188.parquet": {
+            "num_bytes": 45896123,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000189.parquet": {
+            "num_bytes": 53324186,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000190.parquet": {
+            "num_bytes": 64745163,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000191.parquet": {
+            "num_bytes": 52413734,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000192.parquet": {
+            "num_bytes": 45732199,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000193.parquet": {
+            "num_bytes": 51322009,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000194.parquet": {
+            "num_bytes": 47205467,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000195.parquet": {
+            "num_bytes": 45479259,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000196.parquet": {
+            "num_bytes": 39796775,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000197.parquet": {
+            "num_bytes": 53150677,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000198.parquet": {
+            "num_bytes": 52686748,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_mixed200/data/chunk-000/episode_000199.parquet": {
+            "num_bytes": 52851998,
+            "checksum": null
+          }
+        },
+        "download_size": 9727137646,
+        "dataset_size": 10064607034,
+        "size_in_bytes": 19791744680
+      }
+    },
+    {
+      "cache": "/home/zhsu/jyluo/experiments/robotwin_pi0/.cache/huggingface/datasets/parquet/default-a2ea4db924ad6170/0.0.0/9c460aabd2aa27d1496e5e38d2060760561f0ac2cd6a110134eefa5b3f153b8d",
+      "bytes": 9591145376,
+      "source_datasets": [
+        "robotwin_pi0_clean200"
+      ],
+      "sources": 200,
+      "dataset_info": {
+        "description": "",
+        "citation": "",
+        "homepage": "",
+        "license": "",
+        "features": {
+          "observation.state": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "action": {
+            "feature": {
+              "dtype": "float32",
+              "_type": "Value"
+            },
+            "length": 14,
+            "_type": "Sequence"
+          },
+          "observation.images.cam_high": {
+            "_type": "Image"
+          },
+          "observation.images.cam_left_wrist": {
+            "_type": "Image"
+          },
+          "observation.images.cam_right_wrist": {
+            "_type": "Image"
+          },
+          "timestamp": {
+            "dtype": "float32",
+            "_type": "Value"
+          },
+          "frame_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "episode_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "index": {
+            "dtype": "int64",
+            "_type": "Value"
+          },
+          "task_index": {
+            "dtype": "int64",
+            "_type": "Value"
+          }
+        },
+        "builder_name": "parquet",
+        "dataset_name": "parquet",
+        "config_name": "default",
+        "version": {
+          "version_str": "0.0.0",
+          "major": 0,
+          "minor": 0,
+          "patch": 0
+        },
+        "splits": {
+          "train": {
+            "name": "train",
+            "num_bytes": 9590793432,
+            "num_examples": 31185,
+            "shard_lengths": [
+              1700,
+              1707,
+              1660,
+              1655,
+              1738,
+              1668,
+              1649,
+              1714,
+              1680,
+              1671,
+              1652,
+              1705,
+              1678,
+              1704,
+              1626,
+              1641,
+              1679,
+              1718,
+              940
+            ],
+            "dataset_name": "parquet"
+          }
+        },
+        "download_checksums": {
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000000.parquet": {
+            "num_bytes": 42830296,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000001.parquet": {
+            "num_bytes": 58979740,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000002.parquet": {
+            "num_bytes": 46281596,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000003.parquet": {
+            "num_bytes": 43802019,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000004.parquet": {
+            "num_bytes": 48106392,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000005.parquet": {
+            "num_bytes": 43449346,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000006.parquet": {
+            "num_bytes": 44058031,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000007.parquet": {
+            "num_bytes": 50315655,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000008.parquet": {
+            "num_bytes": 43644659,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000009.parquet": {
+            "num_bytes": 55759681,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000010.parquet": {
+            "num_bytes": 43350804,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000011.parquet": {
+            "num_bytes": 48430530,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000012.parquet": {
+            "num_bytes": 41572466,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000013.parquet": {
+            "num_bytes": 44916325,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000014.parquet": {
+            "num_bytes": 49792388,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000015.parquet": {
+            "num_bytes": 42058274,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000016.parquet": {
+            "num_bytes": 53663009,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000017.parquet": {
+            "num_bytes": 44469113,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000018.parquet": {
+            "num_bytes": 42801939,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000019.parquet": {
+            "num_bytes": 50919163,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000020.parquet": {
+            "num_bytes": 46142547,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000021.parquet": {
+            "num_bytes": 50090933,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000022.parquet": {
+            "num_bytes": 42057119,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000023.parquet": {
+            "num_bytes": 45429616,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000024.parquet": {
+            "num_bytes": 42968790,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000025.parquet": {
+            "num_bytes": 39782592,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000026.parquet": {
+            "num_bytes": 44664218,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000027.parquet": {
+            "num_bytes": 50302647,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000028.parquet": {
+            "num_bytes": 42780127,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000029.parquet": {
+            "num_bytes": 46697886,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000030.parquet": {
+            "num_bytes": 42860551,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000031.parquet": {
+            "num_bytes": 47145224,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000032.parquet": {
+            "num_bytes": 47967338,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000033.parquet": {
+            "num_bytes": 48186957,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000034.parquet": {
+            "num_bytes": 46065613,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000035.parquet": {
+            "num_bytes": 44404337,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000036.parquet": {
+            "num_bytes": 41715880,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000037.parquet": {
+            "num_bytes": 42987516,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000038.parquet": {
+            "num_bytes": 43871740,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000039.parquet": {
+            "num_bytes": 41697813,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000040.parquet": {
+            "num_bytes": 44345595,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000041.parquet": {
+            "num_bytes": 44482872,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000042.parquet": {
+            "num_bytes": 45079943,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000043.parquet": {
+            "num_bytes": 43764253,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000044.parquet": {
+            "num_bytes": 50185676,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000045.parquet": {
+            "num_bytes": 51839132,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000046.parquet": {
+            "num_bytes": 48046291,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000047.parquet": {
+            "num_bytes": 45306660,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000048.parquet": {
+            "num_bytes": 50675626,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000049.parquet": {
+            "num_bytes": 45169866,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000050.parquet": {
+            "num_bytes": 52709872,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000051.parquet": {
+            "num_bytes": 57551872,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000052.parquet": {
+            "num_bytes": 41436148,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000053.parquet": {
+            "num_bytes": 61892176,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000054.parquet": {
+            "num_bytes": 45177073,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000055.parquet": {
+            "num_bytes": 42081750,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000056.parquet": {
+            "num_bytes": 49949243,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000057.parquet": {
+            "num_bytes": 50611450,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000058.parquet": {
+            "num_bytes": 45454054,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000059.parquet": {
+            "num_bytes": 40344739,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000060.parquet": {
+            "num_bytes": 42313949,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000061.parquet": {
+            "num_bytes": 43697874,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000062.parquet": {
+            "num_bytes": 55219913,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000063.parquet": {
+            "num_bytes": 41449596,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000064.parquet": {
+            "num_bytes": 50087288,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000065.parquet": {
+            "num_bytes": 45976061,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000066.parquet": {
+            "num_bytes": 46248885,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000067.parquet": {
+            "num_bytes": 47734580,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000068.parquet": {
+            "num_bytes": 46531967,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000069.parquet": {
+            "num_bytes": 47238222,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000070.parquet": {
+            "num_bytes": 45370517,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000071.parquet": {
+            "num_bytes": 46506070,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000072.parquet": {
+            "num_bytes": 52030763,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000073.parquet": {
+            "num_bytes": 46022030,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000074.parquet": {
+            "num_bytes": 46552339,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000075.parquet": {
+            "num_bytes": 50872346,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000076.parquet": {
+            "num_bytes": 50396267,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000077.parquet": {
+            "num_bytes": 43412031,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000078.parquet": {
+            "num_bytes": 56179821,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000079.parquet": {
+            "num_bytes": 41029286,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000080.parquet": {
+            "num_bytes": 44416684,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000081.parquet": {
+            "num_bytes": 53605647,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000082.parquet": {
+            "num_bytes": 48936524,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000083.parquet": {
+            "num_bytes": 44123954,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000084.parquet": {
+            "num_bytes": 50235348,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000085.parquet": {
+            "num_bytes": 41435352,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000086.parquet": {
+            "num_bytes": 41887286,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000087.parquet": {
+            "num_bytes": 40829432,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000088.parquet": {
+            "num_bytes": 51491209,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000089.parquet": {
+            "num_bytes": 49318124,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000090.parquet": {
+            "num_bytes": 42214766,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000091.parquet": {
+            "num_bytes": 46620629,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000092.parquet": {
+            "num_bytes": 48754561,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000093.parquet": {
+            "num_bytes": 42246867,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000094.parquet": {
+            "num_bytes": 49379165,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000095.parquet": {
+            "num_bytes": 44965852,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000096.parquet": {
+            "num_bytes": 45914591,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000097.parquet": {
+            "num_bytes": 44302599,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000098.parquet": {
+            "num_bytes": 45325740,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000099.parquet": {
+            "num_bytes": 43045183,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000100.parquet": {
+            "num_bytes": 49632000,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000101.parquet": {
+            "num_bytes": 43846678,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000102.parquet": {
+            "num_bytes": 42649581,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000103.parquet": {
+            "num_bytes": 40182337,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000104.parquet": {
+            "num_bytes": 42308360,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000105.parquet": {
+            "num_bytes": 41688802,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000106.parquet": {
+            "num_bytes": 57744776,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000107.parquet": {
+            "num_bytes": 44365661,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000108.parquet": {
+            "num_bytes": 40965662,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000109.parquet": {
+            "num_bytes": 49151301,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000110.parquet": {
+            "num_bytes": 49877370,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000111.parquet": {
+            "num_bytes": 40620261,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000112.parquet": {
+            "num_bytes": 43033443,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000113.parquet": {
+            "num_bytes": 45232588,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000114.parquet": {
+            "num_bytes": 44029491,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000115.parquet": {
+            "num_bytes": 46440224,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000116.parquet": {
+            "num_bytes": 44050061,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000117.parquet": {
+            "num_bytes": 45492404,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000118.parquet": {
+            "num_bytes": 46157680,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000119.parquet": {
+            "num_bytes": 42906996,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000120.parquet": {
+            "num_bytes": 41728286,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000121.parquet": {
+            "num_bytes": 46892410,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000122.parquet": {
+            "num_bytes": 47026161,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000123.parquet": {
+            "num_bytes": 47659236,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000124.parquet": {
+            "num_bytes": 42835289,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000125.parquet": {
+            "num_bytes": 42315686,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000126.parquet": {
+            "num_bytes": 44509075,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000127.parquet": {
+            "num_bytes": 57667124,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000128.parquet": {
+            "num_bytes": 46115270,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000129.parquet": {
+            "num_bytes": 42940399,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000130.parquet": {
+            "num_bytes": 40191215,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000131.parquet": {
+            "num_bytes": 44386652,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000132.parquet": {
+            "num_bytes": 47374905,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000133.parquet": {
+            "num_bytes": 47944750,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000134.parquet": {
+            "num_bytes": 42754088,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000135.parquet": {
+            "num_bytes": 42525981,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000136.parquet": {
+            "num_bytes": 41477346,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000137.parquet": {
+            "num_bytes": 42469814,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000138.parquet": {
+            "num_bytes": 45781096,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000139.parquet": {
+            "num_bytes": 43033811,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000140.parquet": {
+            "num_bytes": 45222675,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000141.parquet": {
+            "num_bytes": 44251156,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000142.parquet": {
+            "num_bytes": 49055726,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000143.parquet": {
+            "num_bytes": 42390653,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000144.parquet": {
+            "num_bytes": 42193359,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000145.parquet": {
+            "num_bytes": 42489008,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000146.parquet": {
+            "num_bytes": 51644742,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000147.parquet": {
+            "num_bytes": 55057704,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000148.parquet": {
+            "num_bytes": 56274344,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000149.parquet": {
+            "num_bytes": 41873129,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000150.parquet": {
+            "num_bytes": 50612715,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000151.parquet": {
+            "num_bytes": 46098366,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000152.parquet": {
+            "num_bytes": 44807909,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000153.parquet": {
+            "num_bytes": 44965387,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000154.parquet": {
+            "num_bytes": 42477195,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000155.parquet": {
+            "num_bytes": 42288142,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000156.parquet": {
+            "num_bytes": 44574596,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000157.parquet": {
+            "num_bytes": 41180736,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000158.parquet": {
+            "num_bytes": 42875109,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000159.parquet": {
+            "num_bytes": 43442751,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000160.parquet": {
+            "num_bytes": 42943584,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000161.parquet": {
+            "num_bytes": 46298786,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000162.parquet": {
+            "num_bytes": 48245594,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000163.parquet": {
+            "num_bytes": 41084632,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000164.parquet": {
+            "num_bytes": 47160029,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000165.parquet": {
+            "num_bytes": 59864762,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000166.parquet": {
+            "num_bytes": 48727289,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000167.parquet": {
+            "num_bytes": 48359883,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000168.parquet": {
+            "num_bytes": 43723573,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000169.parquet": {
+            "num_bytes": 64613239,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000170.parquet": {
+            "num_bytes": 45980248,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000171.parquet": {
+            "num_bytes": 42178378,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000172.parquet": {
+            "num_bytes": 43800512,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000173.parquet": {
+            "num_bytes": 54218809,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000174.parquet": {
+            "num_bytes": 42717238,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000175.parquet": {
+            "num_bytes": 46690608,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000176.parquet": {
+            "num_bytes": 42422602,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000177.parquet": {
+            "num_bytes": 44935558,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000178.parquet": {
+            "num_bytes": 39796786,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000179.parquet": {
+            "num_bytes": 45903873,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000180.parquet": {
+            "num_bytes": 50141042,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000181.parquet": {
+            "num_bytes": 42729736,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000182.parquet": {
+            "num_bytes": 46261935,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000183.parquet": {
+            "num_bytes": 44291174,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000184.parquet": {
+            "num_bytes": 55926907,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000185.parquet": {
+            "num_bytes": 50882359,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000186.parquet": {
+            "num_bytes": 42342831,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000187.parquet": {
+            "num_bytes": 51688077,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000188.parquet": {
+            "num_bytes": 45034511,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000189.parquet": {
+            "num_bytes": 44627700,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000190.parquet": {
+            "num_bytes": 59985945,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000191.parquet": {
+            "num_bytes": 48146432,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000192.parquet": {
+            "num_bytes": 40116134,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000193.parquet": {
+            "num_bytes": 57548732,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000194.parquet": {
+            "num_bytes": 44540243,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000195.parquet": {
+            "num_bytes": 45857131,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000196.parquet": {
+            "num_bytes": 45781355,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000197.parquet": {
+            "num_bytes": 50393409,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000198.parquet": {
+            "num_bytes": 42103576,
+            "checksum": null
+          },
+          "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/data/chunk-000/episode_000199.parquet": {
+            "num_bytes": 45464561,
+            "checksum": null
+          }
+        },
+        "download_size": 9262353924,
+        "dataset_size": 9590793432,
+        "size_in_bytes": 18853147356
+      }
+    }
+  ],
+  "after_free_bytes": 107955187712,
+  "status": "complete"
+}

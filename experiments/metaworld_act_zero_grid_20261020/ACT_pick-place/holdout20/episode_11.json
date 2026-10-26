@@ -1,0 +1,1846 @@
+{
+  "identity": {
+    "method": "ACT",
+    "task": "pick-place",
+    "checkpoint_sha256": "8006ac26a728062cbdabab0ce6a549a257c1c50f7f8b2bb1ec0e9f60fb989797",
+    "config": {
+      "temporal_agg": false,
+      "action_horizon": 4
+    },
+    "stage": "holdout20",
+    "expert_positive_control": false,
+    "plan_sha256": "a0ffe04540bcd10fb229380ac3cf3ed34407ae1974d5bcf56cf45d173bc7d661"
+  },
+  "episode": 11,
+  "seed": 2126102011,
+  "steps": 200,
+  "initial_state_sha256": "d12647eda5c2e11e203546476ebf7d6edc601f2914a8d193f769f7fc8b5b030f",
+  "success": true,
+  "first_success_step": 50,
+  "return": 1574.1347677941667,
+  "infos": [
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.026420746615757204,
+      "in_place_reward": 0.14367672126930298,
+      "obj_to_target": 0.2684573961569027,
+      "unscaled_reward": 0.02282630064044931
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.026717337651868386,
+      "in_place_reward": 0.1436084764657168,
+      "obj_to_target": 0.2685180039234585,
+      "unscaled_reward": 0.02304558657496552
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.027276786773886952,
+      "in_place_reward": 0.14355112033595202,
+      "obj_to_target": 0.26856897308330585,
+      "unscaled_reward": 0.023459106643339344
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.028104804661622424,
+      "in_place_reward": 0.14356421737674419,
+      "obj_to_target": 0.26855733194072523,
+      "unscaled_reward": 0.024069341585741436
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.029155004420518146,
+      "in_place_reward": 0.14352934316282898,
+      "obj_to_target": 0.2685883327842121,
+      "unscaled_reward": 0.02483445026172636
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.030379627619194535,
+      "in_place_reward": 0.14354110620763313,
+      "obj_to_target": 0.2685778750320593,
+      "unscaled_reward": 0.025717888279949558
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.03171864754500298,
+      "in_place_reward": 0.1435320332179765,
+      "obj_to_target": 0.2685859411254468,
+      "unscaled_reward": 0.026670733918985577
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.0331386110052124,
+      "in_place_reward": 0.14349731549649072,
+      "obj_to_target": 0.26861681263576886,
+      "unscaled_reward": 0.027666304590929048
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.09132558027683796,
+      "in_place_reward": 0.14351140022459705,
+      "obj_to_target": 0.268604287012612,
+      "unscaled_reward": 0.0591089136617156
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.10074451696294148,
+      "in_place_reward": 0.14351963808253687,
+      "obj_to_target": 0.26859696184888054,
+      "unscaled_reward": 0.06291767072064726
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.03710166207005619,
+      "in_place_reward": 0.14352162568377155,
+      "obj_to_target": 0.26859519454844355,
+      "unscaled_reward": 0.03037615260659725
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.03847645359218801,
+      "in_place_reward": 0.14353940947350635,
+      "obj_to_target": 0.2685793834122545,
+      "unscaled_reward": 0.03129239227385237
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.03993443058434625,
+      "in_place_reward": 0.14347335239910153,
+      "obj_to_target": 0.26863812714659374,
+      "unscaled_reward": 0.03224663923285644
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04147290049846083,
+      "in_place_reward": 0.14351161327161374,
+      "obj_to_target": 0.26860409756214026,
+      "unscaled_reward": 0.03324445101138293
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04302436296630002,
+      "in_place_reward": 0.14351218127693552,
+      "obj_to_target": 0.26860359246958787,
+      "unscaled_reward": 0.03423403684518753
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.0445334015834924,
+      "in_place_reward": 0.14351846847702832,
+      "obj_to_target": 0.2685980018344115,
+      "unscaled_reward": 0.03518302236367205
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04591940106819967,
+      "in_place_reward": 0.14350324544205328,
+      "obj_to_target": 0.2686115388916301,
+      "unscaled_reward": 0.036041528586153816
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.047117348678105436,
+      "in_place_reward": 0.14350778228394598,
+      "obj_to_target": 0.2686075043001867,
+      "unscaled_reward": 0.03677570036144805
+    },
+    {
+      "success": 0.0,
+      "near_object": 0.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.0480944841597432,
+      "in_place_reward": 0.14352421069926846,
+      "obj_to_target": 0.2685928961015157,
+      "unscaled_reward": 0.03736938827751061
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.048836587673695524,
+      "in_place_reward": 0.1435209087748983,
+      "obj_to_target": 0.26859583199291664,
+      "unscaled_reward": 0.03781565149115753
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04934715911277106,
+      "in_place_reward": 0.14351607199399982,
+      "obj_to_target": 0.26860013276788336,
+      "unscaled_reward": 0.038120721925388734
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04965243400270181,
+      "in_place_reward": 0.14351808566279006,
+      "obj_to_target": 0.2685983422263773,
+      "unscaled_reward": 0.038302784422958966
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04980102593227752,
+      "in_place_reward": 0.1435301848704522,
+      "obj_to_target": 0.2685875844368135,
+      "unscaled_reward": 0.038392014650477944
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.049845866839585286,
+      "in_place_reward": 0.1435286374745231,
+      "obj_to_target": 0.26858896020402506,
+      "unscaled_reward": 0.03841854720777221
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.04983093721345001,
+      "in_place_reward": 0.14350969564371122,
+      "obj_to_target": 0.26860580281280266,
+      "unscaled_reward": 0.038408320991719855
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.049837116612561655,
+      "in_place_reward": 0.14415251515456085,
+      "obj_to_target": 0.268035976554171,
+      "unscaled_reward": 0.03845789467590177
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.9708630128167259,
+      "in_place_reward": 0.14513425647841788,
+      "obj_to_target": 0.2671726211475462,
+      "unscaled_reward": 0.14450483869549954
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.9717755442690604,
+      "in_place_reward": 0.1465580948475996,
+      "obj_to_target": 0.2659350583980536,
+      "unscaled_reward": 0.1459368904668922
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.9719124311267299,
+      "in_place_reward": 0.1497004470657222,
+      "obj_to_target": 0.26326299737245246,
+      "unscaled_reward": 0.14905559751653652
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.48372231150912015,
+      "in_place_reward": 0.15649343935267582,
+      "obj_to_target": 0.25774818910989233,
+      "unscaled_reward": 0.13409596346060454
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.48238580077700555,
+      "in_place_reward": 0.1694123991523651,
+      "obj_to_target": 0.24813500378578254,
+      "unscaled_reward": 0.14335303825691673
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.48316360574899714,
+      "in_place_reward": 0.18461204265061076,
+      "obj_to_target": 0.23805860698772177,
+      "unscaled_reward": 0.15416736667571174
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.48392443389553264,
+      "in_place_reward": 0.20454473342987126,
+      "obj_to_target": 0.2264634687786353,
+      "unscaled_reward": 0.16791639968125824
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.48468000694360636,
+      "in_place_reward": 0.230086087678707,
+      "obj_to_target": 0.21368805416171663,
+      "unscaled_reward": 2.335293268407683
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 0.0,
+      "grasp_reward": 0.9708200383037282,
+      "in_place_reward": 0.260464403295521,
+      "obj_to_target": 0.2007809358636608,
+      "unscaled_reward": 2.560763139794743
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9695194341510638,
+      "in_place_reward": 0.29634664813081324,
+      "obj_to_target": 0.18788608879426358,
+      "unscaled_reward": 2.7753443741335806
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9731966009393862,
+      "in_place_reward": 0.33720718873119215,
+      "obj_to_target": 0.17545314828860462,
+      "unscaled_reward": 3.02014022966467
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9740254636385535,
+      "in_place_reward": 0.3831375456281699,
+      "obj_to_target": 0.16354235414316862,
+      "unscaled_reward": 3.294950269747496
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.974666754520086,
+      "in_place_reward": 0.4331150009946956,
+      "obj_to_target": 0.1523733586072198,
+      "unscaled_reward": 3.593868536511123
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9746398048588854,
+      "in_place_reward": 0.4870875673427538,
+      "obj_to_target": 0.14182462701603843,
+      "unscaled_reward": 3.9164292932310194
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9753992728389524,
+      "in_place_reward": 0.5429239150183582,
+      "obj_to_target": 0.13210428917311973,
+      "unscaled_reward": 4.250209557175798
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9754901900249354,
+      "in_place_reward": 0.5998031017782369,
+      "obj_to_target": 0.12309262979392158,
+      "unscaled_reward": 4.589913521460644
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9754187443921806,
+      "in_place_reward": 0.65681074166743,
+      "obj_to_target": 0.11468264963215175,
+      "unscaled_reward": 4.930169867984214
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.975304521462028,
+      "in_place_reward": 0.7142815972243721,
+      "obj_to_target": 0.10659466042244821,
+      "unscaled_reward": 5.273000460796418
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9752194060565826,
+      "in_place_reward": 0.7700276234013833,
+      "obj_to_target": 0.09890190372576223,
+      "unscaled_reward": 5.605388056236709
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9752195042327629,
+      "in_place_reward": 0.8230406740207741,
+      "obj_to_target": 0.09149226669934245,
+      "unscaled_reward": 5.921383902547509
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.975376317577785,
+      "in_place_reward": 0.8726461388047067,
+      "obj_to_target": 0.08418440733351465,
+      "unscaled_reward": 6.217066633521012
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9757472677945149,
+      "in_place_reward": 0.9158480262582167,
+      "obj_to_target": 0.07712448670760606,
+      "unscaled_reward": 6.474703906332039
+    },
+    {
+      "success": 0.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9763723560269042,
+      "in_place_reward": 0.9511208286011872,
+      "obj_to_target": 0.07028547369225117,
+      "unscaled_reward": 6.685325962706551
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.97723661107657,
+      "in_place_reward": 0.97709113556039,
+      "obj_to_target": 0.06370172752090462,
+      "unscaled_reward": 6.84080310564623
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9782814035175018,
+      "in_place_reward": 0.9932106622485195,
+      "obj_to_target": 0.05739833687736279,
+      "unscaled_reward": 6.937836126020776
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9794123366807178,
+      "in_place_reward": 0.9997884981471218,
+      "obj_to_target": 0.051301499789600816,
+      "unscaled_reward": 6.978151943692445
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9805887322111486,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.04562293443501499,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9817490210203796,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.04031839544958112,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9828390884165665,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0352939936766726,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9838690408690729,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030590450394574854,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9848961501611675,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.026353511802072575,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9859014788126379,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02258242914731221,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9868218747920622,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.01915235972492191,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9876699916296536,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.01606599909768803,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9884878151794156,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.013432042772258306,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.989252047576451,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.011260770315827668,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9899119016949995,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.009462501504458487,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9905621050637959,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.008270757000643548,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9911223917299963,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.007555905985928839,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9916751480131538,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0074003192060083855,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9921333014832983,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.007642938364296297,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9925703453897031,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.008194099935392203,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9929642907563829,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.008951774003026788,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9933186443221731,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.009812555172926944,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9934903632822032,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.010721056761560634,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9936636484302436,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.011627531954903405,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9942629002715118,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.012494241317046063,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9944575300569963,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.013390229436175538,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.994434421699536,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.014300019111581968,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9943972033204258,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.015033012182466794,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9949838354119749,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.015795298678428955,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9950946005692778,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.016494501021597028,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9950762604996741,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.01712825451904602,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9952867453418779,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.017730833032445485,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9957045741257036,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.018269405380232476,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9957989056738283,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.018825363375537793,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958072340316799,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.019327403709707345,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958827764091864,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.019838415279802357,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.996246931200212,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.020293003667353558,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9963555777754112,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02075940394102646,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9963061002573972,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.021171918832105216,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9964423346761486,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0215989633856498,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9966580649813638,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02197513160472806,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9967085158654849,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02236989884727986,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9967173813032069,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02271790720853239,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.99685314011584,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02308729498354508,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9970028707235515,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.023409984387864735,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9970796345793513,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.023752599426209723,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.99715677988079,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02404886536451461,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9972279487288112,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.024367139053536543,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9972830432013862,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.024641565063566868,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9973153468855745,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.024941752220923232,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.997303456488857,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.025117989549607055,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9972692234086797,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02547102122055283,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9973757101342856,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.025714487159686557,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9974051156116438,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02598744037197317,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9973301023320569,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02619475312969177,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9973638720124078,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.026481314993089377,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9974357972005978,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02668847012010912,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.997435359268595,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.026939110802400475,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9973135855071209,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02711838969816344,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9972726077753824,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0273514389043527,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9972130216155788,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0275322167723204,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9971901107963335,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.027670541146553224,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.997079082290157,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.027876814182264623,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9971057296244383,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.028139720078862937,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9971877182004032,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.028231196013988834,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.997184382266469,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02841543008941109,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9970541648039676,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.028545762165536677,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9970974618797268,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.028840617957311326,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9970744596316095,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0290269179753777,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9969617352459558,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029147351010609075,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9968194624610698,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029180078106693142,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9968852377146427,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029344536034437853,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9969741228372906,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029497478190602323,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9969432235066373,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02958622674775286,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9968244492730371,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02967357880598941,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.99684756613059,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029783698427820623,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9968073310713367,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029938768205659355,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9967055505249094,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03006315385833191,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9966098788382147,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03016876980316356,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9966071422677292,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030228674525619285,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9968329421653136,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03037983770998829,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9967603019330524,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030472940826368432,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9965858398100025,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03058009364659457,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9965658319178835,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030683542723906648,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9967825164480192,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030704401231149682,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9966689735466081,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03076686358770583,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9964389702604532,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03074618483000393,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9963475868736522,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03078859822367019,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9964592955062619,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03088033441302059,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9964351785293313,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031081447761164175,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9963704158472628,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031213244481045562,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9963408290375815,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031328382893824405,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9962239758965028,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031334761991196745,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9960270923441445,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03132835058565189,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958056350637974,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03141354441257511,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958496499387646,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03151576674595324,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9960806632499994,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031653154510279294,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9959584112170887,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031773776186883755,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958967274351718,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03175562320779458,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9958609578621427,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031891942217069695,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9957346162204277,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031900680225939185,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9955699196103076,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03195770724029285,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9954245033264577,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03207468309342251,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9954305974970674,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03212889989945569,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9955181235972885,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.032196377589896935,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9954043016304162,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0322615496712136,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9953446957984626,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.0322537542103648,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.995281117599587,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.032314077893844106,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9953932303271436,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.032279089103956465,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9953112548997994,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03214636064498527,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9951804373818722,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03205683981476504,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9950748960144792,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03182212825960118,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9949937190224474,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03163782866857892,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9949672052551491,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03144757115251679,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9948159442093447,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03118799052190507,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9947466577004895,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03098002746258512,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9948156408304187,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030775847699016826,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9946950591087123,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03054464410981283,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9945284038946769,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03037255533735092,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9945219216326233,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030213874685012857,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9944731561271007,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030055185265923805,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9944666801175923,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029914172977740402,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9943780270126859,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029793313864024198,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.994189556937924,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029643430546898067,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9941447810179451,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029520803185008,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9940808041654223,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029435034125936597,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9940283887919006,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029382442762855007,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9939578085997914,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029350058868699035,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9942283026138057,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029326706091415824,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9941864776966725,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02932014271519487,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9940450673438199,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029329939275619207,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9938185854346417,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029355663240822307,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.993901168606028,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02936359955335271,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9938808553070773,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.02947867989569877,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9936852240758356,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029557324175766928,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9934366094756213,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029624291015963283,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9936843130389152,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029782043838972694,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9937402942095785,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029893897593953337,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9935827549557333,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.029973550592022998,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9933461677341421,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030120944923654733,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9935741830914817,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03027325287986617,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9934592517491748,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030501068793042662,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9932067721520466,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030627901761363305,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9929718041316022,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.030934174743383627,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9934156344969602,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031099659513685898,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9933438786483961,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031275971355789,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9931798712025846,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03157493598565407,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9928466045840636,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.031757549072406334,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9932255468341977,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03198371446805527,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9931848928165592,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03223155597247961,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9929624677412694,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.032478442287260864,
+      "unscaled_reward": 10.0
+    },
+    {
+      "success": 1.0,
+      "near_object": 1.0,
+      "grasp_success": 1.0,
+      "grasp_reward": 0.9926373994009863,
+      "in_place_reward": 1.0,
+      "obj_to_target": 0.03281575530778025,
+      "unscaled_reward": 10.0
+    }
+  ],
+  "action_min": [
+    -1.3504993915557861,
+    -0.11154389381408691,
+    -0.8358173966407776,
+    -0.18700212240219116
+  ],
+  "action_max": [
+    0.3660932779312134,
+    1.9666961431503296,
+    0.7761057615280151,
+    1.0359127521514893
+  ],
+  "action_std": [
+    0.2631351053714752,
+    0.4704192578792572,
+    0.2605985403060913,
+    0.3247324526309967
+  ],
+  "nonfinite_actions": 0,
+  "fraction_components_outside_env_bounds": 0.09,
+  "video": "/home/zhsu/jyluo/experiments/metaworld_act_zero_grid_20261020/ACT_pick-place/holdout20/episode_11.mp4",
+  "trajectory": "/home/zhsu/jyluo/experiments/metaworld_act_zero_grid_20261020/ACT_pick-place/holdout20/episode_11.npz",
+  "time": 1792438751.909137
+}

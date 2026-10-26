@@ -1,0 +1,11 @@
+# 成功episode索引
+
+全部成功episode见successful_episodes.json；下列为各任务首个成功episode。
+
+| 任务 | seed | 视频 | 轨迹 | 原始判定 |
+|---|---:|---|---|---|
+| shelf-place | 2026102000 | [MP4](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/shelf-place/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/shelf-place/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/shelf-place/rollouts20/episode_00.json) |
+| pick-place-wall | 2026102000 | [MP4](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/pick-place-wall/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/pick-place-wall/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/pick-place-wall/rollouts20/episode_00.json) |
+| pick-place | 2026102000 | [MP4](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch200_ddim5_select_20261020/evaluation/epoch50/pick-place/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch200_ddim5_select_20261020/evaluation/epoch50/pick-place/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch200_ddim5_select_20261020/evaluation/epoch50/pick-place/rollouts20/episode_00.json) |
+| stick-push | 2026102000 | [MP4](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/stick-push/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/stick-push/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/stick-push/rollouts20/episode_00.json) |
+| door-open | 2026102000 | [MP4](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/door-open/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/door-open/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/runs/door-open/rollouts20/episode_00.json) |

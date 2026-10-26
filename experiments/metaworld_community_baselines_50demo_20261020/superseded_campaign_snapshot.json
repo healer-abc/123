@@ -1,0 +1,379 @@
+{
+  "time": 1792445118.1697943,
+  "pid": 2273945,
+  "status": "running",
+  "final_groups_complete": 10,
+  "final_groups_total": 15,
+  "gpu_free_mib": {
+    "0": 21491,
+    "1": 8020
+  },
+  "jobs": [
+    {
+      "key": "collect_shelf-place",
+      "stage": "collect",
+      "task": "shelf-place",
+      "method": "SimpleDP3",
+      "needs": [],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/collect_shelf-place/attempt_01",
+      "log": ""
+    },
+    {
+      "key": "collect_pick-place-wall",
+      "stage": "collect",
+      "task": "pick-place-wall",
+      "method": "SimpleDP3",
+      "needs": [],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/collect_pick-place-wall/attempt_01",
+      "log": ""
+    },
+    {
+      "key": "collect_pick-place",
+      "stage": "collect",
+      "task": "pick-place",
+      "method": "SimpleDP3",
+      "needs": [],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/collect_pick-place/attempt_01",
+      "log": ""
+    },
+    {
+      "key": "collect_stick-push",
+      "stage": "collect",
+      "task": "stick-push",
+      "method": "SimpleDP3",
+      "needs": [],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/collect_stick-push/attempt_01",
+      "log": ""
+    },
+    {
+      "key": "collect_door-open",
+      "stage": "collect",
+      "task": "door-open",
+      "method": "SimpleDP3",
+      "needs": [],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/collect_door-open/attempt_01",
+      "log": ""
+    },
+    {
+      "key": "smoke_DP",
+      "stage": "smoke",
+      "task": "shelf-place",
+      "method": "DP",
+      "needs": [
+        "collect_shelf-place"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_DP/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_DP/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 12000,
+      "pid": 2603055,
+      "started": 1792431616.0126603
+    },
+    {
+      "key": "smoke_ACT",
+      "stage": "smoke",
+      "task": "shelf-place",
+      "method": "ACT",
+      "needs": [
+        "collect_shelf-place"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_ACT/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_ACT/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 3584,
+      "pid": 2273950,
+      "started": 1792406088.2760332
+    },
+    {
+      "key": "smoke_SimpleDP3",
+      "stage": "smoke",
+      "task": "shelf-place",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_shelf-place"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_SimpleDP3/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/smoke_SimpleDP3/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 4096,
+      "pid": 2273951,
+      "started": 1792406088.277713
+    },
+    {
+      "key": "ACT_shelf-place",
+      "stage": "train",
+      "task": "shelf-place",
+      "method": "ACT",
+      "needs": [
+        "collect_shelf-place",
+        "smoke_ACT"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_shelf-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_shelf-place/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 3584,
+      "pid": 2274141,
+      "started": 1792406103.3705149
+    },
+    {
+      "key": "SimpleDP3_shelf-place",
+      "stage": "train",
+      "task": "shelf-place",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_shelf-place",
+        "smoke_SimpleDP3"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_shelf-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_shelf-place/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 4096,
+      "pid": 2274142,
+      "started": 1792406103.3719513
+    },
+    {
+      "key": "DP_shelf-place",
+      "stage": "train",
+      "task": "shelf-place",
+      "method": "DP",
+      "needs": [
+        "collect_shelf-place",
+        "smoke_DP"
+      ],
+      "status": "running",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_shelf-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_shelf-place/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 12000,
+      "pid": 2603379,
+      "started": 1792431649.9502373
+    },
+    {
+      "key": "ACT_pick-place-wall",
+      "stage": "train",
+      "task": "pick-place-wall",
+      "method": "ACT",
+      "needs": [
+        "collect_pick-place-wall",
+        "smoke_ACT"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place-wall/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place-wall/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 3584,
+      "pid": 2296277,
+      "started": 1792408381.2249095
+    },
+    {
+      "key": "SimpleDP3_pick-place-wall",
+      "stage": "train",
+      "task": "pick-place-wall",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_pick-place-wall",
+        "smoke_SimpleDP3"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_pick-place-wall/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_pick-place-wall/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 4096,
+      "pid": 2353677,
+      "started": 1792414139.2324908
+    },
+    {
+      "key": "DP_pick-place-wall",
+      "stage": "train",
+      "task": "pick-place-wall",
+      "method": "DP",
+      "needs": [
+        "collect_pick-place-wall",
+        "smoke_DP"
+      ],
+      "status": "running",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_pick-place-wall/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_pick-place-wall/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 12000,
+      "pid": 2701759,
+      "started": 1792442120.9712312
+    },
+    {
+      "key": "ACT_pick-place",
+      "stage": "train",
+      "task": "pick-place",
+      "method": "ACT",
+      "needs": [
+        "collect_pick-place",
+        "smoke_ACT"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 3584,
+      "pid": 2318964,
+      "started": 1792410660.0562177
+    },
+    {
+      "key": "SimpleDP3_pick-place",
+      "stage": "train",
+      "task": "pick-place",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_pick-place",
+        "smoke_SimpleDP3"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_pick-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_pick-place/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 4096,
+      "pid": 2365933,
+      "started": 1792415228.9998567
+    },
+    {
+      "key": "DP_pick-place",
+      "stage": "train",
+      "task": "pick-place",
+      "method": "DP",
+      "needs": [
+        "collect_pick-place",
+        "smoke_DP"
+      ],
+      "status": "running",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_pick-place/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/DP_pick-place/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 12000,
+      "pid": 2714838,
+      "started": 1792444066.5320492
+    },
+    {
+      "key": "ACT_stick-push",
+      "stage": "train",
+      "task": "stick-push",
+      "method": "ACT",
+      "needs": [
+        "collect_stick-push",
+        "smoke_ACT"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_stick-push/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_stick-push/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 3584,
+      "pid": 2330321,
+      "started": 1792411743.9741263
+    },
+    {
+      "key": "SimpleDP3_stick-push",
+      "stage": "train",
+      "task": "stick-push",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_stick-push",
+        "smoke_SimpleDP3"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_stick-push/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_stick-push/attempt_01/worker.log",
+      "gpu": 0,
+      "budget": 4096,
+      "pid": 2370203,
+      "started": 1792415538.834914
+    },
+    {
+      "key": "DP_stick-push",
+      "stage": "train",
+      "task": "stick-push",
+      "method": "DP",
+      "needs": [
+        "collect_stick-push",
+        "smoke_DP"
+      ],
+      "status": "pending",
+      "attempt": 0,
+      "log": ""
+    },
+    {
+      "key": "ACT_door-open",
+      "stage": "train",
+      "task": "door-open",
+      "method": "ACT",
+      "needs": [
+        "collect_door-open",
+        "smoke_ACT"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_door-open/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_door-open/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 3584,
+      "pid": 2342666,
+      "started": 1792412922.1394262
+    },
+    {
+      "key": "SimpleDP3_door-open",
+      "stage": "train",
+      "task": "door-open",
+      "method": "SimpleDP3",
+      "needs": [
+        "collect_door-open",
+        "smoke_SimpleDP3"
+      ],
+      "status": "complete",
+      "attempt": 1,
+      "out": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_door-open/attempt_01",
+      "log": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/SimpleDP3_door-open/attempt_01/worker.log",
+      "gpu": 1,
+      "budget": 4096,
+      "pid": 2581227,
+      "started": 1792430076.1863408
+    },
+    {
+      "key": "DP_door-open",
+      "stage": "train",
+      "task": "door-open",
+      "method": "DP",
+      "needs": [
+        "collect_door-open",
+        "smoke_DP"
+      ],
+      "status": "pending",
+      "attempt": 0,
+      "log": ""
+    }
+  ]
+}

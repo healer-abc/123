@@ -1,0 +1,869 @@
+{
+  "logs": [
+    "/home/zhsu/jyluo/eval_auto/eval.log"
+  ],
+  "video_dir": "/home/zhsu/jyluo/eval_auto/videos",
+  "episodes_parsed": 2000,
+  "successes": 1917,
+  "success_rate_from_episodes": 0.9585,
+  "per_suite": {
+    "libero_spatial": {
+      "episodes": 500,
+      "successes": 487,
+      "success_rate": 0.974
+    },
+    "libero_object": {
+      "episodes": 500,
+      "successes": 496,
+      "success_rate": 0.992
+    },
+    "libero_goal": {
+      "episodes": 500,
+      "successes": 485,
+      "success_rate": 0.97
+    },
+    "libero_10": {
+      "episodes": 500,
+      "successes": 449,
+      "success_rate": 0.898
+    }
+  },
+  "reported": {
+    "per_suite_total_rate": [
+      {
+        "suite": "libero_spatial",
+        "rate": 0.96
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.97
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.98
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.98
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.964
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.9666666666666667
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.9714285714285714
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.9725
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.9733333333333334
+      },
+      {
+        "suite": "libero_spatial",
+        "rate": 0.974
+      },
+      {
+        "suite": "libero_object",
+        "rate": 1.0
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.99
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.9866666666666667
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.99
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.992
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.99
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.9914285714285714
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.9925
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.9933333333333333
+      },
+      {
+        "suite": "libero_object",
+        "rate": 0.992
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.98
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.99
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.9933333333333333
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.975
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.98
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.97
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.9742857142857143
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.9775
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.98
+      },
+      {
+        "suite": "libero_goal",
+        "rate": 0.97
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.96
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.93
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.9266666666666666
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.935
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.928
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.93
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.9314285714285714
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.94
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.9066666666666666
+      },
+      {
+        "suite": "libero_10",
+        "rate": 0.898
+      }
+    ],
+    "total_success_rate": 0.898,
+    "total_episodes_reported": 500
+  },
+  "exceptions": [],
+  "videos": {
+    "success_videos": 0,
+    "failure_videos": 83,
+    "note": "openpi 原生 examples/libero/main.py 的视频文件名不含 trial 序号，同一 task 的多次 rollout 会互相覆盖（每 task 最多只剩 1 个 success + 1 个 failure）。若要保留全部失败视频，需按 tools 里的说明给 main.py 打补丁。"
+  },
+  "failures": [
+    {
+      "task": "t0_ep10_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_baske",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t0_ep10_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_baske_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t0_ep28_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t0_ep28_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t0_ep39_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t0_ep39_pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t0_ep3_open_the_middle_drawer_of_the_cabinet",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t0_ep3_open_the_middle_drawer_of_the_cabinet_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t0_ep44_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_baske",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t0_ep44_put_both_the_alphabet_soup_and_the_tomato_sauce_in_the_baske_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep16_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep16_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep30_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_t",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep30_pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_t_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep34_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep34_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep35_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep35_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep41_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep41_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep43_put_both_the_cream_cheese_box_and_the_butter_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep43_put_both_the_cream_cheese_box_and_the_butter_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t1_ep8_pick_up_the_cream_cheese_and_place_it_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t1_ep8_pick_up_the_cream_cheese_and_place_it_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t2_ep14_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t2_ep14_turn_on_the_stove_and_put_the_moka_pot_on_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t2_ep15_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t2_ep15_turn_on_the_stove_and_put_the_moka_pot_on_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t2_ep19_pick_up_the_salad_dressing_and_place_it_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t2_ep19_pick_up_the_salad_dressing_and_place_it_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t2_ep21_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t2_ep21_turn_on_the_stove_and_put_the_moka_pot_on_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t2_ep25_turn_on_the_stove_and_put_the_moka_pot_on_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t2_ep25_turn_on_the_stove_and_put_the_moka_pot_on_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep1_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_c",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep1_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_c_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep20_open_the_top_drawer_and_put_the_bowl_inside",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep20_open_the_top_drawer_and_put_the_bowl_inside_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep27_open_the_top_drawer_and_put_the_bowl_inside",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep27_open_the_top_drawer_and_put_the_bowl_inside_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep37_open_the_top_drawer_and_put_the_bowl_inside",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep37_open_the_top_drawer_and_put_the_bowl_inside_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep42_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_c",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep42_put_the_black_bowl_in_the_bottom_drawer_of_the_cabinet_and_c_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep5_open_the_top_drawer_and_put_the_bowl_inside",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep5_open_the_top_drawer_and_put_the_bowl_inside_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t3_ep7_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t3_ep7_pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep11_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep11_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep15_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep15_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep22_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep22_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep29_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep29_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep29_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep29_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep30_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep30_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep40_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep40_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep45_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep45_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep8_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep8_pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabin_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t4_ep8_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t4_ep8_put_the_white_mug_on_the_left_plate_and_put_the_yellow_and_w_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep15_push_the_plate_to_the_front_of_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep15_push_the_plate_to_the_front_of_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep20_pick_up_the_book_and_place_it_in_the_back_compartment_of_the",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep20_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep21_pick_up_the_book_and_place_it_in_the_back_compartment_of_the",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep21_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep26_push_the_plate_to_the_front_of_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep26_push_the_plate_to_the_front_of_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep33_push_the_plate_to_the_front_of_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep33_push_the_plate_to_the_front_of_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep37_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_pl",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep37_pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_pl_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep48_pick_up_the_book_and_place_it_in_the_back_compartment_of_the",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep48_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep4_pick_up_the_tomato_sauce_and_place_it_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep4_pick_up_the_tomato_sauce_and_place_it_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t5_ep8_push_the_plate_to_the_front_of_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t5_ep8_push_the_plate_to_the_front_of_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t6_ep0_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t6_ep0_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t6_ep25_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t6_ep25_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t6_ep32_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t6_ep32_put_the_white_mug_on_the_plate_and_put_the_chocolate_pudding_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t7_ep9_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plat",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t7_ep9_pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plat_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep10_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep10_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep17_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep17_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep22_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep22_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep23_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep23_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep25_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep25_pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep25_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep25_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep27_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep27_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep28_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep28_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep29_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep29_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep32_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep32_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep35_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep35_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep37_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep37_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep41_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep41_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep46_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep46_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep47_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep47_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep48_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep48_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep6_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep6_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep7_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep7_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t8_ep8_put_both_moka_pots_on_the_stove",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t8_ep8_put_both_moka_pots_on_the_stove_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep18_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep18_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep22_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep22_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep24_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep24_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep26_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep26_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep32_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep32_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep36_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep36_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep41_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep41_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep42_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep42_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep43_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep43_pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep46_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep46_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep47_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep47_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep48_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep48_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep4_pick_up_the_orange_juice_and_place_it_in_the_basket",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep4_pick_up_the_orange_juice_and_place_it_in_the_basket_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep4_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep4_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep4_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep4_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep7_put_the_wine_bottle_on_the_rack",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep7_put_the_wine_bottle_on_the_rack_failure.mp4"
+      ],
+      "failure_type": ""
+    },
+    {
+      "task": "t9_ep9_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+      "video_count": 1,
+      "files": [
+        "/home/zhsu/jyluo/eval_auto/videos/rollout_t9_ep9_put_the_yellow_and_white_mug_in_the_microwave_and_close_it_failure.mp4"
+      ],
+      "failure_type": ""
+    }
+  ]
+}

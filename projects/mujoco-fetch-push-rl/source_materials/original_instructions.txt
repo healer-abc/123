@@ -1,0 +1,242 @@
+**按你提供的 RTX 6000D、约 85 GB 显存，以及可用的 conda、tmux，服务器流程定为：环境检查 → 短训练 → 测速 → 单种子预实验 → 批量实验 → 独立评估。**先安排一个训练进程，把数据和恢复流程跑可靠，再扩大实验规模。
+
+我已经准备了[服务器脚本包](outputs/fetch-server-kit.zip)和[完整执行手册](outputs/fetch-server-kit/SERVER_GUIDE.md)。脚本包含五组实验、日志、模型与经验回放保存、恢复训练、评估和录像；**目前完成了语法检查，还没有在你的服务器实际运行。**
+
+以下命令都在服务器的 Linux 终端执行。
+
+**1．第一天：放好项目，确认服务器资源**
+
+下载脚本包，用你现有的 SSH 客户端上传并解压，将文件夹放在：
+
+```bash
+~/projects/mujoco-fetch-push-rl
+```
+
+进入目录，确认能看到 `run.py`、`requirements.txt`、`run_matrix.sh`：
+
+```bash
+cd ~/projects/mujoco-fetch-push-rl
+ls
+nvidia-smi
+free -h
+df -h .
+```
+
+这里分别看 GPU、**系统内存**和磁盘空间。建议预留至少 30 GB 磁盘；多个 SAC 检查点会保存经验回放，容量比模型权重大。
+
+下面默认实验室允许你直接在计算服务器运行。如果实验室通过 Slurm 分配资源，训练要在分配到的计算节点上启动，tmux只负责保持终端会话。
+
+**2．建立独立环境，验证 GPU 能实际计算**
+
+```bash
+conda create -n fetch-rl python=3.11 pip -y
+conda activate fetch-rl
+
+python -m pip install --upgrade pip
+python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install -r requirements.txt
+python -m pip check
+```
+
+这里使用固定版本，便于整批实验保持一致。PyTorch 的 CUDA 12.8 安装方式来自[官方版本说明](https://pytorch.org/get-started/previous-versions/)；你的驱动能否配合它运行，需要实际检查：
+
+```bash
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0)); x=torch.randn(256,256,device='cuda'); print((x@x).mean().item()); torch.cuda.synchronize()"
+```
+
+通过标准是：输出 `True`、正确的 GPU 名称和一个计算结果。若失败，保留完整报错和 `nvidia-smi` 输出，按驱动选择对应版本；环境检查可以先在 CPU 上继续。
+
+限制 CPU 线程，并记录依赖版本：
+
+```bash
+export OMP_NUM_THREADS=2
+export MKL_NUM_THREADS=2
+export OPENBLAS_NUM_THREADS=2
+
+python -m pip freeze > requirements-lock.txt
+mkdir -p logs
+```
+
+**3．第二天：先跑通训练、保存、加载和恢复**
+
+先检查两个环境：
+
+```bash
+python run.py check --task Reach
+python run.py check --task Push
+```
+
+然后在 Reach 上跑 3000 步的小实验：
+
+```bash
+python -u run.py train \
+  --task Reach --group D --seed 99 \
+  --steps 3000 --buffer-size 20000 --learning-starts 100 \
+  --eval-every 1000 --eval-episodes 5 \
+  --device cpu --out runs/reach_smoke
+```
+
+这里 D 组就是 SAC＋HER。这一步主要确认程序能够完成网络更新，暂时不要求高成功率。
+
+独立加载模型并评估，再恢复到累计 5000 步：
+
+```bash
+python run.py eval \
+  --checkpoint runs/reach_smoke/final \
+  --episodes 10 --seed-base 10000 \
+  --out evaluations/reach_smoke
+
+python -u run.py train \
+  --resume runs/reach_smoke/final \
+  --steps 5000 --eval-every 1000 --eval-episodes 5 \
+  --device cpu --out runs/reach_resume
+```
+
+**验收标准：两个训练目录均生成模型、经验回放和结果文件，恢复后的步数增长到 5000。**`--steps` 表示累计目标步数，不是额外增加的步数。
+
+**4．第三天：测速度，决定正式训练用 CPU 还是 GPU**
+
+你的显存充足，但这个项目的网络很小，GPU不一定更快；MuJoCo 的物理仿真仍会占用 CPU。
+
+分别执行相同的 5 万步实验：
+
+```bash
+python -u run.py train \
+  --group D --seed 99 --steps 50000 --eval-episodes 5 \
+  --device cpu --out runs/speed_cpu
+
+python -u run.py train \
+  --group D --seed 99 --steps 50000 --eval-episodes 5 \
+  --device cuda:0 --out runs/speed_gpu
+
+cat runs/speed_cpu/summary.json
+cat runs/speed_gpu/summary.json
+```
+
+比较 `session_steps_per_second`，即这次运行平均每秒完成的训练环境步数。选择更快的设备；以下命令先按 `cuda:0` 写，如果 CPU 更快，就替换成 `cpu`。
+
+**5．第 4–7 天：用 tmux 跑 Push 单种子预实验**
+
+tmux＝SSH 断开后仍保留运行进程的终端会话。
+
+```bash
+tmux new -s fetchpilot
+```
+
+进入后激活环境、进入项目目录，启动 30 万步预实验：
+
+```bash
+conda activate fetch-rl
+cd ~/projects/mujoco-fetch-push-rl
+set -o pipefail
+
+python -u run.py train \
+  --group D --seed 99 --steps 300000 \
+  --device cuda:0 --out runs/push_pilot \
+  2>&1 | tee logs/push_pilot.log
+```
+
+按 **Ctrl+B，松开后按 D**，离开会话；重新登录后用下面命令回去：
+
+```bash
+tmux attach -t fetchpilot
+```
+
+另一个终端可以检查进度：
+
+```bash
+tail -n 30 logs/push_pilot.log
+tail -n 8 runs/push_pilot/validation.csv
+nvidia-smi
+```
+
+你主要看：训练步数是否增长、成功率是否改善、物体最终距离是否下降，以及是否出现 `NaN`。30 万步成功率低时，先检查与延长预实验，再决定调参。
+
+需要延长到累计 100 万步：
+
+```bash
+python -u run.py train \
+  --resume runs/push_pilot/final \
+  --steps 1000000 --device cuda:0 \
+  --out runs/push_pilot_extended
+```
+
+预实验始终使用 `seed 99`。确认配置有效以后，再启动正式三种子实验。
+
+**6．第 2–3 周：分两批完成正式实验**
+
+| 批次 | 内容 | 训练次数 | 第一档预算 |
+|---|---|---:|---:|
+| 第 2 周 | A：PPO 密集奖励；B：SAC 密集奖励；C：SAC 稀疏奖励；D：SAC＋HER | 4 组 × 3 个种子 | 约 1200 万步 |
+| 第 3 周 | E：SAC＋HER＋动作增益随机化 | 1 组 × 3 个种子 | 约 300 万步 |
+
+新建 tmux 会话，在项目环境和目录中执行：
+
+```bash
+tmux new -s fetchcore
+```
+
+```bash
+conda activate fetch-rl
+cd ~/projects/mujoco-fetch-push-rl
+bash run_matrix.sh core cuda:0 1000000
+```
+
+脚本按 D、C、B、A 顺序运行，每组使用 `0、1、2` 三个种子，**始终一次只跑一个训练进程**。PPO 使用 CPU，SAC 各组使用你指定的设备。
+
+核心实验完成后，再启动扩展：
+
+```bash
+bash run_matrix.sh extension cuda:0 1000000
+```
+
+脚本遇到错误会停止，遇到已有输出目录也会停止，避免覆盖结果。若预实验修改了学习率等参数，正式批量配置也要同步修改，完整手册中说明了这一点。
+
+**7．中断时怎样恢复，结果怎样评估**
+
+脚本每 25 万步保存一次完整检查点，正常结束保存到 `final/`。检查点＝模型、经验回放和配置组成的一套恢复文件。
+
+例如预实验中断后，恢复最近的完整检查点：
+
+```bash
+python -u run.py train \
+  --resume runs/push_pilot/checkpoints/step_250000 \
+  --steps 1000000 --device cuda:0 \
+  --out runs/push_pilot_recovered
+```
+
+先确认检查点目录中有 `complete.json`。主动停止时按一次 Ctrl+C，然后等待保存完成；恢复会重新初始化仿真场景，属于继续训练，不能保证与未中断运行逐步一致。
+
+正式模型完成后，先独立评估 D 组的一个种子：
+
+```bash
+python run.py eval \
+  --checkpoint runs/D_seed0/final \
+  --episodes 100 \
+  --gains 0.6 0.8 1.0 1.2 1.4 \
+  --out evaluations/D_seed0
+```
+
+输出包括逐回合结果和汇总成功率。完整手册提供了所有组、所有种子的评估循环。
+
+录像单独执行，训练时一直关闭渲染：
+
+```bash
+MUJOCO_GL=egl python run.py video \
+  --checkpoint runs/D_seed0/final \
+  --episodes 3 --gain 1.0 \
+  --out videos/D_seed0_nominal.mp4
+```
+
+**8．每周结束时检查什么**
+
+| 时间 | 必须拿到的结果 |
+|---|---|
+| 第 1 周 | 环境可用；短训练能保存和恢复；得到真实速度；Push 出现可重复的学习趋势 |
+| 第 2 周 | A–D 的配置、日志和三个种子的学习曲线 |
+| 第 3 周 | E 组训练结果，以及 D/E 在五档控制增益下的成功率 |
+| 第 4 周 | 三种子统计、成功与失败视频、实验报告和复现说明 |
+
+你第一次上服务器，**先完成第 1–3 步，到“3000 步模型能加载并恢复到 5000 步”为止**。这个闭环通过以后，再投入长训练。
+
+[下载脚本包](C:/Users/zhuan/Documents/Codex/2026-10-17/referenced-chatgpt-conversation-this-is-an/outputs/fetch-server-kit.zip) · [查看完整执行手册](C:/Users/zhuan/Documents/Codex/2026-10-17/referenced-chatgpt-conversation-this-is-an/outputs/fetch-server-kit/SERVER_GUIDE.md)

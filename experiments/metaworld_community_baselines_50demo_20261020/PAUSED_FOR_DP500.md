@@ -1,0 +1,1 @@
+Superseded: user requested termination of the old DP processes. They have ended. Original files and independent copies of periodic checkpoints remain. No paused live state remains. See ../metaworld_dp_epoch500_20261020/preserved_baseline/termination_receipt.json

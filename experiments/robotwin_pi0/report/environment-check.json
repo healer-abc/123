@@ -1,0 +1,55 @@
+{
+  "python": "3.11.17 (main, Oct  9 2026, 15:21:28) [Clang 22.1.3 ]",
+  "prefix": "/home/zhsu/jyluo/experiments/robotwin_pi0/.venv",
+  "packages": {
+    "torch": "2.7.1+cu128",
+    "torchvision": "0.22.1+cu128",
+    "ray": "2.59.0",
+    "rlinf": "0.4.0",
+    "rlinf-openpi": "0.1.1",
+    "sapien": "3.0.1",
+    "mplib": "0.2.1",
+    "gymnasium": "0.29.1",
+    "peft": "0.17.1",
+    "datasets": "3.6.0",
+    "lerobot": "0.3.3",
+    "torchcodec": "0.5"
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA RTX 6000D",
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward": true
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA RTX 6000D",
+      "capability": [
+        12,
+        0
+      ],
+      "bf16_backward": true
+    }
+  ],
+  "video_decode": {
+    "frames": 5,
+    "frame_shape": [
+      3,
+      64,
+      64
+    ]
+  },
+  "sapien_render": {
+    "shape": [
+      64,
+      64,
+      4
+    ],
+    "rgb_std": 0.14691251516342163
+  },
+  "status": "passed"
+}

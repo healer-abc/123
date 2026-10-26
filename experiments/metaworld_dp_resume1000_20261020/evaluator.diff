@@ -1,0 +1,20 @@
+--- experiments/metaworld_dp_epoch500_20261020/rollout500.py
++++ experiments/metaworld_dp_resume1000_20261020/rollout.py
+@@ -1,4 +1,4 @@
+-"""Paired DP 500-epoch DDIM10 sensitivity evaluation, copied from frozen baseline evaluator."""
++"""DP continuation500-to1000 DDIM10 paired evaluation, copied from frozen baseline evaluator."""
+ import collections
+ import hashlib
+ import json
+@@ -35,9 +35,9 @@
+     identity={'task':task,'method':method,'config':cfg,'protocol':sha256(ROOT/'protocol.json'),
+         'dataset_episodes':50,'dataset_manifest_sha256':sha256(ROOT/'datasets'/(task+'.json')),
+         'split_sha256':sha256(ROOT/'manifests/dataset_split.json'),'training_seed':0,
+-        'stage':'DP_epoch500_ddim10_20' if final else 'development','round':round_id,
++        'stage':'DP_resumed_epoch1000_ddim10_20' if final else 'development','round':round_id,
+         'ablation_plan_sha256':sha256(Path(__file__).resolve().parent/'plan.json'),
+-        'checkpoint_completed_epochs':500 if final else None}
++        'checkpoint_completed_epochs':1000 if final else None}
+     if final:
+         assert checkpoint and Path(checkpoint).is_file()
+         identity['checkpoint_sha256']=sha256(checkpoint)

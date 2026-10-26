@@ -13,7 +13,8 @@ merely because an experiment could be run again.
 
 `upstream_changes/*/normalized.patch` ignores line-ending-only differences. Exact original
 unstaged/staged patches and original Git metadata are preserved in the separate backup.
-Source overrides preserve the selected working-file bytes. The source directory itself was
+Source overrides preserve local code; Git text line endings are normalized to LF.
+The separate backup preserves the exact original bytes and full raw patches. The source directory itself was
 not committed, reset or cleaned during this export.
 
 Snapshot prepared with an AI coding assistant. No experiments were rerun for this export.

@@ -1,0 +1,57 @@
+--- baseline/rollout.py
++++ ablation/rollout500.py
+@@ -1,4 +1,4 @@
+-"""One frozen MetaWorld evaluation protocol; official ACT temporal aggregation."""
++"""Paired SimpleDP3 500-epoch DDIM10 sensitivity evaluation, copied from frozen baseline evaluator."""
+ import collections
+ import hashlib
+ import json
+@@ -35,11 +35,21 @@
+     identity={'task':task,'method':method,'config':cfg,'protocol':sha256(ROOT/'protocol.json'),
+         'dataset_episodes':50,'dataset_manifest_sha256':sha256(ROOT/'datasets'/(task+'.json')),
+         'split_sha256':sha256(ROOT/'manifests/dataset_split.json'),'training_seed':0,
+-        'stage':'final_holdout20' if final else 'development','round':round_id}
++        'stage':'ablation_epoch500_ddim10_20' if final else 'development','round':round_id,
++        'ablation_plan_sha256':sha256(Path(__file__).resolve().parent/'plan.json'),
++        'checkpoint_completed_epochs':500 if final else None}
+     if final:
+         assert checkpoint and Path(checkpoint).is_file()
+         identity['checkpoint_sha256']=sha256(checkpoint)
+     records=[];env=None;policy.eval()
++    assert method=='SimpleDP3' and policy.num_inference_steps==10
++    if not hasattr(policy,'_ablation_step_calls'):
++        policy._ablation_step_calls=0
++        original_step=policy.noise_scheduler.step
++        def counted_step(*args,**kw):
++            policy._ablation_step_calls+=1
++            return original_step(*args,**kw)
++        policy.noise_scheduler.step=counted_step
+     try:
+         for i,seed in enumerate(seeds):
+             ep=output_dir/f'episode_{i:02d}'
+@@ -59,6 +69,7 @@
+             all_time=torch.zeros((200,210,4),device='cuda') if method=='ACT' else None
+             frames=[];actions=[];agent_pos=[];infos=[];rewards=[];chunks=[];query_steps=[]
+             chunk=None;index=0
++            sampler_calls_before=policy._ablation_step_calls
+             with torch.inference_mode():
+                 for step in range(200):
+                     agent_pos.append(np.asarray(obs['agent_pos']).copy())
+@@ -92,6 +103,7 @@
+                         atomic_json(output_dir/'heartbeat.json',{'time':time.time(),'episode':i,'steps':step+1,'final':final})
+                     if done:break
+             assert len(actions)==200, 'Unexpected episode truncation'
++            assert policy._ablation_step_calls-sampler_calls_before==250, 'Wrong DDIM step count'
+             successful_steps=[j+1 for j,x in enumerate(infos) if bool(x['success'])]
+             arr=np.asarray(actions)
+             r={'identity':identity,'episode':i,'seed':seed,'steps':len(actions),
+@@ -99,7 +111,8 @@
+                 'first_success_step':successful_steps[0] if successful_steps else None,
+                 'return':float(sum(rewards)),'infos':infos,'nonfinite_actions':int((~np.isfinite(arr)).sum()),
+                 'fraction_components_outside_env_bounds':float(((arr<env.action_space.low)|(arr>env.action_space.high)).mean()),
+-                'trajectory':str(ep.with_suffix('.npz')),'video':str(ep.with_suffix('.mp4')) if final else None,'time':time.time()}
++                'denoising_step_calls':policy._ablation_step_calls-sampler_calls_before,
++                'num_inference_steps':policy.num_inference_steps,'trajectory':str(ep.with_suffix('.npz')),'video':str(ep.with_suffix('.mp4')) if final else None,'time':time.time()}
+             np.savez_compressed(ep.with_suffix('.npz'),actions=arr,agent_pos=np.asarray(agent_pos),rewards=np.asarray(rewards),
+                 query_steps=np.asarray(query_steps),predicted_chunks=np.asarray(chunks),initial_state=initial)
+             if final:

@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "records": 100,
+  "successes": 29,
+  "tasks": [
+    {
+      "task": "assembly-v2",
+      "episodes": 20,
+      "successes": 1
+    },
+    {
+      "task": "peg-insert-side-v2",
+      "episodes": 20,
+      "successes": 2
+    },
+    {
+      "task": "disassemble-v2",
+      "episodes": 20,
+      "successes": 8
+    },
+    {
+      "task": "peg-unplug-side-v2",
+      "episodes": 20,
+      "successes": 11
+    },
+    {
+      "task": "stick-pull-v2",
+      "episodes": 20,
+      "successes": 7
+    }
+  ],
+  "total_environment_steps": 39737,
+  "max_action_reconstruction_error": 0.0,
+  "protocol_sha256": "ad2971adcdd70029d447221b0b09b64391e8c06af0ac016a0aaae7662120c391",
+  "checkpoint_sha256": "6e877ae8e2c9c33a2b8d1e3a8a60649ef39b0268da60a3ee71bc5e33cbca7221",
+  "checks": [
+    "publisher weight SHA256",
+    "strict model load",
+    "same task identity and seed",
+    "effective 4D action",
+    "first success stops",
+    "per-episode NPZ and MP4 SHA256"
+  ]
+}

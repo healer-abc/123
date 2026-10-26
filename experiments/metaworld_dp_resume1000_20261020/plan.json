@@ -1,0 +1,92 @@
+{
+  "created": 1792501452.9814916,
+  "method": "DP",
+  "tasks": [
+    "shelf-place",
+    "pick-place-wall",
+    "pick-place",
+    "stick-push",
+    "door-open"
+  ],
+  "start_epoch": 500,
+  "target_epoch": 1000,
+  "additional_epochs": 500,
+  "snapshot_epochs": [
+    600,
+    700,
+    800,
+    900,
+    1000
+  ],
+  "training_seed": 0,
+  "horizon": 16,
+  "n_obs_steps": 2,
+  "action_horizon": 8,
+  "num_inference_steps": 10,
+  "batch_size": 128,
+  "lr_schedule_epochs": 1000,
+  "start_updates": 30500,
+  "target_updates": 61000,
+  "restore": [
+    "model",
+    "ema_model",
+    "optimizer",
+    "lr_scheduler",
+    "EMA_update_counter",
+    "Python_NumPy_Torch_CPU_CUDA_RNG",
+    "train_sampling_batch",
+    "runner_state"
+  ],
+  "seeds": [
+    2026102000,
+    2026102001,
+    2026102002,
+    2026102003,
+    2026102004,
+    2026102005,
+    2026102006,
+    2026102007,
+    2026102008,
+    2026102009,
+    2026102010,
+    2026102011,
+    2026102012,
+    2026102013,
+    2026102014,
+    2026102015,
+    2026102016,
+    2026102017,
+    2026102018,
+    2026102019
+  ],
+  "episodes_per_task": 20,
+  "max_episode_steps": 200,
+  "classification": "Requested continuation of saved500-epoch runs to fixed terminal1000; paired evaluation on the already observed common20-seed suite. Preserve500 results and all checkpoints; no outcome selection.",
+  "max_parallel": 3,
+  "gpu_slots": {
+    "0": 2,
+    "1": 1
+  },
+  "training_budget_mib": 10000,
+  "reserve_mib": 4096,
+  "execution_files": {
+    "run.py": "a87b688386f3549bd5884c1a284327a225fc56ea9b93cddcf1e78944f5b6174b",
+    "resume.py": "fdab90b88bcac6f698fb76a314a01034d25e23395ff1d44ec577f9b9b95a9f46",
+    "rollout.py": "4c8f9004093c41a26c5350e33bcc99aa5d6d21efc1067ee9c42ba6f4bca01f2c"
+  },
+  "targets_sha256": {
+    "shelf-place": "99fe6e6cfac7cb0321d0dd6b349ee0e4fcbd2d66144c753aeac00abec3acf057",
+    "pick-place-wall": "fa26332d2fca16cd431df7f4a41b67220d07ca6dac2fab2dd3a0f1c78f116350",
+    "pick-place": "c8bbc3a6afc5140252003c6e7bfa88daa875606ffd1c2131e67a3ed184b89b7f",
+    "stick-push": "042d4841b80f3929ed3234741cc5586c12481f4644e8c0a8857a704fb6e0bd18",
+    "door-open": "721e8b19cc349831e6f022416951946be38a5f9105da60aac307adf8f3530ba4"
+  },
+  "source_plan_sha256": "1d3976748f90b2cbb121e3d55b550274c049d0346363e55db3fd515a7530fae9",
+  "baseline_protocol_sha256": "b6c079dfc5959432e2e3ee525d62eca81d3be459a5baa79e2c655e6cf13d87be",
+  "baseline_worker_sha256": "8e8c4566a4699074dcc750ed47171b59bd9c8ae00ab2e558ae360705c9107f74",
+  "official_training_sha256": "a7c724edd5ce56959a888329c706b0106c14fcd3d2bb397ade78e0b5b9462358",
+  "stop_rule": "Save every100 cumulative epochs, stop at1000 and evaluate all20 episodes per task; no further training without instruction.",
+  "execution_revision": 2,
+  "previous_plan_sha256": "d86209e22121cb7edf67529c401f43d787a4314b2d7c21ee7c2eb1750439e5c3",
+  "repair": "Register standard Hydra resolvers before resolving saved config; no optimizer updates occurred in failed initial attempts."
+}

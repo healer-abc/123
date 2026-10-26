@@ -1,0 +1,14 @@
+FetchPushDense-v4:
+  n_envs: 1
+  n_timesteps: 1000000
+  policy: MultiInputPolicy
+  policy_kwargs: "dict(net_arch=[256, 256])"
+  learning_rate: 0.0003
+  gamma: 0.98
+  batch_size: 256
+  n_steps: 2048
+  n_epochs: 10
+  clip_range: 0.2
+  gae_lambda: 0.95
+  normalize: false
+  monitor_kwargs: "dict(info_keywords=('is_success',))"

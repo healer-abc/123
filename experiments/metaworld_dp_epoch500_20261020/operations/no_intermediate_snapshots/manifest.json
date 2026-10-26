@@ -1,0 +1,32 @@
+{
+  "created": 1792490805.319914,
+  "tasks": [
+    "stick-push",
+    "door-open"
+  ],
+  "terminal_driver_sha256": "e2a98afaa68ce75b4d703b765378ef88181759a47361863a9fa6f4154d9e44f7",
+  "supervisor_sha256": "16b712c732fa226fd10156a3eb843192a822a48410e199bcdb3d55d600f99142",
+  "original_plan_sha256": "1d3976748f90b2cbb121e3d55b550274c049d0346363e55db3fd515a7530fae9",
+  "request": "User no longer needs intermediate snapshots for remaining two tasks.",
+  "policy_for_new_workers": {
+    "periodic_latest": false,
+    "completed_epoch_snapshots": [
+      500
+    ],
+    "single_checkpoint_write_with_final_hardlink": true,
+    "retain_terminal_resume_context": true
+  },
+  "existing_workers": "Adopt and continue in memory with existing save logic; no restart or progress loss.",
+  "other_experiments_and_users": "Unchanged",
+  "old_supervisor_pid": 2942600,
+  "adopted_workers": [
+    {
+      "task": "pick-place",
+      "pid": 2983254
+    },
+    {
+      "task": "stick-push",
+      "pid": 3000994
+    }
+  ]
+}

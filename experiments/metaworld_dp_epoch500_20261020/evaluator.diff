@@ -1,0 +1,25 @@
+--- experiments/metaworld_simpledp3_epoch500_ddim10_20261020/rollout500.py
++++ experiments/metaworld_dp_epoch500_20261020/rollout500.py
+@@ -1,4 +1,4 @@
+-"""Paired SimpleDP3 500-epoch DDIM10 sensitivity evaluation, copied from frozen baseline evaluator."""
++"""Paired DP 500-epoch DDIM10 sensitivity evaluation, copied from frozen baseline evaluator."""
+ import collections
+ import hashlib
+ import json
+@@ -35,14 +35,14 @@
+     identity={'task':task,'method':method,'config':cfg,'protocol':sha256(ROOT/'protocol.json'),
+         'dataset_episodes':50,'dataset_manifest_sha256':sha256(ROOT/'datasets'/(task+'.json')),
+         'split_sha256':sha256(ROOT/'manifests/dataset_split.json'),'training_seed':0,
+-        'stage':'ablation_epoch500_ddim10_20' if final else 'development','round':round_id,
++        'stage':'DP_epoch500_ddim10_20' if final else 'development','round':round_id,
+         'ablation_plan_sha256':sha256(Path(__file__).resolve().parent/'plan.json'),
+         'checkpoint_completed_epochs':500 if final else None}
+     if final:
+         assert checkpoint and Path(checkpoint).is_file()
+         identity['checkpoint_sha256']=sha256(checkpoint)
+     records=[];env=None;policy.eval()
+-    assert method=='SimpleDP3' and policy.num_inference_steps==10
++    assert method=='DP' and policy.num_inference_steps==10
+     if not hasattr(policy,'_ablation_step_calls'):
+         policy._ablation_step_calls=0
+         original_step=policy.noise_scheduler.step

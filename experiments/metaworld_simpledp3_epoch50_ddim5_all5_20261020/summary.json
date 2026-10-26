@@ -1,0 +1,45 @@
+{
+  "classification": "User explicitly fixed epoch50 after200/100/50 screening produced95/90/90%. This is post-hoc exploratory evaluation, not a successful <90% threshold selection and not a replacement for fixed original baselines.",
+  "results": [
+    {
+      "task": "shelf-place",
+      "checkpoint_epoch": 50,
+      "successes": 8,
+      "episodes": 20,
+      "success_rate": 0.4,
+      "reused_screen": false
+    },
+    {
+      "task": "pick-place-wall",
+      "checkpoint_epoch": 50,
+      "successes": 17,
+      "episodes": 20,
+      "success_rate": 0.85,
+      "reused_screen": false
+    },
+    {
+      "task": "pick-place",
+      "checkpoint_epoch": 50,
+      "successes": 18,
+      "episodes": 20,
+      "success_rate": 0.9,
+      "reused_screen": true
+    },
+    {
+      "task": "stick-push",
+      "checkpoint_epoch": 50,
+      "successes": 16,
+      "episodes": 20,
+      "success_rate": 0.8,
+      "reused_screen": false
+    },
+    {
+      "task": "door-open",
+      "checkpoint_epoch": 50,
+      "successes": 20,
+      "episodes": 20,
+      "success_rate": 1.0,
+      "reused_screen": false
+    }
+  ]
+}

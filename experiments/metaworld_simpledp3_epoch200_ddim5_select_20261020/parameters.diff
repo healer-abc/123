@@ -1,0 +1,15 @@
+--- prior_fixed500_DDIM10
++++ fresh200_DDIM5_with_checkpoint_selection
+-stop_completed_epochs: 500
++stop_completed_epochs: 200
+-snapshot_epochs: [300,400,500]
++snapshot_epochs: [50,100,200]
+-num_inference_steps: 10
++num_inference_steps: 5
+ horizon: 16
+ n_obs_steps: 2
+ action_horizon: 8
+ training_seed: 0
+ lr_schedule_epochs: 1000
++screen_order: [200,100,50]
++select: first pick-place successes <18/20

@@ -1,0 +1,69 @@
+{
+  "status": "complete",
+  "output_dir": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045",
+  "target_per_condition": 150,
+  "phase": "complete",
+  "completed_batches": 60,
+  "formal_episodes": 600,
+  "conditions": {
+    "s1_clean/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 67,
+      "success_rate": 0.44666666666666666,
+      "wilson_95": [
+        0.3694280104150967,
+        0.5265688156508312
+      ]
+    },
+    "s1_clean/randomized": {
+      "attempted": 150,
+      "valid_scenes": 119,
+      "invalid_scenes": 31,
+      "successes": 3,
+      "success_rate": 0.025210084033613446,
+      "wilson_95": [
+        0.008610231289265538,
+        0.07150489364635611
+      ]
+    },
+    "s2_mixed/clean": {
+      "attempted": 150,
+      "valid_scenes": 150,
+      "invalid_scenes": 0,
+      "successes": 93,
+      "success_rate": 0.62,
+      "wilson_95": [
+        0.5402444138161229,
+        0.6937627275355391
+      ]
+    },
+    "s2_mixed/randomized": {
+      "attempted": 150,
+      "valid_scenes": 119,
+      "invalid_scenes": 31,
+      "successes": 89,
+      "success_rate": 0.7478991596638656,
+      "wilson_95": [
+        0.6629702080798223,
+        0.8173236647414017
+      ]
+    }
+  },
+  "initial_free_GiB": 9.319183349609375,
+  "updated_utc": "2026-10-26T05:37:56.809923+00:00",
+  "free_disk_GiB": 991.050853729248,
+  "output_MiB": 3.0591602325439453,
+  "active_model": "s2_mixed",
+  "active_variant": "randomized",
+  "active_batch": 14,
+  "active_job": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045/formal_s2_mixed_randomized_14",
+  "pid": 1148756,
+  "active_elapsed_seconds": 160,
+  "pilot_status": "passed",
+  "resumed_utc": "2026-10-26T04:28:54.676547+00:00",
+  "resumed_free_GiB": 611.2032279968262,
+  "previous_error": "Free disk below 3 GiB; preserve results and stop before next batch",
+  "results": "/home/zhsu/jyluo/experiments/robotwin_pi0/runs/eval_sft_20261026_093045/results.json"
+}

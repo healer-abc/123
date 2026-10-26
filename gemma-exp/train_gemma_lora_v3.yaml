@@ -1,0 +1,33 @@
+model_name_or_path: /home/zhsu/jyluo/models/gemma-7b
+
+stage: sft
+do_train: true
+
+finetuning_type: lora
+
+dataset: alpaca_v3_train
+eval_dataset: alpaca_v3_eval
+dataset_dir: /home/zhsu/jyluo/gemma-exp/config
+
+template: gemma
+
+output_dir: /home/zhsu/jyluo/gemma-exp/output_v3
+
+cutoff_len: 512
+
+learning_rate: 5e-5
+num_train_epochs: 1
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+
+logging_steps: 1
+save_steps: 20
+
+lora_rank: 8
+lora_alpha: 16
+lora_dropout: 0.05
+
+bf16: true
+
+plot_loss: true

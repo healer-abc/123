@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-23T07:30:19.958511+08:00",
+  "archive": "archive/E_interruption_20261023_073019",
+  "interrupted_runs": [
+    {
+      "seed": 0,
+      "last_logged_steps": 197200,
+      "last_progress_mtime": "2026-10-23T00:12:43.434485+08:00"
+    },
+    {
+      "seed": 1,
+      "last_logged_steps": 152600,
+      "last_progress_mtime": "2026-10-23T00:12:43.587482+08:00"
+    },
+    {
+      "seed": 2,
+      "last_logged_steps": 181200,
+      "last_progress_mtime": "2026-10-23T00:12:43.587482+08:00"
+    }
+  ],
+  "cause": "unknown; no process/session remains; host was not rebooted; kernel journal unavailable",
+  "checkpoint_available": false,
+  "recovery": "Restart E seeds 0/1/2 from zero with identical learning parameters and budget; preserve all old artifacts; A-D results reused unchanged.",
+  "protocol_change": {
+    "checkpoint_overrides": {
+      "E": 100000
+    }
+  },
+  "learning_parameters_changed": false,
+  "gpu_used": false
+}

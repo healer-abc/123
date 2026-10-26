@@ -1,0 +1,78 @@
+--- replay500.py (unchanged)
++++ replay_terminal_only.py
+@@ -1,4 +1,4 @@
+-"""Fresh DP training prefix with synchronous snapshots at completed epochs 300/400/500."""
++"""DP terminal-only save override for jobs not yet started; original scientific configuration retained."""
+ import difflib
+ import importlib.util
+ import inspect
+@@ -40,6 +40,9 @@
+ 
+ def main():
+     task, attempt = sys.argv[1], int(sys.argv[2])
++    override = json.loads((HERE / 'operations/no_intermediate_snapshots/manifest.json').read_text())
++    assert sha256(__file__) == override['terminal_driver_sha256']
++    assert task in override['tasks']
+     plan = json.loads((HERE / 'plan.json').read_text())
+     for rel, digest in plan['execution_files'].items():
+         assert sha256(HERE / rel) == digest, 'Changed execution source: ' + rel
+@@ -61,7 +64,7 @@
+     after = before.replace('range(cfg.training.num_epochs)', 'range(500)')
+     increment = '            self.epoch += 1\n'
+     assert after.count(increment) == 1
+-    after = after.replace(increment, increment + '''            if self.epoch in (300, 400, 500):
++    after = after.replace(increment, increment + '''            if self.epoch == 500:
+                 if self._saving_thread is not None:
+                     self._saving_thread.join()
+                 snapshot = self.save_checkpoint(tag=f'epoch_{self.epoch:04d}', use_thread=False)
+@@ -84,6 +87,10 @@
+     replay = ns['run']
+     def checked_run(self):
+         cfg = self.cfg
++        cfg.checkpoint.save_last_ckpt = False
++        cfg.checkpoint.save_last_snapshot = False
++        from omegaconf import OmegaConf
++        OmegaConf.save(cfg, out / 'config.yaml', resolve=True)
+         assert cfg.training.num_epochs == 1000 and cfg.training.seed == 0
+         assert not cfg.training.debug and not cfg.training.resume
+         assert cfg.dataloader.batch_size == 128 and cfg.training.gradient_accumulate_every == 1
+@@ -94,7 +101,7 @@
+         # Validate snapshots before evaluating, using the serialized counters and original schema.
+         import torch
+         import dill
+-        for epoch in [300, 400, 500]:
++        for epoch in [500]:
+             receipt = json.loads((out / 'snapshot_receipts' / f'epoch_{epoch:04d}.json').read_text())
+             assert receipt['completed_epochs'] == epoch and receipt['optimizer_updates'] == 61 * epoch
+             assert sha256(receipt['checkpoint']) == receipt['sha256']
+@@ -114,10 +121,20 @@
+         last = json.loads((out / 'metrics.jsonl').read_text().splitlines()[-1])
+         assert 4e-5 < float(last['lr']) < 6e-5, 'Original1000-epoch LR schedule was not retained'
+         atomic_json(out / 'training_audit.json', {'passed': True, 'completed_epochs': 500,
+-            'optimizer_updates': 30500, 'snapshot_epochs': [300, 400, 500],
++            'optimizer_updates': 30500, 'snapshot_epochs': [500],
+             'lr_schedule_epochs': 1000, 'lr_at_stop': float(last['lr']), 'resume_contexts_verified': True,
+             'continue_training_only_on_future_user_instruction': True})
+     cls.run = checked_run
++    original_save = cls.save_checkpoint
++    def save_checkpoint(self, *args, **kwargs):
++        if kwargs.get('tag') == 'final':
++            checkpoint = Path(self.output_dir) / 'checkpoints/epoch_0500.ckpt'
++            final = Path(self.output_dir) / 'checkpoints/final.ckpt'
++            assert checkpoint.is_file() and not final.exists()
++            final.hardlink_to(checkpoint)
++            return str(final.absolute())
++        return original_save(self, *args, **kwargs)
++    cls.save_checkpoint = save_checkpoint
+ 
+     spec = importlib.util.spec_from_file_location('frozen_baseline_worker', BASE / 'worker.py')
+     worker = importlib.util.module_from_spec(spec)
+@@ -154,7 +171,7 @@
+     worker.install_logging = install_logging
+     atomic_json(out / 'replay_identity.json', {'created': time.time(), 'task': task, 'method': 'DP',
+         'training_seed': 0, 'initialization': 'fresh, resume=False; no old weights loaded',
+-        'completed_epoch_target': 500, 'snapshot_epochs': [300, 400, 500], 'lr_schedule_epochs': 1000,
++        'completed_epoch_target': 500, 'snapshot_epochs': [500], 'lr_schedule_epochs': 1000,
+         'source_plan_sha256': sha256(HERE / 'plan.json'), 'reference': reference_job})
+     worker.train_diffusion('DP', task, out, smoke=False)
+     assert not reference or len(observed) == 20

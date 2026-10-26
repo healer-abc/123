@@ -1,0 +1,149 @@
+{
+  "created_at": 1792439980.7111769,
+  "method": "ACT",
+  "targets": [
+    {
+      "task": "shelf-place",
+      "method": "ACT",
+      "successes": "1",
+      "episodes": "20",
+      "success_rate": "0.05",
+      "checkpoint_sha256": "48f4b4c894d1e62dfb8d4137151675783a792dee5045b4afd55f918cdb532647",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_shelf-place/attempt_01",
+      "stats_sha256": "966f14a2ca8d08b3cb46760e096b81cc50527a163a6fdc2de982387d9a2f2aa1",
+      "config_sha256": "a920bdd56de6801c0d079de5ce88393e0e30bd50409a2e55a19a6fb4648efe6a"
+    },
+    {
+      "task": "pick-place-wall",
+      "method": "ACT",
+      "successes": "0",
+      "episodes": "20",
+      "success_rate": "0.0",
+      "checkpoint_sha256": "f8f7e11acc84761652c34b99a89a32347fcb05a77a3d376d6bafdf5f677bc835",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place-wall/attempt_01",
+      "stats_sha256": "dd08a086c1bc566a8a8d02766427a71cbcf4307492f0327d6e34a408aed4b6c8",
+      "config_sha256": "670e43c83059fffdb91708c49b97872dc5ac5f4a56531e811cc53d19e6750108"
+    },
+    {
+      "task": "pick-place",
+      "method": "ACT",
+      "successes": "3",
+      "episodes": "20",
+      "success_rate": "0.15",
+      "checkpoint_sha256": "8006ac26a728062cbdabab0ce6a549a257c1c50f7f8b2bb1ec0e9f60fb989797",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place/attempt_01",
+      "stats_sha256": "a4eac2c64c56d41c9f2d150289c6f00b5308ea690d915006db653f4482b94336",
+      "config_sha256": "0e42438f755f5868f763e68548c5b0d8fc8e29b5f6bfa7d99ac8f1168a34ad4d"
+    },
+    {
+      "task": "stick-push",
+      "method": "ACT",
+      "successes": "20",
+      "episodes": "20",
+      "success_rate": "1.0",
+      "checkpoint_sha256": "4fb79abfaf8574e0ed9d845ad8e590884dc81d43c35fe3a369cf431c5db2edb1",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_stick-push/attempt_01",
+      "stats_sha256": "b34ee7e936a5ba90b8fb6104240c57bded591b625b2cd4e06bfd29e2a8f348f1",
+      "config_sha256": "aa81c9c6f1f58277f3d02dc6e86117acf855b45131d27ec58b839fbe6e25cad6"
+    },
+    {
+      "task": "door-open",
+      "method": "ACT",
+      "successes": "17",
+      "episodes": "20",
+      "success_rate": "0.85",
+      "checkpoint_sha256": "a944194f197985916d64a010a4896609ee0b6cf037977d245b15b82c5bf6415f",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_door-open/attempt_01",
+      "stats_sha256": "ffb5dc4d2cdf420b6e01b4ba42016922e087ad4ec35d10c1659e7ab1172911e1",
+      "config_sha256": "674db79c76f203afeda019bac7943399fb89333a43bb17759b4f45edf8c1f970"
+    }
+  ],
+  "seeds": [
+    4026101900,
+    4026101901,
+    4026101902,
+    4026101903,
+    4026101904,
+    4026101905,
+    4026101906,
+    4026101907,
+    4026101908,
+    4026101909,
+    4026101910,
+    4026101911,
+    4026101912,
+    4026101913,
+    4026101914,
+    4026101915,
+    4026101916,
+    4026101917,
+    4026101918,
+    4026101919
+  ],
+  "training_seed": 0,
+  "candidates": [
+    100,
+    32,
+    16,
+    8,
+    4,
+    2,
+    1
+  ],
+  "temporal_agg": false,
+  "chunk_size": 100,
+  "hard_tasks": [
+    "shelf-place",
+    "pick-place",
+    "pick-place-wall"
+  ],
+  "easy_tasks": [
+    "door-open",
+    "stick-push"
+  ],
+  "reference_results": [
+    {
+      "task": "shelf-place",
+      "horizon": 1,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_act_short_interval_20261020/runs/shelf-place/rollouts20",
+      "summary_sha256": "463c1cd0b7e70440a16bb375c9d8f8f23765df9e19783a69ef7541bb7d90abca"
+    },
+    {
+      "task": "pick-place-wall",
+      "horizon": 1,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/holdout20",
+      "summary_sha256": "ec0a624037e0f5732e40a49ff1ad94be77ab5e1e47f94d9f207fc128a21b44fc"
+    },
+    {
+      "task": "pick-place",
+      "horizon": 1,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_act_short_interval_20261020/runs/pick-place/rollouts20",
+      "summary_sha256": "15b76d7f3b47812e83b88b4c357d368aa21c7f1f79d65b02b99551882f9cd80a"
+    },
+    {
+      "task": "stick-push",
+      "horizon": 1,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_act_short_interval_20261020/runs/stick-push/rollouts20",
+      "summary_sha256": "63500489badcb2e08342dff98203dc79f535de36b453e5db59e6048c5b70f839"
+    },
+    {
+      "task": "door-open",
+      "horizon": 1,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_act_short_interval_20261020/runs/door-open/rollouts20",
+      "summary_sha256": "e1af3b261050ecda0843f1702365cfaddd0170e5d007cae277f4b4f34cd1d7ba"
+    },
+    {
+      "task": "pick-place-wall",
+      "horizon": 100,
+      "directory": "/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/paired_original20",
+      "summary_sha256": "88c6869965424020b014fd7978c0dacff8a936c88be714cde82a3744cad71a6e"
+    }
+  ],
+  "engine_sha256": "609bd68580a1d35aa8f219046b874b000b3eea7ccbdb48d1a5277395624bb56b",
+  "runner_sha256": "d1287944d16c772c8e63a4d5b3a5e31580240433e9764c08727422fe1ea27694",
+  "stop_rule": "First ONE horizon with 20 completed episodes and >0 successes on EVERY task. Same ordered seed list on all tasks and candidates; no task-specific horizons or seed changes.",
+  "classification": "Common-horizon parameter-selection validation on one fixed common seed suite; not an independent unseen test estimate.",
+  "training_changes": null,
+  "inference_budget_mib": 2048,
+  "reserve_mib": 4096
+}

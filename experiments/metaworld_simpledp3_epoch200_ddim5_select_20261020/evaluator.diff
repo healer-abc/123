@@ -1,0 +1,41 @@
+--- experiments/metaworld_simpledp3_epoch500_ddim10_20261020/rollout500.py
++++ experiments/metaworld_simpledp3_epoch200_ddim5_select_20261020/rollout.py
+@@ -1,4 +1,4 @@
+-"""Paired SimpleDP3 500-epoch DDIM10 sensitivity evaluation, copied from frozen baseline evaluator."""
++"""Fresh SimpleDP3200-epoch DDIM5 checkpoint-selection exploratory evaluation, copied from frozen baseline evaluator."""
+ import collections
+ import hashlib
+ import json
+@@ -31,18 +31,19 @@
+     seeds=p['final_episode_seeds'] if final else p['development_episode_seeds']
+     output_dir=Path(output_dir);output_dir.mkdir(parents=True,exist_ok=True)
+     cfg=({'chunk_size':10,'action_horizon':1,'temporal_agg':True,'aggregation_k':0.01} if method=='ACT'
+-         else {'horizon':16,'n_obs_steps':2,'action_horizon':8,'num_inference_steps':10,'scheduler':'DDIM','prediction_type':'sample'})
++         else {'horizon':16,'n_obs_steps':2,'action_horizon':8,'num_inference_steps':5,'scheduler':'DDIM','prediction_type':'sample'})
+     identity={'task':task,'method':method,'config':cfg,'protocol':sha256(ROOT/'protocol.json'),
+         'dataset_episodes':50,'dataset_manifest_sha256':sha256(ROOT/'datasets'/(task+'.json')),
+         'split_sha256':sha256(ROOT/'manifests/dataset_split.json'),'training_seed':0,
+-        'stage':'ablation_epoch500_ddim10_20' if final else 'development','round':round_id,
++        'stage':'exploratory_epoch200_100_50_ddim5_20' if final else 'development','round':round_id,
+         'ablation_plan_sha256':sha256(Path(__file__).resolve().parent/'plan.json'),
+-        'checkpoint_completed_epochs':500 if final else None}
++        'checkpoint_completed_epochs':getattr(policy,'_evaluation_checkpoint_epoch',None) if final else None}
+     if final:
+         assert checkpoint and Path(checkpoint).is_file()
+         identity['checkpoint_sha256']=sha256(checkpoint)
++    if final:assert policy._evaluation_checkpoint_epoch in (50,100,200)
+     records=[];env=None;policy.eval()
+-    assert method=='SimpleDP3' and policy.num_inference_steps==10
++    assert method=='SimpleDP3' and policy.num_inference_steps==5
+     if not hasattr(policy,'_ablation_step_calls'):
+         policy._ablation_step_calls=0
+         original_step=policy.noise_scheduler.step
+@@ -103,7 +104,7 @@
+                         atomic_json(output_dir/'heartbeat.json',{'time':time.time(),'episode':i,'steps':step+1,'final':final})
+                     if done:break
+             assert len(actions)==200, 'Unexpected episode truncation'
+-            assert policy._ablation_step_calls-sampler_calls_before==250, 'Wrong DDIM step count'
++            assert policy._ablation_step_calls-sampler_calls_before==125, 'Wrong DDIM step count'
+             successful_steps=[j+1 for j,x in enumerate(infos) if bool(x['success'])]
+             arr=np.asarray(actions)
+             r={'identity':identity,'episode':i,'seed':seed,'steps':len(actions),

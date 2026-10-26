@@ -1,0 +1,68 @@
+{
+  "title": "基于 MuJoCo 的机械臂推物策略学习：稀疏奖励、样本效率与控制误差鲁棒性",
+  "formal_steps": 1000000,
+  "training_seeds": [
+    0,
+    1,
+    2
+  ],
+  "task": "Push",
+  "device": "cpu",
+  "threads": 2,
+  "max_workers": 3,
+  "groups": {
+    "A": "PPO dense",
+    "B": "SAC dense",
+    "C": "SAC sparse",
+    "D": "SAC + HER sparse",
+    "E": "SAC + HER sparse + gain randomization"
+  },
+  "order": [
+    "D",
+    "C",
+    "B",
+    "A",
+    "E"
+  ],
+  "learning_rate": 0.0003,
+  "buffer_size": 1000000,
+  "learning_starts": 10000,
+  "validation": {
+    "every": 20000,
+    "episodes": 20,
+    "seed_base": 10000
+  },
+  "test": {
+    "episodes": 100,
+    "seed_base": 20000,
+    "robust_gains": [
+      0.6,
+      0.8,
+      1.0,
+      1.2,
+      1.4
+    ]
+  },
+  "checkpoint_every": 250000,
+  "run_prefix": "formal_20261022",
+  "runner": "source_materials/runner_frozen_20261022.py",
+  "runner_sha256": "726e9d4321ad65bebfc5f30467bb6f6099715905007bedf10a22965027be3dc2",
+  "pilot": {
+    "first": "runs/push_pilot_s99_300k_20261022",
+    "external_tmux": "fetch-pilot-20261022",
+    "extended": "runs/push_pilot_s99_1m_20261022",
+    "max_steps": 1000000,
+    "min_last_two_validation_mean": 0.5,
+    "accepted_checkpoint": "runs/push_pilot_s99_1m_20261022/interrupted",
+    "admission_evaluation": "evaluations/pilot_s99_admission_20261022"
+  },
+  "training_gain_range": [
+    0.8,
+    1.2
+  ],
+  "statistics": "mean and sample standard deviation across 3 training seeds; never treat test episodes as training seeds",
+  "status": "recipe fixed; formal launch requires seed99 learning gate",
+  "checkpoint_overrides": {
+    "E": 100000
+  }
+}

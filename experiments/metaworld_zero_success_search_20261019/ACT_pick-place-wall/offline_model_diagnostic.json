@@ -1,0 +1,337 @@
+{
+  "task": "pick-place-wall",
+  "checkpoint_sha256": "f8f7e11acc84761652c34b99a89a32347fcb05a77a3d376d6bafdf5f677bc835",
+  "device": "cpu",
+  "observations": "first timestep from five fixed training episodes and all ten validation episodes",
+  "note": "Offline diagnostic only. Posterior uses expert future actions as an encoder input, while rollout uses the official zero latent prior. Neither is substituted into rollout.",
+  "checkpoint_unchanged": true,
+  "records": [
+    {
+      "episode": 27,
+      "split": "train",
+      "normalized_prior_l1": 0.3251946270465851,
+      "normalized_posterior_l1": 0.3270871639251709,
+      "posterior_kl": 0.001614987850189209,
+      "first_predicted_action": [
+        -0.04961267113685608,
+        0.3624834716320038,
+        -0.5758332014083862,
+        -0.09997397661209106
+      ],
+      "first_expert_action": [
+        -0.1435256451368332,
+        0.03500065207481384,
+        -1.493011713027954,
+        0.0
+      ],
+      "raw_first_action_l1": 0.3596370816230774,
+      "finite_predictions": true
+    },
+    {
+      "episode": 35,
+      "split": "train",
+      "normalized_prior_l1": 0.4241982400417328,
+      "normalized_posterior_l1": 0.42299365997314453,
+      "posterior_kl": 0.0017805695533752441,
+      "first_predicted_action": [
+        0.20052585005760193,
+        0.29027611017227173,
+        -0.7089251279830933,
+        -0.09902799129486084
+      ],
+      "first_expert_action": [
+        0.08239912986755371,
+        0.04531850665807724,
+        -1.493011713027954,
+        0.0
+      ],
+      "raw_first_action_l1": 0.31154972314834595,
+      "finite_predictions": true
+    },
+    {
+      "episode": 40,
+      "split": "train",
+      "normalized_prior_l1": 0.2549210786819458,
+      "normalized_posterior_l1": 0.25867342948913574,
+      "posterior_kl": 0.0015742480754852295,
+      "first_predicted_action": [
+        -0.16112320125102997,
+        0.39543554186820984,
+        -0.507719874382019,
+        -0.07722210884094238
+      ],
+      "first_expert_action": [
+        -0.24705661833286285,
+        0.11297491192817688,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.18272700905799866,
+      "finite_predictions": true
+    },
+    {
+      "episode": 38,
+      "split": "train",
+      "normalized_prior_l1": 0.27381035685539246,
+      "normalized_posterior_l1": 0.27266234159469604,
+      "posterior_kl": 0.0014365911483764648,
+      "first_predicted_action": [
+        0.1049841046333313,
+        0.4071016311645508,
+        -0.6290209293365479,
+        -0.11453253030776978
+      ],
+      "first_expert_action": [
+        -0.048801060765981674,
+        0.4819747805595398,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.12679541110992432,
+      "finite_predictions": true
+    },
+    {
+      "episode": 2,
+      "split": "train",
+      "normalized_prior_l1": 0.38141754269599915,
+      "normalized_posterior_l1": 0.3818085193634033,
+      "posterior_kl": 0.0015692412853240967,
+      "first_predicted_action": [
+        0.29103410243988037,
+        0.2095242291688919,
+        -0.5515154600143433,
+        -0.026321589946746826
+      ],
+      "first_expert_action": [
+        0.3103507161140442,
+        0.04234841465950012,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.11357757449150085,
+      "finite_predictions": true
+    },
+    {
+      "episode": 16,
+      "split": "validation",
+      "normalized_prior_l1": 0.3100535571575165,
+      "normalized_posterior_l1": 0.31277674436569214,
+      "posterior_kl": 0.0020371079444885254,
+      "first_predicted_action": [
+        0.09483225643634796,
+        0.35301363468170166,
+        -0.6718059778213501,
+        -0.1144292950630188
+      ],
+      "first_expert_action": [
+        -0.03582388907670975,
+        0.20758786797523499,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.12792924046516418,
+      "finite_predictions": true
+    },
+    {
+      "episode": 0,
+      "split": "validation",
+      "normalized_prior_l1": 0.20180398225784302,
+      "normalized_posterior_l1": 0.20509880781173706,
+      "posterior_kl": 0.00156363844871521,
+      "first_predicted_action": [
+        -0.190376415848732,
+        0.4478267431259155,
+        -0.44811010360717773,
+        -0.07476538419723511
+      ],
+      "first_expert_action": [
+        -0.3202943801879883,
+        0.30402836203575134,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.17334583401679993,
+      "finite_predictions": true
+    },
+    {
+      "episode": 15,
+      "split": "validation",
+      "normalized_prior_l1": 0.25773170590400696,
+      "normalized_posterior_l1": 0.258919358253479,
+      "posterior_kl": 0.0015687644481658936,
+      "first_predicted_action": [
+        -0.19522975385189056,
+        0.45393484830856323,
+        -0.42252612113952637,
+        -0.06917375326156616
+      ],
+      "first_expert_action": [
+        -0.3291294276714325,
+        0.38313809037208557,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.1610889434814453,
+      "finite_predictions": true
+    },
+    {
+      "episode": 5,
+      "split": "validation",
+      "normalized_prior_l1": 0.3393218517303467,
+      "normalized_posterior_l1": 0.33810052275657654,
+      "posterior_kl": 0.0018299520015716553,
+      "first_predicted_action": [
+        -0.2604796290397644,
+        0.44657957553863525,
+        -0.36778175830841064,
+        -0.0284307599067688
+      ],
+      "first_expert_action": [
+        -0.5345436334609985,
+        0.1429777890443802,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.2578316330909729,
+      "finite_predictions": true
+    },
+    {
+      "episode": 11,
+      "split": "validation",
+      "normalized_prior_l1": 0.3003584146499634,
+      "normalized_posterior_l1": 0.30067357420921326,
+      "posterior_kl": 0.0014490783214569092,
+      "first_predicted_action": [
+        0.26514384150505066,
+        0.25571778416633606,
+        -0.6520521640777588,
+        -0.042238473892211914
+      ],
+      "first_expert_action": [
+        0.35190093517303467,
+        0.3956599831581116,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.10247433185577393,
+      "finite_predictions": true
+    },
+    {
+      "episode": 9,
+      "split": "validation",
+      "normalized_prior_l1": 0.2631057798862457,
+      "normalized_posterior_l1": 0.2653657793998718,
+      "posterior_kl": 0.0019208192825317383,
+      "first_predicted_action": [
+        -0.25615158677101135,
+        0.4506412148475647,
+        -0.2207275629043579,
+        -0.018818557262420654
+      ],
+      "first_expert_action": [
+        -0.4980500042438507,
+        0.46044856309890747,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.21070212125778198,
+      "finite_predictions": true
+    },
+    {
+      "episode": 8,
+      "split": "validation",
+      "normalized_prior_l1": 0.6899319291114807,
+      "normalized_posterior_l1": 0.6915156841278076,
+      "posterior_kl": 0.0015789568424224854,
+      "first_predicted_action": [
+        0.021386779844760895,
+        0.34546735882759094,
+        -0.6266028881072998,
+        -0.10663825273513794
+      ],
+      "first_expert_action": [
+        -0.07574883103370667,
+        0.0432470478117466,
+        -1.493011713027954,
+        0.0
+      ],
+      "raw_first_action_l1": 0.34310072660446167,
+      "finite_predictions": true
+    },
+    {
+      "episode": 12,
+      "split": "validation",
+      "normalized_prior_l1": 0.391155481338501,
+      "normalized_posterior_l1": 0.39409366250038147,
+      "posterior_kl": 0.0016556978225708008,
+      "first_predicted_action": [
+        0.0717107281088829,
+        0.33574992418289185,
+        -0.6565341949462891,
+        -0.1102113127708435
+      ],
+      "first_expert_action": [
+        -0.04629785194993019,
+        0.02346225641667843,
+        -1.493011713027954,
+        0.0
+      ],
+      "raw_first_action_l1": 0.3442462682723999,
+      "finite_predictions": true
+    },
+    {
+      "episode": 43,
+      "split": "validation",
+      "normalized_prior_l1": 0.3037493824958801,
+      "normalized_posterior_l1": 0.3045502007007599,
+      "posterior_kl": 0.0015104115009307861,
+      "first_predicted_action": [
+        0.2770332098007202,
+        0.23700016736984253,
+        -0.5983266830444336,
+        -0.052771806716918945
+      ],
+      "first_expert_action": [
+        0.21270136535167694,
+        0.07165311276912689,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.11928393691778183,
+      "finite_predictions": true
+    },
+    {
+      "episode": 37,
+      "split": "validation",
+      "normalized_prior_l1": 0.25076618790626526,
+      "normalized_posterior_l1": 0.25336867570877075,
+      "posterior_kl": 0.001581043004989624,
+      "first_predicted_action": [
+        -0.26531079411506653,
+        0.44903647899627686,
+        -0.24279820919036865,
+        -0.014752745628356934
+      ],
+      "first_expert_action": [
+        -0.5867117643356323,
+        0.4279729425907135,
+        -0.7930117249488831,
+        0.0
+      ],
+      "raw_first_action_l1": 0.22685769200325012,
+      "finite_predictions": true
+    }
+  ],
+  "means": {
+    "train": {
+      "normalized_prior_l1": 0.3319083690643311,
+      "normalized_posterior_l1": 0.33264502286911013,
+      "raw_first_action_l1": 0.21885735988616944
+    },
+    "validation": {
+      "normalized_prior_l1": 0.3307978272438049,
+      "normalized_posterior_l1": 0.332446300983429,
+      "raw_first_action_l1": 0.2066860727965832
+    }
+  }
+}

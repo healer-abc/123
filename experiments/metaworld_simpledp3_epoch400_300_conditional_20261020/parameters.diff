@@ -1,0 +1,10 @@
+--- fixed_epoch500
++++ outcome_selected_epoch400_or300
+-checkpoint_completed_epochs: 500
++screen: epoch400 pick-place20episodes
++if successes <18: epoch400 for allfive
++else: epoch300 for allfive
+ num_inference_steps: 10
+ training_seed: 0
+ n_obs_steps: 2
+ action_horizon: 8

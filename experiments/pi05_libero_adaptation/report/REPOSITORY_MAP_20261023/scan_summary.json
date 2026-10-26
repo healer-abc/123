@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-23",
+  "root": "/home/zhsu/jyluo",
+  "scope": "openpi/pi0/pi05 + LIBERO + MetaWorld VLA and associated baselines; neighboring projects inventoried as boundaries",
+  "files_by_catalog": {
+    "project": 65541,
+    "adjacent": 33729,
+    "dependencies": 383533
+  },
+  "origins": {
+    "本会话可确认由Agent新增": 8,
+    "来源待核实": 30705,
+    "运行/调度/重定向自动产物": 862,
+    "敏感配置/凭据": 53,
+    "外部下载数据": 5098,
+    "链接/引用": 10713,
+    "测评管线自动产物": 19814,
+    "本地项目扩展/文档/材料": 7975,
+    "Python自动缓存": 3507,
+    "本地实验管线产物/输入快照": 9161,
+    "下载/运行时模型资产": 1019,
+    "训练追踪自动产物": 486,
+    "外部源码/运行时副本，可能含本地适配": 16438,
+    "指标解析/采样自动产物": 38,
+    "环境安装产物/第三方包": 374164,
+    "外部预训练资产/下载缓存": 32,
+    "版本控制元数据": 133,
+    "离线引入的第三方源码": 125,
+    "上游路径：仅换行不同": 753,
+    "上游来源：本地Git索引一致": 533,
+    "未列入本地上游索引：待核对": 12,
+    "上游路径：本地内容修改": 3,
+    "训练器自动产物": 1171
+  },
+  "directories": 53040,
+  "readable_source_entries": 6417,
+  "git_index_metadata": [
+    {
+      "worktree": "projects/openpi",
+      "gitdir": "projects/openpi/.git",
+      "recorded_HEAD": "215abfb217dbac7d5f1273282331b9b1866c0479",
+      "index_version": 2,
+      "index_entries": 142,
+      "caveat": "comparison is against local Git index, not fetched current upstream; index may contain staged changes"
+    },
+    {
+      "worktree": "projects/openpi/third_party/libero",
+      "gitdir": "projects/openpi/.git/modules/third_party/libero",
+      "recorded_HEAD": "f78abd68ee283de9f9be3c8f7e2a9ad60246e95c",
+      "index_version": 2,
+      "index_entries": 1116,
+      "caveat": "comparison is against local Git index, not fetched current upstream; index may contain staged changes"
+    },
+    {
+      "worktree": "projects/openpi/third_party/aloha",
+      "gitdir": "projects/openpi/.git/modules/third_party/aloha",
+      "recorded_HEAD": "d1dc83afd89ded4379851257fe5d85632d31d5ec",
+      "index_version": 2,
+      "index_entries": 35,
+      "caveat": "comparison is against local Git index, not fetched current upstream; index may contain staged changes"
+    }
+  ],
+  "upstream_path_changes": 756,
+  "errors": [],
+  "size_caveat": "logical lstat sizes; no symlink following, no hardlink deduplication, not physical du usage",
+  "self_exclusion": "atlas generated outputs excluded except build_map.py/lookup.py; prevents recursive self-inventory",
+  "missing_git_index_paths": [],
+  "top_level": [
+    {
+      "path": ".codex",
+      "scope": "敏感基础设施",
+      "direct_files": 1,
+      "direct_bytes": 3918,
+      "recursive_files": 1,
+      "recursive_bytes": 3918,
+      "children": 0
+    },
+    {
+      "path": "dataset_root",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "recursive_files": 5099,
+      "recursive_bytes": 34939139226,
+      "children": 1
+    },
+    {
+      "path": "eval_auto",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 3,
+      "direct_bytes": 563802,
+      "recursive_files": 89,
+      "recursive_bytes": 16069832,
+      "children": 2
+    },
+    {
+      "path": "experiments",
+      "scope": "其他/关联待核实",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "recursive_files": 57335,
+      "recursive_bytes": 536138973701,
+      "children": 29
+    },
+    {
+      "path": "gemma-exp",
+      "scope": "相邻独立项目",
+      "direct_files": 5,
+      "direct_bytes": 2837,
+      "recursive_files": 93,
+      "recursive_bytes": 1743072923,
+      "children": 6
+    },
+    {
+      "path": "metrics",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 3,
+      "direct_bytes": 462456,
+      "recursive_files": 3,
+      "recursive_bytes": 462456,
+      "children": 0
+    },
+    {
+      "path": "metrics_lora",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 3,
+      "direct_bytes": 292007,
+      "recursive_files": 3,
+      "recursive_bytes": 292007,
+      "children": 0
+    },
+    {
+      "path": "miniforge3",
+      "scope": "共享环境基础设施",
+      "direct_files": 6,
+      "direct_bytes": 18295546,
+      "recursive_files": 274422,
+      "recursive_bytes": 35438640575,
+      "children": 14
+    },
+    {
+      "path": "models",
+      "scope": "相邻独立项目",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "recursive_files": 54,
+      "recursive_bytes": 51255841829,
+      "children": 1
+    },
+    {
+      "path": "myopenpi",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "recursive_files": 32,
+      "recursive_bytes": 12446013604,
+      "children": 1
+    },
+    {
+      "path": "projects",
+      "scope": "其他/关联待核实",
+      "direct_files": 0,
+      "direct_bytes": 0,
+      "recursive_files": 145653,
+      "recursive_bytes": 519701095315,
+      "children": 4
+    },
+    {
+      "path": "tools",
+      "scope": "共享输入/部署/历史产物",
+      "direct_files": 7,
+      "direct_bytes": 55188,
+      "recursive_files": 7,
+      "recursive_bytes": 55188,
+      "children": 0
+    }
+  ]
+}

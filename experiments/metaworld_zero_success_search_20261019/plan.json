@@ -1,0 +1,173 @@
+{
+  "created_at": 1792423091.8605642,
+  "baseline_root": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019",
+  "baseline_results_sha256": "20ad4ea4da18182ca72d262e323e35d994eadd29acb9ca841c4540ac6d3b6382",
+  "script_sha256": "336501029d53c97f987676c0df2ff2b3cad4810af739d3dca05559f9cfd93407",
+  "targets": [
+    {
+      "task": "pick-place-wall",
+      "method": "ACT",
+      "successes": "0",
+      "episodes": "20",
+      "success_rate": "0.0",
+      "checkpoint_sha256": "f8f7e11acc84761652c34b99a89a32347fcb05a77a3d376d6bafdf5f677bc835",
+      "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place-wall/attempt_01"
+    }
+  ],
+  "scope_note": "stick-pull-v2 is not in the existing five-task campaign; no matching baseline checkpoint is available in this campaign.",
+  "blocks": 3,
+  "episodes_per_trial": 3,
+  "search_seed_start": 3026101900,
+  "holdout_seeds": [
+    4026101900,
+    4026101901,
+    4026101902,
+    4026101903,
+    4026101904,
+    4026101905,
+    4026101906,
+    4026101907,
+    4026101908,
+    4026101909,
+    4026101910,
+    4026101911,
+    4026101912,
+    4026101913,
+    4026101914,
+    4026101915,
+    4026101916,
+    4026101917,
+    4026101918,
+    4026101919
+  ],
+  "max_episode_steps": 200,
+  "success_definition": "any official info.success within 200 steps",
+  "stop_rule": "Complete each three-episode trial. Lock the first trial with >0 successes; evaluate exactly one independent 20-episode holdout. Do not select on holdout results.",
+  "grids": {
+    "ACT": [
+      {
+        "temporal_agg": true,
+        "action_horizon": 1,
+        "aggregation_k": 0.01
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 1
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 2
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 4
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 8
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 16
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 32
+      },
+      {
+        "temporal_agg": false,
+        "action_horizon": 100
+      }
+    ],
+    "DP": [
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 100,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 8
+      }
+    ],
+    "SimpleDP3": [
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 1
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 2
+      },
+      {
+        "num_inference_steps": 10,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 20,
+        "action_horizon": 8
+      },
+      {
+        "num_inference_steps": 50,
+        "action_horizon": 8
+      }
+    ]
+  },
+  "training_changes": null,
+  "classification": "inference-parameter/seed-screened evaluation; original baseline retained"
+}

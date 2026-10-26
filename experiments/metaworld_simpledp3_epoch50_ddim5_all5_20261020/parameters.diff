@@ -1,0 +1,11 @@
+--- completed200_100_50_threshold_search
++++ user_fixed_epoch50_all5
+-selection: first pick-place <90%; exhausted with [95%,90%,90%]
++checkpoint_epoch: 50, explicitly fixed by user after search
++reuse_pick_place: 18/20 from the completed50-epoch screen
++evaluate_other4_tasks: 20episodes each, no outcome-based changes
+ num_inference_steps: 5
+ horizon: 16
+ n_obs_steps: 2
+ action_horizon: 8
+ training_seed: 0

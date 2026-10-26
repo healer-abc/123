@@ -1,0 +1,424 @@
+{
+  "status": "frozen",
+  "created_at": "2026-10-21T19:48:55+08:00",
+  "candidate": "E2-s42",
+  "reference": "E1-s42",
+  "anchor": "E0-s42",
+  "excluded": {
+    "E3-s42": "development success 68.25%, 26pp below E1; failed screening"
+  },
+  "selection": "E2 development equals E1 overall; Spatial +3.5pp, Long -3.5pp; sampled peak memory -24.5%, step time -12.9% with shared-device limitations",
+  "manifest_sha256": "6f52e79c4e194e04a57d40a283812078db54bef4117a86a5f02c52e31c17311b",
+  "runs": [
+    {
+      "run_id": "E0-s42",
+      "config": "pi05_libero",
+      "checkpoint": "/home/zhsu/jyluo/projects/openpi/checkpoints/pi05_libero/pi05_libero_full_gpu1/29999",
+      "weight_type": "EMA",
+      "training_seed": 42,
+      "inference_artifacts": {
+        "_CHECKPOINT_METADATA": {
+          "size": 426,
+          "sha256": "cb3e4f529aa40b9a35d39a8647ba496b2d878dce17154c4c4dd6c6ccc638d7be"
+        },
+        "assets/physical-intelligence/libero/norm_stats.json": {
+          "size": 1916,
+          "sha256": "c0ee3c1a6ca5f1414d31180af3bc333dca1d78cf912f341943191b393fe68707"
+        },
+        "params/_METADATA": {
+          "size": 23544,
+          "sha256": "f27d21952e602528615298c668b588ba14ae8268e03e94598ea0235eaea52a5f"
+        },
+        "params/_sharding": {
+          "size": 12797,
+          "sha256": "7e65c8b63fafedfedb52bf416d6bfde394c1c88fd28dc02f18a7911f2581c183"
+        },
+        "params/array_metadatas/process_0": {
+          "size": 9162,
+          "sha256": "b6f4c56c01a8b73c9db955c4c68dd0b74d7fdda723831715dcbcd18ba5ddd4ab"
+        },
+        "params/d/f99957f559547735337cd23a6fd7cf52": {
+          "size": 2233,
+          "sha256": "6ba12d5dce7feeb731e4842807bba3bb227ec57b2e711d3e94c820b03f958b9d"
+        },
+        "params/manifest.ocdbt": {
+          "size": 117,
+          "sha256": "26ec1a89844ef2cbc619eb90d81906dc66a75068f219908f9536061813a90da1"
+        },
+        "params/ocdbt.process_0/d/01095e22fcf265cfc595278c5e3c011c": {
+          "size": 70033010,
+          "sha256": "3204cf4b38081d783d72d85ed9f4228b8ca1773d3d9e583dbe336cb4c185661c"
+        },
+        "params/ocdbt.process_0/d/0b2e7f3cb9776328029e1daaa5e1b5dc": {
+          "size": 118522,
+          "sha256": "27eed27e236431dcbba03570f9623f17c0baa7ea1e65854f3086158e0e27adcf"
+        },
+        "params/ocdbt.process_0/d/10bfd659121514a59aa0068957193d70": {
+          "size": 34942947,
+          "sha256": "14d83c63067cb4e4fca67f9fde1b236f712d1bf40edf2397c214351c9da33586"
+        },
+        "params/ocdbt.process_0/d/289c39d3a8a2c36521712783b932d183": {
+          "size": 1060,
+          "sha256": "33ffcb14fa7536b3235b98119a983a1247ac93c856eb6b53ee4a93d0f13dc3ec"
+        },
+        "params/ocdbt.process_0/d/3ad38f976a5f302d4869a616a8fa3e34": {
+          "size": 1957014994,
+          "sha256": "bfe54fbeb2ebbe8bb5e89c190d19ea218c279f670562ecdbe949e3d02b6dc950"
+        },
+        "params/ocdbt.process_0/d/4ad71bb717385856bf189d59c4ad9072": {
+          "size": 678846628,
+          "sha256": "0d774d60693d1919643c760ff7f8faf72f781ae0833135ac2c19c34fdb1125c2"
+        },
+        "params/ocdbt.process_0/d/5b982e3f4df2145dccf32f94bdc90f36": {
+          "size": 2240144618,
+          "sha256": "02d3c5f4e1a7bb9a94c7d45337a739dbd81c3dabb00311caecfa6bc78bd7103c"
+        },
+        "params/ocdbt.process_0/d/6a2b0ddea91ebf08f1b3969fe8e5a3e5": {
+          "size": 213,
+          "sha256": "fff2f8b328c86ab34912c01d5758210df1805bcd73e3709be401d1989b9b18c3"
+        },
+        "params/ocdbt.process_0/d/70dbe354da213abb0ff05f3bfa91c070": {
+          "size": 5406,
+          "sha256": "f624b7cc268b0f2ddd0b243829d0b678dc0007f15605fa16ec2ef07c1c208c29"
+        },
+        "params/ocdbt.process_0/d/93ebd128a71ab795eb26f7a737df18ef": {
+          "size": 22216286,
+          "sha256": "3248c6d45be81fc670c24db4d5891ba6c771016ba97d4c79ebd56dfc632116cd"
+        },
+        "params/ocdbt.process_0/d/b789f47ccbb3528a57b6542a51ff10fd": {
+          "size": 133023244,
+          "sha256": "5aa94399ff7a85ffbf934297087b9802d0870bd2406890f6d10d0419e080ac32"
+        },
+        "params/ocdbt.process_0/d/c35ed0469ed2f8766ade4d19741f3116": {
+          "size": 2240021687,
+          "sha256": "c41dc43e2f70a8816325936bceca774123982da28ad6d7b50b81ea53c9e145b6"
+        },
+        "params/ocdbt.process_0/d/cfdb9862f6d8c2fc89df16aee1040d66": {
+          "size": 1262328363,
+          "sha256": "c71b45ed2fc6a97212e3c4db9fb27d22684beab9045806158c8f013327a01eec"
+        },
+        "params/ocdbt.process_0/d/d59237da8c85dfca70f1120a70f5f746": {
+          "size": 252818,
+          "sha256": "9038393b6e18f7861b55f8cf7693d09ce2565108a21490bb97b57e60ad1b02aa"
+        },
+        "params/ocdbt.process_0/d/d8dddd7353f88860c60d6163061ac7f4": {
+          "size": 1553252991,
+          "sha256": "5c50bad243ba0023345b566b3fcb73073208e8589ec883d676f2b394389e48e0"
+        },
+        "params/ocdbt.process_0/d/e7b9c3d755966c01bf71fa8d1b69c7c7": {
+          "size": 7923523,
+          "sha256": "bba2d8872d23499bf6246e151ec402985b37adaac6b2e961a34b4a32ac8bf10e"
+        },
+        "params/ocdbt.process_0/d/ebd15f56b2dd4e77523a20144299da5a": {
+          "size": 2240135767,
+          "sha256": "03923b0ba77bcef881a0c792387ecb4961223d07303dfd244ff0b5fcfbca731d"
+        },
+        "params/ocdbt.process_0/manifest.ocdbt": {
+          "size": 729,
+          "sha256": "9764ccc238fe8b9e3c38bdced3510e4b05e861d2dbbe1e0249bb49eee6f3d148"
+        }
+      }
+    },
+    {
+      "run_id": "E1-s42",
+      "config": "pi05_libero_lora",
+      "checkpoint": "/home/zhsu/jyluo/projects/openpi/checkpoints/pi05_libero_lora/pi05_libero_lora_gpu0/29999",
+      "weight_type": "current non-EMA",
+      "training_seed": 42,
+      "inference_artifacts": {
+        "_CHECKPOINT_METADATA": {
+          "size": 426,
+          "sha256": "02c7026f218d611ddb82a1649b3a6366eb89d86469166b2a17e910d6d91b0912"
+        },
+        "assets/physical-intelligence/libero/norm_stats.json": {
+          "size": 1916,
+          "sha256": "c0ee3c1a6ca5f1414d31180af3bc333dca1d78cf912f341943191b393fe68707"
+        },
+        "params/_METADATA": {
+          "size": 33052,
+          "sha256": "88464a384c524c50fa1a92c1685d23a79570c62807a0ccf021f5f9307fff137c"
+        },
+        "params/_sharding": {
+          "size": 17773,
+          "sha256": "54899ee3f4d45eee96ddada379a19a9da1324792b141fa0449608620571e6b01"
+        },
+        "params/array_metadatas/process_0": {
+          "size": 12891,
+          "sha256": "da5f8952b77ab352fa92e3e58d742bfe0db5b9c1b956212f8279895b9df03721"
+        },
+        "params/d/bc00850efff331c222b40ed9ca9f9649": {
+          "size": 2589,
+          "sha256": "2109344ef9ad38503b9c8ae4059c9e050961603d3cb10ff7f2bc561e20af0165"
+        },
+        "params/manifest.ocdbt": {
+          "size": 118,
+          "sha256": "febcd916822f7f7b6d0ca657233abf22fe8751b93c866b6ef56cf191b54b1b78"
+        },
+        "params/ocdbt.process_0/d/3f1f2915a0342d00a508851ac2ce4aba": {
+          "size": 1376,
+          "sha256": "e43163c6c67941f90156dcc5ae501720f0e0ea0dabfe8651c50b5c3aca84ff33"
+        },
+        "params/ocdbt.process_0/d/5d495e058389bf8697cebf51b21a5f0f": {
+          "size": 55003026,
+          "sha256": "d6204dd7ba398fdad655bdbd8f89adfd963906b33a152eff097e47d6b7be4a8c"
+        },
+        "params/ocdbt.process_0/d/67a9cf0627164dab4a8d86e1d4812082": {
+          "size": 993621317,
+          "sha256": "eba32e46bc91b1e0f735ce22b377f7872ce9d4507319896aadb8c56386d1ddfe"
+        },
+        "params/ocdbt.process_0/d/71d7911a6e94c3ecdeabecd90adc0542": {
+          "size": 2577,
+          "sha256": "8592c4c6501d093ed1ac496fbe9d2b2bed34aa31a7cd22c20a4f2d691f8d8ba8"
+        },
+        "params/ocdbt.process_0/d/75d3b6343c8e4caac13cb1502650928a": {
+          "size": 213,
+          "sha256": "fff2f8b328c86ab34912c01d5758210df1805bcd73e3709be401d1989b9b18c3"
+        },
+        "params/ocdbt.process_0/d/7de13900b6102e2ed8a4c3586435fcb8": {
+          "size": 961169694,
+          "sha256": "f58b7d973cf53ed5c51b448f11fa24ce568113a1f7482e8a125305745f998e12"
+        },
+        "params/ocdbt.process_0/d/89607f0a81eb8be507cf21861a8fc8a5": {
+          "size": 828933240,
+          "sha256": "19a4b6d092c46b0895eaa7cb89dad9221146db0cd0b5482c8e2f765c4e5f761d"
+        },
+        "params/ocdbt.process_0/d/afdb4fc7ced594b69e827f6a7f03e4f2": {
+          "size": 458801290,
+          "sha256": "d3724bda5999c4d986262ba53ec5126640a078830a40cee7df70e076bdb18d58"
+        },
+        "params/ocdbt.process_0/d/bbaabb9c517f309511185535e86840d6": {
+          "size": 5728,
+          "sha256": "e52d603da3b2d71afb2cc16eeafa52490ce1ab7963a427a43bc3b4d232b72793"
+        },
+        "params/ocdbt.process_0/d/ee1870592eecd59c983e3cfbaa736b64": {
+          "size": 2837127932,
+          "sha256": "81e819addf009386c0ace14ad9e40380dd6df1e0f1727d4eb9e99b19339de14d"
+        },
+        "params/ocdbt.process_0/d/f8069d78bc0de6df50f421f6c4fec9cd": {
+          "size": 200038103,
+          "sha256": "f4b39dccc437a95a987ee419656b1b1c32cfc0688581a006e856e0c0d721df2d"
+        },
+        "params/ocdbt.process_0/manifest.ocdbt": {
+          "size": 546,
+          "sha256": "72b0ffb8c1952eacc4367dde1fc8a234d58b2f8cf456bd4986ae9e057d881840"
+        }
+      }
+    },
+    {
+      "run_id": "E2-s42",
+      "config": "pi05_libero_lora_frozen_vision",
+      "checkpoint": "/home/zhsu/jyluo/projects/openpi/checkpoints/pi05_libero_lora_frozen_vision/pi05_libero_lora_frozen_vision_s42/29999",
+      "weight_type": "current non-EMA",
+      "training_seed": 42,
+      "inference_artifacts": {
+        "_CHECKPOINT_METADATA": {
+          "size": 426,
+          "sha256": "1b90986aea8e85aba3bf6d72fae44d212e8cd033504651e0805cfd62a67ccdff"
+        },
+        "assets/physical-intelligence/libero/norm_stats.json": {
+          "size": 1916,
+          "sha256": "c0ee3c1a6ca5f1414d31180af3bc333dca1d78cf912f341943191b393fe68707"
+        },
+        "params/_METADATA": {
+          "size": 33052,
+          "sha256": "88464a384c524c50fa1a92c1685d23a79570c62807a0ccf021f5f9307fff137c"
+        },
+        "params/_sharding": {
+          "size": 17773,
+          "sha256": "54899ee3f4d45eee96ddada379a19a9da1324792b141fa0449608620571e6b01"
+        },
+        "params/array_metadatas/process_0": {
+          "size": 12891,
+          "sha256": "da5f8952b77ab352fa92e3e58d742bfe0db5b9c1b956212f8279895b9df03721"
+        },
+        "params/d/2ae61a6e0a3ceaee64ffa352c18d4d91": {
+          "size": 2578,
+          "sha256": "187c6cc0fe059d94923e1696f2788c827690fece489641c72e5e7fd4b2038a19"
+        },
+        "params/manifest.ocdbt": {
+          "size": 118,
+          "sha256": "87eaa78301c208d8ca8eac3ad20a6bc5a77e85e425cb0177c1f7dc0dfabca829"
+        },
+        "params/ocdbt.process_0/d/18778ed988ed0be9f1264803fd95098c": {
+          "size": 828933192,
+          "sha256": "e7891bffebbbe91f9ac58068f9405915209652c57f9c02b232ed2573f45aeff2"
+        },
+        "params/ocdbt.process_0/d/2ee7a7002f150cfa9860e7f41bacca0b": {
+          "size": 1891253692,
+          "sha256": "542fecb7ba5c66a3e9a9bb2a15f47f3e6390725836b804a29d959a0e704f0178"
+        },
+        "params/ocdbt.process_0/d/53dd8d982e08963a9802a554148fe952": {
+          "size": 1010976335,
+          "sha256": "61aa21bdcb0d6da0ba5f617412630193cb56b8c5b9e95fd2b63eb29c02cc1202"
+        },
+        "params/ocdbt.process_0/d/64a61fbd48ac23d40f95b1fb9176a952": {
+          "size": 97514501,
+          "sha256": "88dab43ad2a36b7c327ed53515e76b08e3dafa80ac97ec7de2513890eaebaf00"
+        },
+        "params/ocdbt.process_0/d/6fdd2f7b801c24908c8479ea9c091759": {
+          "size": 1376,
+          "sha256": "90d24d7766bf7713f33b14c2baf86b0e7a43688699cbcad13d34d45445af8bc2"
+        },
+        "params/ocdbt.process_0/d/db90a3a82bf27ef6814c664a9d0e95a1": {
+          "size": 79669571,
+          "sha256": "41c7f62d18f20d3f50553446c648afcef693c575e62bf4aa54b19d025e11801e"
+        },
+        "params/ocdbt.process_0/d/e06f14cdb506cf80b04931157e69ec3a": {
+          "size": 945879315,
+          "sha256": "4ee64eb4daa1c8ed2a6c316c91d954230aee1242c647da06ebee5df6b50966a5"
+        },
+        "params/ocdbt.process_0/d/ef62ae1656a1fcb31cf41fe384810cf5": {
+          "size": 592818640,
+          "sha256": "cb6248afbf0cbf2cacfbbf4df6f0d37452d14e9e655538d0eece6a2986f2c5be"
+        },
+        "params/ocdbt.process_0/d/f4db1a6d890d30c8eac45298eb2a1edf": {
+          "size": 217,
+          "sha256": "e94b6f05ceef55173200b9a654bc6d84fae3656f3c7e168fafc6291a2847bc7a"
+        },
+        "params/ocdbt.process_0/manifest.ocdbt": {
+          "size": 506,
+          "sha256": "22b8dff99bd0fae1739d79fa8cfdead8cd6a5bfb3e502d8d646cf0045869d88c"
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "primary_for_prospective_confirmation": "environment_success_suite_equal",
+    "co_reported_original_metric": "raw_bound_strict_success_suite_equal",
+    "primary_comparison": "E2 minus E1",
+    "engineering_margin": -0.05,
+    "bootstrap": "10000 paired resamples within each fixed task, then task and suite equal means",
+    "bootstrap_seed": 20261021,
+    "noninferiority": "95% interval lower endpoint strictly greater than -0.05",
+    "strict_claim": "retain original raw-bound failures; no noninferiority claim for the original strict criterion based on environment success"
+  },
+  "execution": {
+    "episodes_per_run": 1600,
+    "planned_total": 4800,
+    "e0_development_supplement": 400,
+    "flow_steps": 10,
+    "replan_steps": 5,
+    "settling_steps": 10,
+    "initial_states": "Spatial/Long 20..49, Object/Goal 0..49, all 40 tasks",
+    "infrastructure_max_attempts_per_episode": 2,
+    "final_checkpoints_only": true,
+    "failure_rule": "environment timeout/NaN is policy failure or explicitly reported policy fault; infrastructure faults retained separately"
+  },
+  "limitations": [
+    "one training seed (42), no training-seed uncertainty claim",
+    "E0 historical all-suite results already exposed; this is fixed-benchmark confirmation, not a pristine independent test",
+    "development is used for selection and excluded from confirmation estimates",
+    "E0 EMA and E1/E2 non-EMA recipe comparison is not a single-variable ablation",
+    "no candidate or execution changes after viewing confirmation outcomes"
+  ],
+  "environment_versions": {
+    "server": {
+      "python": "3.11.17 (main, Oct  9 2026, 15:21:28) [Clang 22.1.3 ]",
+      "packages": {
+        "jax": "0.5.3",
+        "jaxlib": "0.5.3",
+        "numpy": "1.26.4",
+        "torch": "2.7.1",
+        "mujoco": "2.3.7",
+        "robosuite": "not distributed in this environment",
+        "libero": "not distributed in this environment",
+        "openpi-client": "0.1.0"
+      }
+    },
+    "client": {
+      "python": "3.8.20 (default, Oct  2 2024, 16:34:12) \n[Clang 18.1.8 ]",
+      "packages": {
+        "jax": "not distributed in this environment",
+        "jaxlib": "not distributed in this environment",
+        "numpy": "1.22.4",
+        "torch": "1.11.0+cu113",
+        "mujoco": "3.2.3",
+        "robosuite": "1.4.1",
+        "libero": "0.1.0",
+        "openpi-client": "0.1.0"
+      }
+    }
+  },
+  "source_and_evidence_hashes": {
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/eval_manifest.py": "d7b899b7f31cc538fe5488c892400c9e9bc312dcc97542b595e22c5d64fa52e5",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/seeded_policy_server.py": "e402137f5974b8eebff464a3ce7a8e2780e5cc0fc5db7eda153181ea45b2c674",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/development_watchdog.py": "5f1931ce53036fbb0ddc47e76f79757a4ae00aab15b47b07c5504ce10f45fd27",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/confirmation_gate.py": "c62074de7dc3a44363bf2391737ed8bcaf60f2266514ce0004ca296472dfbe49",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/analyze_confirmation.py": "f3e9b819b93b0da1cf6d4dc59b8857d918206bfef336c44f1d2621f03cc741fc",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/freeze_confirmation.py": "87b192892cf485de29eb27b531cf1e6e82fffafee688957f5c62f03f47cadabb",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/run_confirmation_pipeline.py": "6b3393683d1298d815a7435c525bd216cce5baf4ea84ccbbf301e73029b5d02b",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/report/final_development_review/artifact_audit.json": "d4bcc90cdd4b2a7d28cb0a267cbea76ab2b9e0a797a6326ec9b1c80bc0ee0ff0",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/report/final_development_review/failure_labels.csv": "5c71017abd2b7b5a5b69c634a7c0604cde07a7680011a82a4de472c4cf8a0784",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/report/final_development_review/failure_sample.json": "dd1bad6bcd9b47347edc97fd62577d31497d5c2c231d7fb756e9f9741f968940",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/report/final_development_review/review_notes.md": "94b4c254533fbc4a22fa99d6c947fd22f419dea6187170c5273a3e175730e4b4",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/evaluations/development_comparison.json": "3a1d177004475226bc3d7bfe4c565c19c7dcf74aaa4f6eb6c62d261beabd71c0",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/evaluations/e3_development_comparison.json": "a3b334249f0ac8b84a0a155579ee7c4e1de7c639158955e0b76e2a8a0132e9f1",
+    "/home/zhsu/jyluo/experiments/pi05_libero_adaptation/metrics/profiles/summary.json": "40af9cf8da36a8f57567b5bee9bd6e5e45e9d6ce548da0eb98c5e88576b4cf58",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/training/config.py": "94efe985481631907c41efa2c8b4e4b262529a56f70e94153d13d17925f5bef3",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/training/checkpoints.py": "3229a21f5e717c62464cd7737c201adad548d58f6cafc50782d8a3062aca28d0",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/models/pi0_config.py": "3e803fae376cb3bd1481e6b4cf3a1ee3b976de1411d62b035822af4be8584f7a",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/models/pi0.py": "19b25188bd1c7a56c84c93762776a480c103d4060d30e790234939f5063640a2",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/models/gemma.py": "543fb8ef8ac04195704f4ad402dc08821657005aec88a8a413efd870f5228ec0",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/models/lora.py": "7e2f5edcedce56723692cafc87b2ad729a984210e7b0bb8e7fdb2af6acb3d2d0",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/policies/policy_config.py": "3b2a929964fa838352f4a3b57a21f3d13b775654463ba998e366b0e421aeb77e",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/policies/libero_policy.py": "f07eec520b07835c122cf2d08bc8d5f9f1430cff8ef82203293871b330405c3e",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/policies/policy.py": "43a9e3b340280d78cf4768fa1c6b96accd5b57d33c55d791a83bcb91254a52dd",
+    "/home/zhsu/jyluo/projects/openpi/src/openpi/transforms.py": "4b566c16bbd1b24428e748fa53669d0fa247d2aacbc6c1636fc4c1f5cfd9338c",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/__init__.py": "072f9274f6d198e26894b73b509b4203cda52f554337dc6b42b6e1be5651aece",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/benchmark/__init__.py": "b1c7bcbe75150e123c2d250cf455c7ed7333b76d21c78ec122a5c02544d19b83",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/benchmark/libero_suite_task_map.py": "dc644c34987f6e0e4dc5320e5168cd2ee170cb8520f6a9344d2cd6d50f2c55fc",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/benchmark/mu_creation.py": "db2c897bd78becd5cfa82a196d5415d4457c7c6a8210f5b996bade55d48db23e",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/__init__.py": "5d756932064c36a18ac773e99769fe53c42e4a70fccbca9d9fd69e5fe406afef",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/__init__.py": "73d7211043cae59b7eff98dfb0226261cbf454c538ff37ffa059a1a5e69f675d",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/coffee_table_arena.py": "dcdbe2527b5da662b665fb037cd89d4fbb8d4f3732d087ce5b03ba3889e2a2bb",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/empty_arena.py": "52f4326243c4583ff80c89dcc35aa39591095234750978764b34113fbead2079",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/kitchen_arena.py": "1c1bb6df8136a4204ba518b285db1e9989b812b52e117b47b3eaf98f30ba65f7",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/living_room_arena.py": "75e83b7a6380715e10b3f5c7d956eaeb175bd40935ca631e449290d1652d1acd",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/study_arena.py": "033acba25d50ff3d06af86ecea0394f9eef25c84dcfecddbacaaa9e850541d84",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/style.py": "96e51bb3eca9400a583e3b5e8d2285195de111b1d062eb83f436dca0b799955f",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/arenas/table_arena.py": "1bdb84403e0aa7803eea88bc8f3abeb3bd35f1b62bb349ab5ed540f6af7a364c",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/base_object.py": "f453792049821a35f87f84bc38bd59d60e4af32be9f186d6477a8128544b1a60",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/bddl_base_domain.py": "9626f2995514474a4fa3cc3d36ace1de091e2293d96f61399688178c56ca1750",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/bddl_utils.py": "87b8a58af6af158ae70c532152e2109bdff67d11ca64dcb4d3838e44710d198a",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/env_wrapper.py": "2880cad5b3fe46ea105816f42798faf4c22e16839098b679ebcad7b51acfdbd0",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/object_states/__init__.py": "5d55c3e77693a56b8af36d9f58b2a2de8d3b83d4d455250f0987bd528b7aeabb",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/object_states/base_object_states.py": "c986e622314f82a9e5695a7e77a1f3bd9614ba8836b67bb5cd9d07837ad09b1b",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/__init__.py": "f5521a5bd83d33cbda8675d7bef8979161e7c489436393b2ce90e35401ef8cd6",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/articulated_objects.py": "49ad9f28c85d70f80b715d8114d058b5d0ba4630447f28e388b13b22d2d1af16",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/google_scanned_objects.py": "a3573e439fd4e0d4506428e037682947294b4d22c38c28ad5286ded8c9cc8f65",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/hope_objects.py": "015d0c390d5d642857e5a0c4c5db7190bee72e495ddc3ef7279dbcedd75fbbcb",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/site_object.py": "e384bb216c83d1226fd4be37d50ab0a2f7aa7273f8bb14e3c20e34563d893637",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/target_zones.py": "80dbb280ffc046514beeee44a721cdb29fdad84227d0187967ec4afe15e81401",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/objects/turbosquid_objects.py": "2e7cd3c4258c711454306d1cd0d7f53135325e2fec1a7b96154eb0f6144f1922",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/predicates/__init__.py": "c331dda58b856186119036766f785fadd83d08679d09b724dc26bd491edc1727",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/predicates/base_predicates.py": "caa741093ac65836848e04b8b72c9976c7ddfc5bbd71f265ed2eb01761c086f6",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/__init__.py": "830289ac583075d13909e4cee8589dd41b5339f93b71f379b0bc243c7deec956",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_coffee_table_manipulation.py": "55b6f523bfdcd80023daaaf3bc3f03abfe3c081d99db3d373a7f8554e1bca01a",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_floor_manipulation.py": "edb604bc79528211590c1d37886f3105a1842b0b512ac7c80329082ec5ccf1af",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_kitchen_tabletop_manipulation.py": "66b75940d508b2d20ba8b7487d0227e069416b1640a68f50a3370cd29c2798f9",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_living_room_tabletop_manipulation.py": "2ce6a2c1992b3152361d32497ad7b421bc9f92e015322bd5e5434e5de4404169",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_study_tabletop_manipulation.py": "aaeed18584934da7ca5d94b85028cab51bd5f365aaecedf6f23d4e75c3d060bc",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/problems/libero_tabletop_manipulation.py": "9bc3c3ab8d50cf68fb665ffb54d3877ff5ae56d10c6b38802b59df1d145dc659",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/regions/__init__.py": "ebdc30bd5d2a490cdce90a389f9d7efa22092248b6b3b36744b688b6d7060409",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/regions/base_region_sampler.py": "19850780813d46f2a73a0323109bbc510bec6b59fae454a2527d087230925cbb",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/regions/object_property_sampler.py": "61153ec8c533e94dc6fe5dcb51fdb29e3986c09ce2ef7926f9e683813e6ae984",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/regions/workspace_region_sampler.py": "384f06b2b5d79b342def3f6031203b61285b1881e79e9c42e4654f979c505a27",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/robots/__init__.py": "bedf41b4e37e76026ed6e196fe57c4bd5ea5b78d5f5330f1318cde9e8b46c687",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/robots/mounted_panda.py": "b60b02645173fff6570161505dd1607257bdaea5fbcfc18c07cb57a27a37d434",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/robots/on_the_ground_panda.py": "2b23440a51af05759725919b03311fdf292ae290b1956daad88e8c5ab0ad0b32",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/textures.py": "75c38b3d3998b33f115c8af5ae2a2e3aa47162b8c0972cf86450eb22259e772c",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/utils.py": "5d5019e724616c2cf6ee433d37c5eabde3d8bdffb11c74fa0f46402e9c2e3c23",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/envs/venv.py": "214efa79434abd240544146861b8d9be5f3b6ddd9eaa1e1a4d56486919559822",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/__init__.py": "2aed6b3bda87bd2811195ffac1b68747488cc1699e88728175cd56fb51b54d7e",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/bddl_generation_utils.py": "4557a289bff454ec91c66df6bc20d2b902d6f0f03d5f78e6747cec8b3d6ed41e",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/dataset_utils.py": "f3f8cb083725068084d7c61d13df57deb1d3112fa5904b6d45c1ad942c923740",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/download_utils.py": "06a05eb482297772f65cbd575a84f5289e6d049e9ee3d12c2d618ed559c380da",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/log_utils.py": "1e2e418ef4a8dadafd454ddd00f88223bfc6edb612b2193272870adc25e082b1",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/mu_utils.py": "31daa20eeb9eff35bc746c8e3a12fbdb440512487cde3303346e95664f404505",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/object_utils.py": "7e6e55ac18e3b43a2632c13773346ac21c9e8df0e81f4b0ece9eb4c25a29b17e",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/task_generation_utils.py": "04fa614daa09962fcbbe2042ec304b0baa0be760b9c0b24d80931ffa4e54a77b",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/time_utils.py": "55f76c615b9042cd2876b95c64e896b791ded5d87d4cf05734d1803c8cc66d1c",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/utils.py": "d24da91ab5e350579493375198d0603a38ea61cb468d6800bfb029f854b678d9",
+    "/home/zhsu/jyluo/projects/openpi/third_party/libero/libero/libero/utils/video_utils.py": "332840f6d7da0ce9c23c2754fae69dace5458caaf460d3dbffd582fb8f66b402"
+  }
+}

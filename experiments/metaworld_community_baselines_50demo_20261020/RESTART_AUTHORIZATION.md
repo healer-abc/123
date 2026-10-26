@@ -1,0 +1,1 @@
+User requested a new run with literature-supported MetaWorld settings on 2026-10-20. Prior campaign jobs are superseded; all existing data, checkpoints, raw failures and reports are preserved. Other users/projects GPU jobs must not be stopped.

@@ -1,0 +1,5 @@
+{
+  "issue": "LD_LIBRARY_PATH was set after Python startup, so cached MuJoCo extension failed to load and attempted a rebuild; missing X11 headers was a secondary error.",
+  "fix": "Re-exec helpers with the baseline environment before any dynamic library loading. Original failed log retained in paired_control.log.",
+  "main_evaluation_affected": false
+}

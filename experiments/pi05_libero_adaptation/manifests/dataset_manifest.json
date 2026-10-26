@@ -1,0 +1,18 @@
+{
+  "dataset": "physical-intelligence/libero",
+  "codebase_version": "v2.0",
+  "robot_type": "panda",
+  "episodes": 1693,
+  "frames": 273465,
+  "tasks": 40,
+  "fps": 10,
+  "split": "train=0:1693",
+  "inputs": ["third-person RGB", "wrist RGB", "language instruction"],
+  "state_note": "client supplies observation/state, but pi05 with discrete_state_input=False does not use the continuous state token branch; server implementation audit pending",
+  "action_shape_in_dataset": [7],
+  "model_action_dim": 32,
+  "model_action_horizon": 10,
+  "norm_stats_path": "/home/zhsu/jyluo/projects/openpi/assets/pi05_libero/physical-intelligence/libero/norm_stats.json",
+  "norm_stats_sha256": "c0ee3c1a6ca5f1414d31180af3bc333dca1d78cf912f341943191b393fe68707"
+}
+

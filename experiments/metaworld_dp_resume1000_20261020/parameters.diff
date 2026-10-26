@@ -1,0 +1,14 @@
+--- completed_DP500
++++ requested_DP1000_continuation
+-terminal_epoch: 500
++terminal_epoch: 1000
++additional_epochs: 500
++full_saved_state_resume: true
++snapshot_epochs: [600,700,800,900,1000]
+ training_seed: 0
+ batch_size: 128
+ lr_schedule_epochs: 1000
+ num_inference_steps: 10
+ horizon: 16
+ n_obs_steps: 2
+ action_horizon: 8

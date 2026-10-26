@@ -1,0 +1,80 @@
+{
+  "created_at": 1792438961.1074233,
+  "row": {
+    "task": "shelf-place",
+    "method": "ACT",
+    "successes": "1",
+    "episodes": "20",
+    "success_rate": "0.05",
+    "checkpoint_sha256": "48f4b4c894d1e62dfb8d4137151675783a792dee5045b4afd55f918cdb532647",
+    "output": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_shelf-place/attempt_01"
+  },
+  "source_root": "/home/zhsu/jyluo/experiments/metaworld_act_zero_grid_20261020",
+  "source_case": "/home/zhsu/jyluo/experiments/metaworld_act_zero_grid_20261020/ACT_shelf-place",
+  "source_complete_sha256": "23ddd410d34396aac52c5b3d44fcfbb67c3196a28a7f47ce3b24cb1e6d0637d8",
+  "previous_config": {
+    "temporal_agg": false,
+    "action_horizon": 2
+  },
+  "grid": [
+    {
+      "temporal_agg": false,
+      "action_horizon": 2
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 4
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 8
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 16
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 32
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 100
+    },
+    {
+      "temporal_agg": true,
+      "action_horizon": 1,
+      "aggregation_k": 0.01
+    },
+    {
+      "temporal_agg": false,
+      "action_horizon": 1
+    }
+  ],
+  "blocks": 3,
+  "search_seed_start": 3126102000,
+  "validation_seeds": [
+    2126102000,
+    2126102001,
+    2126102002,
+    2126102003,
+    2126102004,
+    2126102005,
+    2126102006,
+    2126102007,
+    2126102008,
+    2126102009,
+    2126102010,
+    2126102011,
+    2126102012,
+    2126102013,
+    2126102014,
+    2126102015,
+    2126102016,
+    2126102017,
+    2126102018,
+    2126102019
+  ],
+  "engine_sha256": "609bd68580a1d35aa8f219046b874b000b3eea7ccbdb48d1a5277395624bb56b",
+  "classification": "Adaptive nonzero-goal validation. Same fixed20 pool for all candidates; report every round. Original baseline remains separate."
+}

@@ -1,0 +1,11 @@
+# 成功episode路径
+
+每项列出第一条真实成功的视频和完整轨迹；全部成功记录见successful_episodes.json。
+
+| 任务 | seed | 视频 | 轨迹 | 原生info |
+|---|---:|---|---|---|
+| shelf-place | 4026101903 | [MP4](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/shelf-place/rollouts20/episode_03.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/shelf-place/rollouts20/episode_03.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/shelf-place/rollouts20/episode_03.json) |
+| pick-place-wall | 4026101901 | [MP4](/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/paired_original20/episode_01.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/paired_original20/episode_01.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/paired_original20/episode_01.json) |
+| pick-place | 4026101907 | [MP4](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/pick-place/rollouts20/episode_07.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/pick-place/rollouts20/episode_07.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/pick-place/rollouts20/episode_07.json) |
+| stick-push | 4026101900 | [MP4](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/stick-push/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/stick-push/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/stick-push/rollouts20/episode_00.json) |
+| door-open | 4026101900 | [MP4](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/door-open/rollouts20/episode_00.mp4) | [NPZ](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/door-open/rollouts20/episode_00.npz) | [JSON](/home/zhsu/jyluo/experiments/metaworld_act_joint_seed_interval_20261020/runs/horizon_100/door-open/rollouts20/episode_00.json) |

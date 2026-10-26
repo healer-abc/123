@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "verified_utc": "2026-10-25T00:49:38.417934+00:00",
+  "total_episodes": 400,
+  "total_training_frames": 62116,
+  "variants": {
+    "clean": {
+      "episodes": 200,
+      "training_frames": 31185,
+      "raw_frames": 31385,
+      "frames_per_episode": {
+        "min": 135,
+        "max": 230,
+        "mean": 155.925
+      },
+      "seed_range": [
+        0,
+        250
+      ],
+      "repo_id": "local/robotwin_pi0_clean200",
+      "raw_dataset": "/home/zhsu/jyluo/data/robotwin_pi0/raw/clean/adjust_bottle/demo_clean_pi0_train200",
+      "lerobot_dataset": "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200",
+      "norm_stats": "/home/zhsu/jyluo/experiments/robotwin_pi0/report/clean200_norm_stats/norm_stats.json",
+      "raw_source_hashes_verified": 200,
+      "artifact_sha256": {
+        "data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/meta/source_episodes.jsonl": "e0fad94f971e2bafc5aef448caa92b6456d9d410bf5dccbe538b523bfd843181",
+        "data/robotwin_pi0/lerobot/local/robotwin_pi0_clean200/meta/info.json": "5cd321b1d3ca24b15d9a27f461495b2b3773f0323d097dcec8aa1d2732d629ac",
+        "data/robotwin_pi0/raw/clean/adjust_bottle/demo_clean_pi0_train200/collection_config.yml": "2b236bf699d947a4c4fa2c151da207793867e496f7dd4110bd09a069d91cd628",
+        "data/robotwin_pi0/raw/clean/adjust_bottle/demo_clean_pi0_train200/collection_protocol.json": "208f1510d0fec47cde2c30fcaa2f498a61db2a1e6798907db54550055e2adf17",
+        "experiments/robotwin_pi0/report/clean200_norm_stats/norm_stats.json": "08facb861d34c912d1ac861cf37cf3dad6d3a97de2697203b7def76bcf0e9db6",
+        "experiments/robotwin_pi0/report/clean200_norm_stats/source.json": "ba7440f4a4f2ea5a092b2a6b625833ee626934dc29e53f9e87c4d850bcd37ea8",
+        "experiments/robotwin_pi0/report/clean200-converted-check.json": "df96c895c3e6b4d8c38afa516fbc99d133cafbf8c6a62eb1a5a44fa172fa8eb9",
+        "experiments/robotwin_pi0/report/clean200-loader-check.json": "0554f51af6d9f4d04cca743c605379cb3235545a46f21fa9c4a14d6dda3320dc"
+      }
+    },
+    "randomized": {
+      "episodes": 200,
+      "training_frames": 30931,
+      "raw_frames": 31131,
+      "frames_per_episode": {
+        "min": 133,
+        "max": 256,
+        "mean": 154.655
+      },
+      "seed_range": [
+        2,
+        269
+      ],
+      "repo_id": "local/robotwin_pi0_randomized200",
+      "raw_dataset": "/home/zhsu/jyluo/data/robotwin_pi0/raw/randomized/adjust_bottle/demo_randomized_pi0_train200",
+      "lerobot_dataset": "/home/zhsu/jyluo/data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200",
+      "norm_stats": "/home/zhsu/jyluo/experiments/robotwin_pi0/report/randomized200_norm_stats/norm_stats.json",
+      "raw_source_hashes_verified": 200,
+      "artifact_sha256": {
+        "data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/meta/source_episodes.jsonl": "3b98828db05e4109a9678f81042580ffb135f3f4a46cdad4ae267ed3cf68653f",
+        "data/robotwin_pi0/lerobot/local/robotwin_pi0_randomized200/meta/info.json": "31e1d8b2e6dbb4e222838614d6ea1413a0abdf6ec3d3ddf01d29b7d4caddda2f",
+        "data/robotwin_pi0/raw/randomized/adjust_bottle/demo_randomized_pi0_train200/collection_config.yml": "4aa84b55d9c42bc5911e1e37f1dd37ec52c6c21429fbb6bb150adc878c823ef0",
+        "data/robotwin_pi0/raw/randomized/adjust_bottle/demo_randomized_pi0_train200/collection_protocol.json": "802b5869bb4d517a156b8b2ce8238e6b351ab2fd298cc9dbd8961af2337ddde1",
+        "experiments/robotwin_pi0/report/randomized200_norm_stats/norm_stats.json": "79bbb083b02c73f15efd07e308c66489d7762325d2d9bbb036d2a7b4545099f0",
+        "experiments/robotwin_pi0/report/randomized200_norm_stats/source.json": "2cfcf070c7d0773ebf25b35fbd7b64ae637b09ca02e36f6d9de9ab6dd6dcf9bd",
+        "experiments/robotwin_pi0/report/randomized200-converted-check.json": "f4ef69bbe40f4641de28e2b5ae195d2c5b4cf1913ced223670b0040571b16d83",
+        "experiments/robotwin_pi0/report/randomized200-loader-check.json": "36574c673d7487f47f7490d912bf33eb89706649d49e4837ab36bcb2ce2ce816"
+      }
+    }
+  },
+  "validation": "Raw hashes, seeds, instructions, configuration and report consistency checked here; all state/action pairs and sampled camera pixels checked by converted-check reports."
+}

@@ -1,0 +1,100 @@
+{
+  "time": 1792488670.1588964,
+  "pid": 3001477,
+  "state": "complete",
+  "jobs": [
+    {
+      "task": "shelf-place",
+      "state": "complete",
+      "attempt": 1,
+      "failures": 0,
+      "not_before": 0,
+      "gpu": 0,
+      "started": 1792487719.5711772,
+      "log": "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/logs/shelf-place_attempt1.log",
+      "pid": 3001485
+    },
+    {
+      "task": "pick-place-wall",
+      "state": "complete",
+      "attempt": 1,
+      "failures": 0,
+      "not_before": 0,
+      "gpu": 1,
+      "started": 1792487719.6862605,
+      "log": "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/logs/pick-place-wall_attempt1.log",
+      "pid": 3001486
+    },
+    {
+      "task": "pick-place",
+      "state": "complete",
+      "attempt": 0,
+      "failures": 0,
+      "not_before": 0
+    },
+    {
+      "task": "stick-push",
+      "state": "complete",
+      "attempt": 1,
+      "failures": 0,
+      "not_before": 0,
+      "gpu": 1,
+      "started": 1792488084.283482,
+      "log": "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/logs/stick-push_attempt1.log",
+      "pid": 3004545
+    },
+    {
+      "task": "door-open",
+      "state": "complete",
+      "attempt": 1,
+      "failures": 0,
+      "not_before": 0,
+      "gpu": 0,
+      "started": 1792488196.1389127,
+      "log": "/home/zhsu/jyluo/experiments/metaworld_simpledp3_epoch50_ddim5_all5_20261020/logs/door-open_attempt1.log",
+      "pid": 3005466
+    }
+  ],
+  "rows": [
+    {
+      "task": "shelf-place",
+      "checkpoint_epoch": 50,
+      "state": "complete",
+      "successes": 8,
+      "episodes": 20,
+      "reused": false
+    },
+    {
+      "task": "pick-place-wall",
+      "checkpoint_epoch": 50,
+      "state": "complete",
+      "successes": 17,
+      "episodes": 20,
+      "reused": false
+    },
+    {
+      "task": "pick-place",
+      "checkpoint_epoch": 50,
+      "state": "complete",
+      "successes": 18,
+      "episodes": 20,
+      "reused": true
+    },
+    {
+      "task": "stick-push",
+      "checkpoint_epoch": 50,
+      "state": "complete",
+      "successes": 16,
+      "episodes": 20,
+      "reused": false
+    },
+    {
+      "task": "door-open",
+      "checkpoint_epoch": 50,
+      "state": "complete",
+      "successes": 20,
+      "episodes": 20,
+      "reused": false
+    }
+  ]
+}

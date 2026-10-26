@@ -1,0 +1,39 @@
+{
+  "config": {
+    "temporal_agg": false,
+    "action_horizon": 1
+  },
+  "screening_seeds": [
+    3026101903,
+    3026101904,
+    3026101905
+  ],
+  "screening_result": {
+    "identity": {
+      "method": "ACT",
+      "task": "pick-place-wall",
+      "checkpoint_sha256": "f8f7e11acc84761652c34b99a89a32347fcb05a77a3d376d6bafdf5f677bc835",
+      "config": {
+        "temporal_agg": false,
+        "action_horizon": 1
+      },
+      "stage": "search",
+      "expert_positive_control": false,
+      "plan_sha256": "5a0660782658878c05226a9fc498a87d0ad32c6c82bee457887f91566315c2e8"
+    },
+    "episodes": 3,
+    "successes": 1,
+    "success_rate": 0.3333333333333333,
+    "seeds": [
+      3026101903,
+      3026101904,
+      3026101905
+    ],
+    "successful_episodes": [
+      "/home/zhsu/jyluo/experiments/metaworld_zero_success_search_20261019/ACT_pick-place-wall/search/trial_001/episode_02.mp4"
+    ]
+  },
+  "checkpoint": "/home/zhsu/jyluo/experiments/metaworld_official_baselines_50demo_20261019/runs/ACT_pick-place-wall/attempt_01/policy_best.ckpt",
+  "checkpoint_sha256": "f8f7e11acc84761652c34b99a89a32347fcb05a77a3d376d6bafdf5f677bc835",
+  "locked_at": 1792423395.6687052
+}
